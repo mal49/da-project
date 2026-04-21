@@ -309,11 +309,7 @@ function App() {
             </div>
             <datalist id="player-options">
               {suggestedPlayers.map((player) => (
-                <option
-                  key={player.name}
-                  value={player.name}
-                  label={`Rank ${player.rank} - Elo ${player.elo}`}
-                />
+                <option key={player.name} value={player.name} />
               ))}
             </datalist>
             <div className="field-grid two-columns">
