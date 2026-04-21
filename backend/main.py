@@ -8,15 +8,9 @@ from typing import Optional
 
 app = FastAPI(title="🏸 Badminton Match Predictor API")
 
-# ALLOWED_ORIGIN env var: set to your Cloudflare Pages URL in Railway dashboard
-# e.g. https://da-project.pages.dev
-_allowed_origin = os.getenv("ALLOWED_ORIGIN", "*")
-allowed_origins = ["*"] if _allowed_origin == "*" else [_allowed_origin, "http://localhost:5173"]
-
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=allowed_origins,
-    allow_credentials=True,
+    allow_origins=["*"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
