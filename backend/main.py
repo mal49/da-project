@@ -8,10 +8,14 @@ from typing import Optional
 
 app = FastAPI(title="🏸 Badminton Match Predictor API")
 
-# Enable CORS for React Frontend
+# ALLOWED_ORIGIN env var: set to your Cloudflare Pages URL in Railway dashboard
+# e.g. https://da-project.pages.dev
+_allowed_origin = os.getenv("ALLOWED_ORIGIN", "*")
+allowed_origins = ["*"] if _allowed_origin == "*" else [_allowed_origin, "http://localhost:5173"]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # In production, specify exact origins
+    allow_origins=allowed_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -176,3 +180,4 @@ if __name__ == "__main__":
     print("📍 Open http://localhost:8000/docs to test")
     print("="*60)
     uvicorn.run(app, host="0.0.0.0", port=8000)
+    
