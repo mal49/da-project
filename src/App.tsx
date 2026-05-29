@@ -1,19 +1,21 @@
-import { useMemo, useState } from 'react'
-import type { FormEvent } from 'react'
-import heroImg from './assets/hero.png'
+import { useEffect, useRef, useState } from 'react'
 import './App.css'
-
-type PredictionRequest = {
-  player_a_name: string
-  player_b_name: string
-  player_a_rank: number
-  player_b_rank: number
-  player_a_elo?: number
-  player_b_elo?: number
-  tournament_name: string
-  round: string
-  match_type: string
-}
+import type { MatchContext, Player, PredictionView, Round } from './players'
+import {
+  MATCHUPS,
+  ROUNDS,
+  SURFACES,
+  buildPredictionView,
+  findPlayer,
+  lastName,
+  matchTypeFor,
+  roundToApi,
+} from './players'
+import { PlayerAvatar } from './components/PlayerAvatar'
+import { PlayerModal } from './components/PlayerModal'
+import { ResultCard } from './components/ResultCard'
+import { Leaderboard } from './components/Leaderboard'
+import { TopBar } from './components/TopBar'
 
 type PredictionResponse = {
   player_a_win_probability: number
@@ -23,499 +25,351 @@ type PredictionResponse = {
   model_used: string
 }
 
-type FormState = {
-  playerAName: string
-  playerAPartnerName: string
-  playerBName: string
-  playerBPartnerName: string
-  playerARank: string
-  playerBRank: string
-  playerAElo: string
-  playerBElo: string
-  tournamentName: string
-  round: string
-  matchType: string
-}
-
-type Player = {
-  name: string
-  rank: number
-  elo: number
-  categories: string[]
-}
-
 const apiBaseUrl = import.meta.env.VITE_API_URL ?? 'http://localhost:8000'
-const playerSourceUrl = 'https://badmintonranks.com/'
 
-const playerDirectory: Player[] = [
-  { name: 'Lee Zii Jia', rank: 10, elo: 2450, categories: ['MS'] },
-  { name: 'Viktor Axelsen', rank: 2, elo: 2650, categories: ['MS'] },
-  { name: 'Kunlavut Vitidsarn', rank: 4, elo: 2580, categories: ['MS'] },
-  { name: 'Shi Yu Qi', rank: 1, elo: 2680, categories: ['MS'] },
-  { name: 'Anders Antonsen', rank: 3, elo: 2600, categories: ['MS'] },
-  { name: 'Kodai Naraoka', rank: 6, elo: 2520, categories: ['MS'] },
-  { name: 'Anthony Sinisuka Ginting', rank: 8, elo: 2485, categories: ['MS'] },
-  { name: 'Loh Kean Yew', rank: 13, elo: 2410, categories: ['MS'] },
-  { name: 'Jonatan Christie', rank: 5, elo: 2545, categories: ['MS'] },
-  { name: 'Li Shi Feng', rank: 7, elo: 2505, categories: ['MS'] },
-  { name: 'Ng Tze Yong', rank: 18, elo: 2350, categories: ['MS'] },
-  { name: 'An Se Young', rank: 1, elo: 2700, categories: ['WS'] },
-  { name: 'Chen Yu Fei', rank: 2, elo: 2640, categories: ['WS'] },
-  { name: 'Akane Yamaguchi', rank: 4, elo: 2590, categories: ['WS'] },
-  { name: 'Tai Tzu Ying', rank: 5, elo: 2550, categories: ['WS'] },
-  { name: 'Carolina Marin', rank: 6, elo: 2525, categories: ['WS'] },
-  { name: 'P. V. Sindhu', rank: 12, elo: 2425, categories: ['WS'] },
-  { name: 'Gregoria Mariska Tunjung', rank: 7, elo: 2495, categories: ['WS'] },
-  { name: 'Han Yue', rank: 8, elo: 2475, categories: ['WS'] },
-  { name: 'Goh Jin Wei', rank: 30, elo: 2240, categories: ['WS'] },
-  { name: 'Aaron Chia', rank: 5, elo: 2520, categories: ['MD', 'XD'] },
-  { name: 'Soh Wooi Yik', rank: 5, elo: 2520, categories: ['MD'] },
-  { name: 'Satwiksairaj Rankireddy', rank: 3, elo: 2580, categories: ['MD'] },
-  { name: 'Chirag Shetty', rank: 3, elo: 2580, categories: ['MD'] },
-  { name: 'Fajar Alfian', rank: 7, elo: 2490, categories: ['MD'] },
-  { name: 'Muhammad Rian Ardianto', rank: 7, elo: 2490, categories: ['MD'] },
-  { name: 'Kang Min Hyuk', rank: 6, elo: 2505, categories: ['MD'] },
-  { name: 'Seo Seung Jae', rank: 6, elo: 2505, categories: ['MD', 'XD'] },
-  { name: 'Kim Astrup', rank: 8, elo: 2470, categories: ['MD'] },
-  { name: 'Anders Skaarup Rasmussen', rank: 8, elo: 2470, categories: ['MD'] },
-  { name: 'Chen Qing Chen', rank: 1, elo: 2670, categories: ['WD'] },
-  { name: 'Jia Yi Fan', rank: 1, elo: 2670, categories: ['WD'] },
-  { name: 'Pearly Tan', rank: 8, elo: 2475, categories: ['WD', 'XD'] },
-  { name: 'Thinaah Muralitharan', rank: 8, elo: 2475, categories: ['WD'] },
-  { name: 'Baek Ha Na', rank: 2, elo: 2630, categories: ['WD'] },
-  { name: 'Lee So Hee', rank: 2, elo: 2630, categories: ['WD'] },
-  { name: 'Nami Matsuyama', rank: 5, elo: 2540, categories: ['WD'] },
-  { name: 'Chiharu Shida', rank: 5, elo: 2540, categories: ['WD'] },
-  { name: 'Huang Dong Ping', rank: 2, elo: 2635, categories: ['XD', 'WD'] },
-  { name: 'Feng Yan Zhe', rank: 2, elo: 2635, categories: ['XD'] },
-  { name: 'Zheng Si Wei', rank: 1, elo: 2680, categories: ['XD'] },
-  { name: 'Huang Ya Qiong', rank: 1, elo: 2680, categories: ['XD'] },
-  { name: 'Goh Soon Huat', rank: 9, elo: 2465, categories: ['XD'] },
-  { name: 'Shevon Jemie Lai', rank: 9, elo: 2465, categories: ['XD'] },
-]
-
-const rounds = [
-  'Qualification',
-  'Round 1',
-  'Round 2',
-  'Round 3',
-  'Round of 32',
-  'Round of 16',
-  'Quarter final',
-  'Semi final',
-  'Final',
-]
-
-const matchTypes = [
-  { label: 'Men Singles', value: 'MS' },
-  { label: 'Women Singles', value: 'WS' },
-  { label: 'Men Doubles', value: 'MD' },
-  { label: 'Women Doubles', value: 'WD' },
-  { label: 'Mixed Doubles', value: 'XD' },
-]
-
-const initialForm: FormState = {
-  playerAName: 'Lee Zii Jia',
-  playerAPartnerName: '',
-  playerBName: 'Viktor Axelsen',
-  playerBPartnerName: '',
-  playerARank: '10',
-  playerBRank: '2',
-  playerAElo: '2450',
-  playerBElo: '2650',
-  tournamentName: '',
-  round: '',
-  matchType: '',
-}
-
-function optionalNumber(value: string) {
-  return value.trim() ? Number(value) : undefined
-}
-
-function toPercent(value: number) {
-  return `${Math.round(value * 100)}%`
-}
-
-function isDoublesMatch(matchType: string) {
-  return ['MD', 'WD', 'XD'].includes(matchType)
-}
-
-function formatSideName(primary: string, partner: string, fallback: string) {
-  const names = [primary, partner].map((name) => name.trim()).filter(Boolean)
-  return names.length ? names.join(' / ') : fallback
-}
-
-function findPlayer(name: string) {
-  const normalizedName = name.trim().toLowerCase()
-  return playerDirectory.find(
-    (player) => player.name.toLowerCase() === normalizedName,
+// ----- player slot button -----
+function PlayerSlot({
+  side,
+  player,
+  onClick,
+}: {
+  side: 'a' | 'b'
+  player: Player | null
+  onClick: () => void
+}) {
+  const right = side === 'b'
+  return (
+    <button className={`pslot ${right ? 'right' : ''}`} onClick={onClick}>
+      {player ? (
+        <PlayerAvatar player={player} size={56} />
+      ) : (
+        <div className="pavatar empty">+</div>
+      )}
+      <div style={{ display: 'flex', flexDirection: 'column' }}>
+        <div className="label">Player {right ? 'B' : 'A'}</div>
+        {player ? (
+          <>
+            <div className="name">{player.name}</div>
+            <div className="meta">
+              <span className="accent">#{player.rank}</span>
+              <span className="sep">·</span>
+              <span>{player.elo} ELO</span>
+              <span className="sep">·</span>
+              <span>{player.country}</span>
+            </div>
+          </>
+        ) : (
+          <>
+            <div className="name placeholder">Select a player…</div>
+            <div className="meta">
+              <span>Click to search the world rankings</span>
+            </div>
+          </>
+        )}
+      </div>
+    </button>
   )
-}
-
-function getSuggestedPlayers(matchType: string) {
-  if (!matchType) {
-    return playerDirectory
-  }
-
-  return playerDirectory.filter((player) =>
-    player.categories.includes(matchType),
-  )
-}
-
-function getSideMetrics(names: string[]) {
-  const players = names.map(findPlayer)
-
-  if (players.some((player) => !player)) {
-    return null
-  }
-
-  const knownPlayers = players as Player[]
-  const rank = Math.round(
-    knownPlayers.reduce((total, player) => total + player.rank, 0) /
-      knownPlayers.length,
-  )
-  const elo = Math.round(
-    knownPlayers.reduce((total, player) => total + player.elo, 0) /
-      knownPlayers.length,
-  )
-
-  return { rank, elo }
 }
 
 function App() {
-  const [form, setForm] = useState<FormState>(initialForm)
-  const [prediction, setPrediction] = useState<PredictionResponse | null>(null)
+  const [pA, setPA] = useState<Player | null>(findPlayer('va') ?? null)
+  const [pB, setPB] = useState<Player | null>(findPlayer('kv') ?? null)
+  const [modal, setModal] = useState<'a' | 'b' | null>(null)
+  const [showCtx, setShowCtx] = useState(false)
+  const [ctx, setCtx] = useState<MatchContext>({
+    tournament: '',
+    round: 'QF',
+    surface: 'Mat',
+    bestOf: 3,
+  })
+  const [result, setResult] = useState<PredictionView | null>(null)
+  const [predicting, setPredicting] = useState(false)
   const [error, setError] = useState('')
-  const [isLoading, setIsLoading] = useState(false)
+  const [leaderTarget, setLeaderTarget] = useState<'a' | 'b'>('a')
+  const [apiOnline, setApiOnline] = useState(true)
+  const resultRef = useRef<HTMLDivElement>(null)
 
-  const showDoublesFields = isDoublesMatch(form.matchType)
-  const sideAName = showDoublesFields
-    ? formatSideName(form.playerAName, form.playerAPartnerName, 'Side A')
-    : form.playerAName || 'Player A'
-  const sideBName = showDoublesFields
-    ? formatSideName(form.playerBName, form.playerBPartnerName, 'Side B')
-    : form.playerBName || 'Player B'
-  const suggestedPlayers = getSuggestedPlayers(form.matchType)
-  const sideAMetrics = getSideMetrics(
-    showDoublesFields
-      ? [form.playerAName, form.playerAPartnerName]
-      : [form.playerAName],
-  )
-  const sideBMetrics = getSideMetrics(
-    showDoublesFields
-      ? [form.playerBName, form.playerBPartnerName]
-      : [form.playerBName],
-  )
-  const playersReady = Boolean(sideAMetrics && sideBMetrics)
-
-  const resultRows = useMemo(() => {
-    if (!prediction) {
-      return []
+  // Health check so the topbar pill reflects real backend reachability.
+  useEffect(() => {
+    let cancelled = false
+    fetch(`${apiBaseUrl}/`)
+      .then((res) => {
+        if (!cancelled) setApiOnline(res.ok)
+      })
+      .catch(() => {
+        if (!cancelled) setApiOnline(false)
+      })
+    return () => {
+      cancelled = true
     }
+  }, [])
 
-    return [
-      {
-        name: sideAName,
-        value: prediction.player_a_win_probability,
-      },
-      {
-        name: sideBName,
-        value: prediction.player_b_win_probability,
-      },
-    ]
-  }, [prediction, sideAName, sideBName])
-
-  function updateField(field: keyof FormState, value: string) {
-    setForm((current) => ({ ...current, [field]: value }))
+  function handlePick(player: Player) {
+    if (modal === 'a') setPA(player)
+    if (modal === 'b') setPB(player)
+    setModal(null)
+    setResult(null)
   }
 
-  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault()
-    setError('')
-    setPrediction(null)
-    setIsLoading(true)
+  function swap() {
+    setPA(pB)
+    setPB(pA)
+    setResult(null)
+  }
 
-    const payload: PredictionRequest = {
-      player_a_name: sideAName,
-      player_b_name: sideBName,
-      player_a_rank: sideAMetrics?.rank ?? Number(form.playerARank),
-      player_b_rank: sideBMetrics?.rank ?? Number(form.playerBRank),
-      player_a_elo: sideAMetrics?.elo ?? optionalNumber(form.playerAElo),
-      player_b_elo: sideBMetrics?.elo ?? optionalNumber(form.playerBElo),
-      tournament_name: form.tournamentName.trim() || 'Unknown tournament',
-      round: form.round || 'Round 2',
-      match_type: form.matchType || 'MS',
+  function loadSample([aid, bid]: [string, string]) {
+    setPA(findPlayer(aid) ?? null)
+    setPB(findPlayer(bid) ?? null)
+    setResult(null)
+  }
+
+  async function runPredict() {
+    if (!pA || !pB) return
+    setPredicting(true)
+    setResult(null)
+    setError('')
+
+    const payload = {
+      player_a_name: pA.name,
+      player_b_name: pB.name,
+      player_a_rank: pA.rank,
+      player_b_rank: pB.rank,
+      player_a_elo: pA.elo,
+      player_b_elo: pB.elo,
+      tournament_name: ctx.tournament.trim() || 'Unknown tournament',
+      round: roundToApi(ctx.round),
+      match_type: matchTypeFor(pA),
     }
 
     try {
-      const response = await fetch(`${apiBaseUrl}/predict`, {
+      const res = await fetch(`${apiBaseUrl}/predict`, {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),
       })
-
-      if (!response.ok) {
-        const body = await response.json().catch(() => null)
-        throw new Error(body?.detail ?? `Request failed with ${response.status}`)
+      if (!res.ok) {
+        const body = (await res.json().catch(() => null)) as { detail?: string } | null
+        throw new Error(body?.detail ?? `Request failed with ${res.status}`)
       }
-
-      const data = (await response.json()) as PredictionResponse
-      setPrediction(data)
-    } catch (requestError) {
-      const message =
-        requestError instanceof Error
-          ? requestError.message
-          : 'Unable to get prediction.'
-      setError(message)
+      const data = (await res.json()) as PredictionResponse
+      setApiOnline(true)
+      setResult(
+        buildPredictionView(
+          pA,
+          pB,
+          ctx,
+          data.player_a_win_probability,
+          data.confidence,
+          data.model_used,
+        ),
+      )
+      setTimeout(() => {
+        resultRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+      }, 100)
+    } catch (e) {
+      setError(e instanceof Error ? e.message : 'Unable to reach the prediction API.')
     } finally {
-      setIsLoading(false)
+      setPredicting(false)
     }
   }
 
+  const ctxString = `${ctx.tournament || 'No tournament'} · ${ctx.round} · Best of ${ctx.bestOf}`
+
   return (
-    <main className="app-shell">
-      <section className="scoreboard" aria-labelledby="page-title">
-        <div className="scoreboard-copy">
-          <div className="eyebrow">
-            <img src={heroImg} alt="" />
-            Badminton AI Predictor
-          </div>
-          <h1 id="page-title">
-            Match<br />
-            <span>Predictor</span>
-          </h1>
-          <p>
-            Select two players and get an AI-powered probability estimate for
-            who wins. Add match context for sharper predictions.
-          </p>
-        </div>
+    <>
+      <div className="bg-canvas" />
+      <div className="page">
+        <TopBar apiOnline={apiOnline} />
 
-        <div className="status-strip" aria-label="API endpoint">
-          <span>API</span>
-          <code>{apiBaseUrl}/predict</code>
-        </div>
-      </section>
-
-      <section className="workspace">
-        <form className="predictor-form" onSubmit={handleSubmit}>
-          <div className="form-section">
-            <div className="section-heading">
-              <h2>Players</h2>
-              <a href={playerSourceUrl} target="_blank" rel="noreferrer">
-                BadmintonRanks
-              </a>
-            </div>
-            <datalist id="player-options">
-              {suggestedPlayers.map((player) => (
-                <option key={player.name} value={player.name} />
-              ))}
-            </datalist>
-            <div className="field-grid two-columns">
-              <label>
-                {showDoublesFields ? 'Side A player 1' : 'Player A'}
-                <input
-                  list="player-options"
-                  placeholder="Search player name"
-                  required
-                  value={form.playerAName}
-                  onChange={(event) =>
-                    updateField('playerAName', event.target.value)
-                  }
-                />
-              </label>
-              <label>
-                {showDoublesFields ? 'Side B player 1' : 'Player B'}
-                <input
-                  list="player-options"
-                  placeholder="Search player name"
-                  required
-                  value={form.playerBName}
-                  onChange={(event) =>
-                    updateField('playerBName', event.target.value)
-                  }
-                />
-              </label>
-              {showDoublesFields && (
-                <>
-                  <label>
-                    Side A player 2
-                    <input
-                      list="player-options"
-                      placeholder="Search partner name"
-                      required
-                      value={form.playerAPartnerName}
-                      onChange={(event) =>
-                        updateField('playerAPartnerName', event.target.value)
-                      }
-                    />
-                  </label>
-                  <label>
-                    Side B player 2
-                    <input
-                      list="player-options"
-                      placeholder="Search partner name"
-                      required
-                      value={form.playerBPartnerName}
-                      onChange={(event) =>
-                        updateField('playerBPartnerName', event.target.value)
-                      }
-                    />
-                  </label>
-                </>
-              )}
-              <label>
-                {showDoublesFields ? 'Side A rank' : 'Player A rank'}
-                <input
-                  required
-                  min="1"
-                  max="500"
-                  readOnly
-                  type="number"
-                  value={sideAMetrics?.rank ?? ''}
-                />
-              </label>
-              <label>
-                {showDoublesFields ? 'Side B rank' : 'Player B rank'}
-                <input
-                  required
-                  min="1"
-                  max="500"
-                  readOnly
-                  type="number"
-                  value={sideBMetrics?.rank ?? ''}
-                />
-              </label>
-              <label>
-                {showDoublesFields ? 'Side A Elo' : 'Player A Elo'}
-                <input
-                  min="1000"
-                  max="3500"
-                  placeholder="Optional"
-                  readOnly
-                  type="number"
-                  value={sideAMetrics?.elo ?? ''}
-                />
-              </label>
-              <label>
-                {showDoublesFields ? 'Side B Elo' : 'Player B Elo'}
-                <input
-                  min="1000"
-                  max="3500"
-                  placeholder="Optional"
-                  readOnly
-                  type="number"
-                  value={sideBMetrics?.elo ?? ''}
-                />
-              </label>
-            </div>
-            <p className="field-note">
-              Search and choose players from the suggestions. Rank and Elo are
-              filled from the selected {showDoublesFields ? 'side.' : 'player.'}
+        <main className="container">
+          <section className="hero" id="predictor">
+            <span className="eyebrow">
+              <span className="dot-pulse">●</span>
+              Badminton AI Predictor · v2.1
+            </span>
+            <h1>
+              Who wins
+              <br />
+              the <span className="accent">rally?</span>
+            </h1>
+            <p className="lede">
+              Pick any two players from the world rankings. Our model crunches
+              Elo, form, head-to-head and match context to call the winner — and
+              the scoreline.
             </p>
-            {!playersReady && (
-              <p className="field-note warning-note">
-                Select valid suggested names for both sides before predicting.
-              </p>
-            )}
-          </div>
 
-          <div className="form-section">
-            <h2>Match</h2>
-            <div className="field-grid">
-              <label>
-                Tournament
-                <input
-                  placeholder="Optional"
-                  value={form.tournamentName}
-                  onChange={(event) =>
-                    updateField('tournamentName', event.target.value)
-                  }
-                />
-              </label>
-              <label>
-                Round
-                <select
-                  value={form.round}
-                  onChange={(event) => updateField('round', event.target.value)}
+            <div className="vs-shell">
+              <div className="vs-bar">
+                <PlayerSlot side="a" player={pA} onClick={() => setModal('a')} />
+                <div className="vs-mid">
+                  <span className="vs-glyph">VS</span>
+                </div>
+                <PlayerSlot side="b" player={pB} onClick={() => setModal('b')} />
+              </div>
+
+              <div className="vs-actions">
+                <div style={{ display: 'flex', gap: 8 }}>
+                  <button
+                    className={`ghost-btn ${showCtx ? 'open' : ''}`}
+                    onClick={() => setShowCtx((v) => !v)}
+                  >
+                    {showCtx ? '− Hide context' : '+ Add match context'}
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="m6 9 6 6 6-6" />
+                    </svg>
+                  </button>
+                  <button className="ghost-btn" onClick={swap}>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="M7 16V4m0 0L3 8m4-4 4 4M17 8v12m0 0 4-4m-4 4-4-4" />
+                    </svg>
+                    Swap
+                  </button>
+                </div>
+                <button
+                  className="predict-btn"
+                  onClick={runPredict}
+                  disabled={!pA || !pB || predicting}
                 >
-                  <option value="">Optional</option>
-                  {rounds.map((round) => (
-                    <option key={round} value={round}>
-                      {round}
-                    </option>
-                  ))}
-                </select>
-              </label>
-              <label>
-                Match type
-                <select
-                  value={form.matchType}
-                  onChange={(event) =>
-                    updateField('matchType', event.target.value)
-                  }
-                >
-                  <option value="">Optional</option>
-                  {matchTypes.map((matchType) => (
-                    <option key={matchType.value} value={matchType.value}>
-                      {matchType.label}
-                    </option>
-                  ))}
-                </select>
-              </label>
-            </div>
-            <p className="field-note">
-              These fields can be left blank. The prediction will still run
-              using default match context.
-            </p>
-          </div>
+                  {predicting ? 'Crunching…' : 'Predict winner'}
+                  <svg
+                    className="arrow"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2.4"
+                    strokeLinecap="round"
+                  >
+                    <path d="M5 12h14m-6-6 6 6-6 6" />
+                  </svg>
+                </button>
+              </div>
 
-          <button
-            className="submit-button"
-            disabled={isLoading || !playersReady}
-          >
-            {isLoading ? 'Predicting...' : 'Predict winner'}
-          </button>
-        </form>
-
-        <aside className={`result-panel${prediction ? ' has-prediction' : ''}`} aria-live="polite">
-          <div>
-            <p className="panel-label">🏆 Predicted Winner</p>
-            <h2>{prediction?.predicted_winner ?? 'Awaiting Match'}</h2>
-            <p className="panel-copy">
-              {prediction
-                ? `${prediction.confidence} confidence · ${prediction.model_used}`
-                : 'Fill in the match details and hit Predict to see the AI forecast.'}
-            </p>
-          </div>
-
-          {error && <p className="error-message">{error}</p>}
-
-          {prediction ? (
-            <div className="probabilities">
-              {resultRows.map((row) => (
-                <div className="probability-row" key={row.name}>
-                  <div className="probability-header">
-                    <span>{row.name}</span>
-                    <strong>{toPercent(row.value)}</strong>
+              {showCtx && (
+                <div className="ctx-panel">
+                  <div className="ctx-field">
+                    <label>Tournament</label>
+                    <input
+                      value={ctx.tournament}
+                      onChange={(e) => setCtx({ ...ctx, tournament: e.target.value })}
+                      placeholder="All England Open"
+                    />
                   </div>
-                  <div className="meter" aria-hidden="true">
-                    <span style={{ width: toPercent(row.value) }} />
+                  <div className="ctx-field">
+                    <label>Round</label>
+                    <select
+                      value={ctx.round}
+                      onChange={(e) => setCtx({ ...ctx, round: e.target.value as Round })}
+                    >
+                      {ROUNDS.map((r) => (
+                        <option key={r} value={r}>
+                          {r}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                  <div className="ctx-field">
+                    <label>Surface</label>
+                    <select
+                      value={ctx.surface}
+                      onChange={(e) =>
+                        setCtx({ ...ctx, surface: e.target.value as MatchContext['surface'] })
+                      }
+                    >
+                      {SURFACES.map((s) => (
+                        <option key={s} value={s}>
+                          {s}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                  <div className="ctx-field">
+                    <label>Best of</label>
+                    <select
+                      value={ctx.bestOf}
+                      onChange={(e) =>
+                        setCtx({ ...ctx, bestOf: Number(e.target.value) as 3 | 5 })
+                      }
+                    >
+                      <option value={3}>3 sets</option>
+                      <option value={5}>5 sets</option>
+                    </select>
                   </div>
                 </div>
-              ))}
+              )}
+
+              {/* sample matchups */}
+              <div className="chip-row">
+                <span className="chip-label">Try these →</span>
+                {MATCHUPS.map(([aid, bid], i) => {
+                  const a = findPlayer(aid)
+                  const b = findPlayer(bid)
+                  if (!a || !b) return null
+                  return (
+                    <button key={i} className="chip" onClick={() => loadSample([aid, bid])}>
+                      <span className="flag">{a.flag}</span>
+                      <span>{lastName(a.name)}</span>
+                      <span className="vs">VS</span>
+                      <span>{lastName(b.name)}</span>
+                      <span className="flag">{b.flag}</span>
+                    </button>
+                  )
+                })}
+              </div>
+
+              {/* result reveal */}
+              <div ref={resultRef} className="result-shell" data-open={result ? 'true' : 'false'}>
+                {result && pA && pB && <ResultCard result={result} a={pA} b={pB} />}
+              </div>
+
+              {error && <div className="result-error">{error}</div>}
             </div>
-          ) : (
-            <div className="empty-court" aria-hidden="true">
-              <span />
-              <span />
-              <span />
+          </section>
+
+          <section className="section" id="rankings">
+            <div className="section-head">
+              <div>
+                <div className="kicker">◆ Live BWF World Rankings</div>
+                <h2>
+                  Top of the <span className="accent">ladder</span>
+                </h2>
+              </div>
+              <div className="right">
+                Pick into slot <span className="slot-tag">{leaderTarget === 'a' ? 'A' : 'B'}</span> →
+                <button
+                  className="ghost-btn"
+                  onClick={() => setLeaderTarget(leaderTarget === 'a' ? 'b' : 'a')}
+                >
+                  Switch to {leaderTarget === 'a' ? 'B' : 'A'}
+                </button>
+              </div>
             </div>
-          )}
-        </aside>
-      </section>
-    </main>
+            <Leaderboard
+              onPickPlayer={(p) => {
+                if (leaderTarget === 'a') setPA(p)
+                else setPB(p)
+                setResult(null)
+                window.scrollTo({ top: 0, behavior: 'smooth' })
+              }}
+            />
+          </section>
+        </main>
+
+        <footer>
+          <span>© 2026 shuttle.ai · Model v2.1 trained on 18,400 BWF matches</span>
+          <span className="right">{ctxString}</span>
+        </footer>
+      </div>
+
+      <PlayerModal
+        open={modal !== null}
+        excludeId={modal === 'a' ? pB?.id : pA?.id}
+        title={modal === 'a' ? 'Search Player A' : 'Search Player B'}
+        onPick={handlePick}
+        onClose={() => setModal(null)}
+      />
+    </>
   )
 }
 

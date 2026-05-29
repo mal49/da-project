@@ -1,50 +1,129 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700;900&family=JetBrains+Mono:wght@400;500;700&display=swap');
+/* === design foundation: theme tokens, resets, background ===
+   Ported from the Claude Design handoff (coral / paper theme, "remove gradients" pass).
+   Fonts are loaded via index.html. */
 
 :root {
-  --accent: #00e87a;
-  --accent-dim: rgba(0, 232, 122, 0.12);
-  --accent-glow: rgba(0, 232, 122, 0.25);
-  --accent-border: rgba(0, 232, 122, 0.35);
-  --body: 'Outfit', system-ui, sans-serif;
-  --display: 'Bebas Neue', 'Impact', sans-serif;
-  --mono: 'JetBrains Mono', 'Cascadia Mono', monospace;
-  --page: #06090f;
-  --surface: rgba(255, 255, 255, 0.035);
-  --surface-hover: rgba(255, 255, 255, 0.06);
-  --ink: #e8f0ff;
-  --ink-muted: rgba(232, 240, 255, 0.45);
-  --ink-soft: rgba(232, 240, 255, 0.7);
-  --line: rgba(255, 255, 255, 0.08);
-  --line-bright: rgba(0, 232, 122, 0.2);
-  --gold: #ffd166;
-  --danger: #ff5757;
-  --danger-dim: rgba(255, 87, 87, 0.12);
-  --court: #0a2918;
-  --shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
-  --shadow-sm: 0 4px 20px rgba(0, 0, 0, 0.4);
-  --glow-accent: 0 0 40px rgba(0, 232, 122, 0.15);
+  /* primary accent */
+  --accent: #ff6b6b;
+  --accent-deep: #e0535f;
+  --accent-ink: #5b1f24;
+  --accent-soft: color-mix(in oklab, var(--accent) 14%, white 86%);
+  --accent-line: color-mix(in oklab, var(--accent) 35%, white 65%);
 
-  color: var(--ink);
-  background: var(--page);
-  font-family: var(--body);
-  font-synthesis: none;
-  line-height: 1.5;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* surfaces */
+  --bg: #fbf9f5;
+  --bg-2: #f4f1ea;
+  --paper: #ffffff;
+  --paper-2: #fafaf7;
+  --border: #ececea;
+  --border-2: #e2e1de;
+  --ink: #1a1a1c;
+  --ink-2: #4a4a4f;
+  --ink-3: #8a8a90;
+  --ink-4: #c2c2c6;
+
+  /* secondary palette — slot tints, chips, leaderboard accents */
+  --c-mint: #5ec9a8;
+  --c-mint-bg: #e0f3eb;
+  --c-lav: #8b7ec8;
+  --c-lav-bg: #ece8f7;
+  --c-sky: #5ea8d9;
+  --c-sky-bg: #e0eff7;
+  --c-butter: #e8a854;
+  --c-butter-bg: #fbf0db;
+  --c-peach: #ee8765;
+  --c-peach-bg: #fae4d8;
+  --c-rose: var(--accent);
+  --c-rose-bg: #fbe3e3;
+
+  --font-display: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  --pad-x: clamp(20px, 4vw, 56px);
+  --gap-lg: 64px;
+  --gap-md: 28px;
+  --gap-sm: 16px;
+  --r-xl: 28px;
+  --r-lg: 20px;
+  --r-md: 14px;
+  --r-sm: 10px;
+
+  --shadow-sm: 0 1px 2px rgba(20, 20, 30, 0.04), 0 1px 3px rgba(20, 20, 30, 0.06);
+  --shadow-md: 0 4px 8px -2px rgba(20, 20, 30, 0.05), 0 10px 24px -8px rgba(20, 20, 30, 0.1);
+  --shadow-lg: 0 8px 16px -4px rgba(20, 20, 30, 0.06), 0 30px 60px -20px rgba(20, 20, 30, 0.18);
+  --shadow-coral: 0 8px 20px -6px color-mix(in oklab, var(--accent) 55%, transparent);
+}
+
+[data-type='display'] {
+  --font-display: 'Plus Jakarta Sans', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+}
+
+[data-density='compact'] {
+  --gap-lg: 44px;
+  --gap-md: 20px;
+  --gap-sm: 12px;
+  --r-xl: 22px;
+  --r-lg: 16px;
+}
+[data-density='spacious'] {
+  --gap-lg: 96px;
+  --gap-md: 44px;
+  --gap-sm: 22px;
+  --r-xl: 32px;
+  --r-lg: 24px;
 }
 
 * {
   box-sizing: border-box;
 }
-
+html,
 body {
   margin: 0;
-  min-width: 320px;
+  padding: 0;
+  background: var(--bg);
+  color: var(--ink);
 }
-
+body {
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
 button,
 input,
 select {
   font: inherit;
+}
+
+/* === background === */
+.bg-canvas {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: var(--bg);
+}
+[data-bg='dots'] .bg-canvas::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(26, 26, 28, 0.06) 1px, transparent 1.4px);
+  background-size: 22px 22px;
+}
+[data-bg='grid'] .bg-canvas::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(to right, rgba(26, 26, 28, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(26, 26, 28, 0.04) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+[data-bg='plain'] .bg-canvas::after {
+  display: none;
 }
