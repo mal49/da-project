@@ -1,0 +1,1068 @@
+event_id,date,tournament,discipline,player,player_id,opponent,opponent_id,sets_for,sets_against,won
+12244288,2024-04-12,"European Championships 2024, MS",MS,Viktor Axelsen,87484,Gemke R.,234811,2,0,True
+12245836,2024-04-13,"European Championships 2024, MS",MS,Viktor Axelsen,87484,Popov T.,241059,1,2,False
+12290277,2024-04-27,"BWF Thomas Cup, 2024, Singles",,Viktor Axelsen,87484,Hamek A.,210940,2,0,True
+12287437,2024-04-28,"BWF Thomas Cup, 2024, Singles",,Viktor Axelsen,87484,Lee C.,182557,2,1,True
+12294013,2024-04-30,"BWF Thomas Cup, 2024, Singles",,Viktor Axelsen,87484,Lee Z.,244095,2,0,True
+12302442,2024-05-03,"BWF Thomas Cup, 2024, Singles",,Viktor Axelsen,87484,Tien Chen Chou,87480,1,2,False
+12352526,2024-05-22,"Malaysia Masters 2024, MS",MS,Viktor Axelsen,87484,Watanabe K.,212159,2,0,True
+12356521,2024-05-23,"Malaysia Masters 2024, MS",MS,Viktor Axelsen,87484,Teeraratsakul P.,310233,2,0,True
+12360444,2024-05-24,"Malaysia Masters 2024, MS",MS,Viktor Axelsen,87484,Tien Chen Chou,87480,2,0,True
+12364782,2024-05-25,"Malaysia Masters 2024, MS",MS,Viktor Axelsen,87484,Guangzu Lu,217992,2,0,True
+12369495,2024-05-26,"Malaysia Masters 2024, MS",MS,Viktor Axelsen,87484,Lee Z.,244095,2,1,True
+12372859,2024-05-29,"Singapore Open 2024, MS",MS,Viktor Axelsen,87484,Sen L.,244759,2,1,True
+12378213,2024-05-30,"Singapore Open 2024, MS",MS,Viktor Axelsen,87484,Chun-Yi L.,258097,2,1,True
+12381330,2024-05-31,"Singapore Open 2024, MS",MS,Viktor Axelsen,87484,Leong J.,244225,2,0,True
+12384463,2024-06-01,"Singapore Open 2024, MS",MS,Viktor Axelsen,87484,Shifeng Li,283162,,,False
+12602401,2024-07-27,"Olympic Tournament, Singles",,Viktor Axelsen,87484,Dahal P.,330996,2,0,True
+12612551,2024-07-29,"Olympic Tournament, Singles",,Viktor Axelsen,87484,Zilberman M.,76595,2,0,True
+12612540,2024-07-31,"Olympic Tournament, Singles",,Viktor Axelsen,87484,Nguyen N.,246527,2,0,True
+12633403,2024-08-02,"Olympic Games, Final Round",,Viktor Axelsen,87484,Loh Kean Yew,172746,2,0,True
+12638747,2024-08-04,"Olympic Games, Final Round",,Viktor Axelsen,87484,Sen L.,244759,2,0,True
+12644232,2024-08-05,"Olympic Games, Final Round",,Viktor Axelsen,87484,Vitidsarn K.,207992,2,0,True
+12816931,2024-09-11,"Hong Kong Open 2024, MS",MS,Viktor Axelsen,87484,Ka Long Ng.,104289,2,0,True
+12825136,2024-09-12,"Hong Kong Open 2024, MS",MS,Viktor Axelsen,87484,Yang S.,262764,2,0,True
+12831512,2024-09-13,"Hong Kong Open 2024, MS",MS,Viktor Axelsen,87484,Tien Chen Chou,87480,2,0,True
+12837027,2024-09-14,"Hong Kong Open 2024, MS",MS,Viktor Axelsen,87484,Anthony G.,164374,2,0,True
+12842581,2024-09-15,"Hong Kong Open 2024, MS",MS,Viktor Axelsen,87484,Lei L.,311774,2,0,True
+12866490,2024-09-18,"China Open 2024, MS",MS,Viktor Axelsen,87484,Lei L.,311774,1,2,False
+12972191,2024-10-15,"Denmark Open 2024, MS",MS,Viktor Axelsen,87484,Tanaka Y.,343205,2,0,True
+12991085,2024-10-17,"Denmark Open 2024, MS",MS,Viktor Axelsen,87484,Lanier A.,339319,0,1,False
+11614271,2023-09-07,"China Open 2023, MS",MS,Viktor Axelsen,87484,Wang T.,142606,2,1,True
+11623470,2023-09-08,"China Open 2023, MS",MS,Viktor Axelsen,87484,Loh Kean Yew,172746,2,0,True
+11626096,2023-09-09,"China Open 2023, MS",MS,Viktor Axelsen,87484,Jonatan Christie,164088,2,0,True
+11628106,2023-09-10,"China Open 2023, MS",MS,Viktor Axelsen,87484,Guangzu Lu,217992,2,0,True
+11636699,2023-09-13,"Hong Kong Open 2023, MS",MS,Viktor Axelsen,87484,Lee C.,208969,0,2,False
+11744317,2023-10-18,"Denmark Open 2023, MS",MS,Viktor Axelsen,87484,Johannesen M.,316713,2,0,True
+11770167,2023-10-25,"French Open 2023, MS",MS,Viktor Axelsen,87484,Ka Long Ng.,104289,0,1,False
+11826477,2023-11-15,"Kumamoto Masters Japan 2023, MS",MS,Viktor Axelsen,87484,DWI Wardoyo C.,231911,2,0,True
+11834354,2023-11-16,"Kumamoto Masters Japan 2023, MS",MS,Viktor Axelsen,87484,Tze Yong NG.,325704,2,1,True
+11836650,2023-11-17,"Kumamoto Masters Japan 2023, MS",MS,Viktor Axelsen,87484,Jonatan Christie,164088,2,1,True
+11838879,2023-11-18,"Kumamoto Masters Japan 2023, MS",MS,Viktor Axelsen,87484,Obayashi T.,289687,2,0,True
+11842089,2023-11-19,"Kumamoto Masters Japan 2023, MS",MS,Viktor Axelsen,87484,Yuqi Shi,164376,2,0,True
+11896358,2023-12-13,"World Tour Finals 2023, MS, Group A",,Viktor Axelsen,87484,Yuqi Shi,164376,0,2,False
+11897096,2023-12-14,"World Tour Finals 2023, MS, Group A",,Viktor Axelsen,87484,Naraoka K.,212157,2,0,True
+11899160,2023-12-15,"World Tour Finals 2023, MS, Group A",,Viktor Axelsen,87484,Anthony G.,164374,2,1,True
+11900908,2023-12-16,"World Tour Finals 2023, MS, Finals",,Viktor Axelsen,87484,Antonsen A.,215405,2,0,True
+11902367,2023-12-17,"World Tour Finals 2023, MS, Finals",,Viktor Axelsen,87484,Yuqi Shi,164376,2,0,True
+11954554,2024-01-09,"Malaysia Open 2024, MS",MS,Viktor Axelsen,87484,Loh Kean Yew,172746,2,0,True
+11959610,2024-01-11,"Malaysia Open 2024, MS",MS,Viktor Axelsen,87484,Lee C.,182557,2,1,True
+11964817,2024-01-12,"Malaysia Open 2024, MS",MS,Viktor Axelsen,87484,Ka Long Ng.,104289,2,1,True
+11967913,2024-01-13,"Malaysia Open 2024, MS",MS,Viktor Axelsen,87484,Yuqi Shi,164376,1,2,False
+12122929,2024-03-05,"French Open 2024, MS",MS,Viktor Axelsen,87484,Rajawat P.,392222,2,0,True
+12131822,2024-03-07,"French Open 2024, MS",MS,Viktor Axelsen,87484,Wang T.,142606,0,2,False
+12151621,2024-03-12,"All England Open 2024, MS",MS,Viktor Axelsen,87484,Srikanth K.,96359,2,0,True
+12156083,2024-03-14,"All England Open 2024, MS",MS,Viktor Axelsen,87484,Weng H.,251935,2,0,True
+12160843,2024-03-15,"All England Open 2024, MS",MS,Viktor Axelsen,87484,Anthony G.,164374,1,2,False
+12235392,2024-04-10,"European Championships 2024, MS",MS,Viktor Axelsen,87484,Schaefer K.,181650,2,0,True
+12240572,2024-04-11,"European Championships 2024, MS",MS,Viktor Axelsen,87484,Koljonen K.,177532,2,0,True
+13973273,2025-06-05,"Indonesia Open 2025, MS",MS,Kunlavut Vitidsarn,207992,Lee C.,208969,2,0,True
+13976799,2025-06-06,"Indonesia Open 2025, MS",MS,Kunlavut Vitidsarn,207992,Lanier A.,339319,2,0,True
+13979596,2025-06-07,"Indonesia Open 2025, MS",MS,Kunlavut Vitidsarn,207992,Tien Chen Chou,87480,0,2,False
+14177475,2025-07-15,"Japan Open 2025, MS",MS,Kunlavut Vitidsarn,207992,Weng H.,251935,0,2,False
+14241865,2025-07-22,"China Open 2025, MS",MS,Kunlavut Vitidsarn,207992,Farhan A.,412918,2,1,True
+14246811,2025-07-24,"China Open 2025, MS",MS,Kunlavut Vitidsarn,207992,Leong J.,244225,2,0,True
+14259827,2025-07-25,"China Open 2025, MS",MS,Kunlavut Vitidsarn,207992,Tien Chen Chou,87480,0,2,False
+14497782,2025-08-26,BWF World Championships Men Singles,,Kunlavut Vitidsarn,207992,Canjura Artiga U.,252173,2,0,True
+14550911,2025-08-27,BWF World Championships Men Singles,,Kunlavut Vitidsarn,207992,Kim B.,936903,2,0,True
+14559594,2025-08-28,BWF World Championships Men Singles,,Kunlavut Vitidsarn,207992,Farhan A.,412918,2,1,True
+14567305,2025-08-29,BWF World Championships Men Singles,,Kunlavut Vitidsarn,207992,Jonatan Christie,164088,2,1,True
+14576021,2025-08-30,BWF World Championships Men Singles,,Kunlavut Vitidsarn,207992,Antonsen A.,215405,2,0,True
+14581926,2025-08-31,BWF World Championships Men Singles,,Kunlavut Vitidsarn,207992,Yuqi Shi,164376,1,2,False
+14692064,2025-09-16,"LI-NING China Masters 2025, MS",MS,Kunlavut Vitidsarn,207992,Teh J.,333188,2,0,True
+14695318,2025-09-18,"LI-NING China Masters 2025, MS",MS,Kunlavut Vitidsarn,207992,Guangzu Lu,217992,2,0,True
+14712970,2025-09-19,"LI-NING China Masters 2025, MS",MS,Kunlavut Vitidsarn,207992,Popov Christo,275000,0,1,False
+14848216,2025-10-08,"Arctic Open 2025, MS",MS,Kunlavut Vitidsarn,207992,Shetty A.,501106,2,0,True
+14854936,2025-10-09,"Arctic Open 2025, MS",MS,Kunlavut Vitidsarn,207992,Tanaka Y.,343205,2,0,True
+14860766,2025-10-10,"Arctic Open 2025, MS",MS,Kunlavut Vitidsarn,207992,Watanabe K.,212159,2,0,True
+14867037,2025-10-11,"Arctic Open 2025, MS",MS,Kunlavut Vitidsarn,207992,Gemke R.,234811,2,0,True
+14871295,2025-10-12,"Arctic Open 2025, MS",MS,Kunlavut Vitidsarn,207992,Tien Chen Chou,87480,1,2,False
+14882021,2025-10-15,"Denmark Open 2025, MS",MS,Kunlavut Vitidsarn,207992,Guangzu Lu,217992,2,1,True
+14893507,2025-10-16,"Denmark Open 2025, MS",MS,Kunlavut Vitidsarn,207992,Popov T.,241059,2,1,True
+14900950,2025-10-17,"Denmark Open 2025, MS",MS,Kunlavut Vitidsarn,207992,Viktor Axelsen,87484,1,2,False
+14922297,2025-10-21,"French Open 2025, MS",MS,Kunlavut Vitidsarn,207992,Wang T.,142606,2,1,True
+14925984,2025-10-23,"French Open 2025, MS",MS,Kunlavut Vitidsarn,207992,Naraoka K.,212157,2,0,True
+14939025,2025-10-24,"French Open 2025, MS",MS,Kunlavut Vitidsarn,207992,Farhan A.,412918,2,1,True
+14945051,2025-10-25,"French Open 2025, MS",MS,Kunlavut Vitidsarn,207992,Popov Christo,275000,0,2,False
+15227049,2025-12-17,"World Tour Finals 2025, MS, Group A ",,Kunlavut Vitidsarn,207992,Jonatan Christie,164088,2,0,True
+13370620,2025-01-22,"Indonesia Masters 2025, MS",MS,Kunlavut Vitidsarn,207992,Nguyen N.,246527,2,0,True
+13374327,2025-01-23,"Indonesia Masters 2025, MS",MS,Kunlavut Vitidsarn,207992,Guangzu Lu,217992,2,1,True
+13379865,2025-01-24,"Indonesia Masters 2025, MS",MS,Kunlavut Vitidsarn,207992,Teh J.,333188,2,0,True
+13385863,2025-01-25,"Indonesia Masters 2025, MS",MS,Kunlavut Vitidsarn,207992,Yuqi Shi,164376,2,0,True
+13389238,2025-01-26,"Indonesia Masters 2025, MS",MS,Kunlavut Vitidsarn,207992,Jonatan Christie,164088,2,1,True
+13587195,2025-03-12,"All England Open 2025, MS",MS,Kunlavut Vitidsarn,207992,Weng H.,251935,2,0,True
+13602872,2025-03-13,"All England Open 2025, MS",MS,Kunlavut Vitidsarn,207992,Lanier A.,339319,0,2,False
+13633722,2025-03-19,"Swiss Open 2025, MS",MS,Kunlavut Vitidsarn,207992,Lee C.,208969,2,0,True
+13639651,2025-03-20,"Swiss Open 2025, MS",MS,Kunlavut Vitidsarn,207992,Gemke R.,234811,2,1,True
+13647928,2025-03-21,"Swiss Open 2025, MS",MS,Kunlavut Vitidsarn,207992,Chun-Yi L.,258097,0,2,False
+13732414,2025-04-09,"Asia Championships 2025, MS",MS,Kunlavut Vitidsarn,207992,Tze Yong NG.,325704,2,0,True
+13739004,2025-04-10,"Asia Championships 2025, MS",MS,Kunlavut Vitidsarn,207992,George K.,244765,2,1,True
+13745411,2025-04-11,"Asia Championships 2025, MS",MS,Kunlavut Vitidsarn,207992,Nishimoto K.,146358,2,1,True
+13753590,2025-04-12,"Asia Championships 2025, MS",MS,Kunlavut Vitidsarn,207992,Loh Kean Yew,172746,2,0,True
+13757826,2025-04-13,"Asia Championships 2025, MS",MS,Kunlavut Vitidsarn,207992,Guangzu Lu,217992,1,0,True
+13820744,2025-04-27,"BWF Sudirman Cup, 2025, MS",MS,Kunlavut Vitidsarn,207992,Ka Long Ng.,104289,2,1,True
+13843164,2025-05-02,"BWF Sudirman Cup, 2025, MS",MS,Kunlavut Vitidsarn,207992,Jonatan Christie,164088,0,2,False
+13892131,2025-05-14,"Thailand Open, MS",MS,Kunlavut Vitidsarn,207992,Lei L.,311774,2,0,True
+13896323,2025-05-15,"Thailand Open, MS",MS,Kunlavut Vitidsarn,207992,Ka Long Ng.,104289,2,1,True
+13900860,2025-05-16,"Thailand Open, MS",MS,Kunlavut Vitidsarn,207992,Nishimoto K.,146358,2,0,True
+13907390,2025-05-17,"Thailand Open, MS",MS,Kunlavut Vitidsarn,207992,Loh Kean Yew,172746,2,0,True
+13913224,2025-05-18,"Thailand Open, MS",MS,Kunlavut Vitidsarn,207992,Antonsen A.,215405,2,1,True
+13941749,2025-05-28,"Singapore Open 2025, MS",MS,Kunlavut Vitidsarn,207992,Nishimoto K.,146358,2,0,True
+13949723,2025-05-29,"Singapore Open 2025, MS",MS,Kunlavut Vitidsarn,207992,Zhengxing Wang,454757,2,0,True
+13952593,2025-05-30,"Singapore Open 2025, MS",MS,Kunlavut Vitidsarn,207992,Leong J.,244225,2,0,True
+13955891,2025-05-31,"Singapore Open 2025, MS",MS,Kunlavut Vitidsarn,207992,Chun-Yi L.,258097,2,0,True
+13958863,2025-06-01,"Singapore Open 2025, MS",MS,Kunlavut Vitidsarn,207992,Guangzu Lu,217992,2,0,True
+13960760,2025-06-04,"Indonesia Open 2025, MS",MS,Kunlavut Vitidsarn,207992,Wang T.,142606,2,0,True
+13941751,2025-05-27,"Singapore Open 2025, MS",MS,Anders Antonsen,215405,Popov Christo,275000,0,2,False
+13960808,2025-06-03,"Indonesia Open 2025, MS",MS,Anders Antonsen,215405,Chi Y.,211891,2,0,True
+13969390,2025-06-05,"Indonesia Open 2025, MS",MS,Anders Antonsen,215405,Farhan A.,412918,2,1,True
+13976800,2025-06-06,"Indonesia Open 2025, MS",MS,Anders Antonsen,215405,Lee C.,182557,2,0,True
+13979625,2025-06-07,"Indonesia Open 2025, MS",MS,Anders Antonsen,215405,Yuqi Shi,164376,2,1,True
+13983246,2025-06-08,"Indonesia Open 2025, MS",MS,Anders Antonsen,215405,Tien Chen Chou,87480,2,0,True
+14177471,2025-07-16,"Japan Open 2025, MS",MS,Anders Antonsen,215405,Lei L.,311774,0,2,False
+14241897,2025-07-23,"China Open 2025, MS",MS,Anders Antonsen,215405,Tanaka Y.,343205,2,0,True
+14256520,2025-07-24,"China Open 2025, MS",MS,Anders Antonsen,215405,Chun-Yi L.,258097,2,1,True
+14264202,2025-07-25,"China Open 2025, MS",MS,Anders Antonsen,215405,Popov T.,241059,2,1,True
+14275359,2025-07-26,"China Open 2025, MS",MS,Anders Antonsen,215405,Zhengxing Wang,454757,0,2,False
+14497770,2025-08-26,BWF World Championships Men Singles,,Anders Antonsen,215405,Mathias J.,280636,2,0,True
+14550876,2025-08-27,BWF World Championships Men Singles,,Anders Antonsen,215405,Prannoy H.,96349,2,1,True
+14559181,2025-08-28,BWF World Championships Men Singles,,Anders Antonsen,215405,Popov T.,241059,2,1,True
+14567766,2025-08-29,BWF World Championships Men Singles,,Anders Antonsen,215405,Tien Chen Chou,87480,2,0,True
+14576021,2025-08-30,BWF World Championships Men Singles,,Anders Antonsen,215405,Vitidsarn K.,207992,0,2,False
+14692240,2025-09-17,"LI-NING China Masters 2025, MS",MS,Anders Antonsen,215405,Gemke R.,234811,2,0,True
+14709905,2025-09-18,"LI-NING China Masters 2025, MS",MS,Anders Antonsen,215405,Ka Long Ng.,104289,2,1,True
+14718600,2025-09-19,"LI-NING China Masters 2025, MS",MS,Anders Antonsen,215405,Lanier A.,339319,2,0,True
+14723412,2025-09-20,"LI-NING China Masters 2025, MS",MS,Anders Antonsen,215405,Chun-Yi L.,258097,0,2,False
+14753608,2025-09-24,"Korea Open 2025, MS",MS,Anders Antonsen,215405,Yoo T.,412670,2,0,True
+14762357,2025-09-25,"Korea Open 2025, MS",MS,Anders Antonsen,215405,Hoh J.,382660,2,0,True
+14768365,2025-09-26,"Korea Open 2025, MS",MS,Anders Antonsen,215405,Naraoka K.,212157,,,True
+14778708,2025-09-27,"Korea Open 2025, MS",MS,Anders Antonsen,215405,Tien Chen Chou,87480,2,1,True
+14785437,2025-09-28,"Korea Open 2025, MS",MS,Anders Antonsen,215405,Jonatan Christie,164088,1,2,False
+14882015,2025-10-15,"Denmark Open 2025, MS",MS,Anders Antonsen,215405,Anthony G.,164374,2,0,True
+14892927,2025-10-16,"Denmark Open 2025, MS",MS,Anders Antonsen,215405,Sen L.,244759,0,2,False
+14916509,2025-10-22,"French Open 2025, MS",MS,Anders Antonsen,215405,Teh J.,333188,2,0,True
+14933860,2025-10-23,"French Open 2025, MS",MS,Anders Antonsen,215405,Yang B.,259994,2,1,True
+14939030,2025-10-24,"French Open 2025, MS",MS,Anders Antonsen,215405,Viktor Axelsen,87484,2,1,True
+13004345,2024-10-19,"Denmark Open 2024, MS",MS,Anders Antonsen,215405,Nishimoto K.,146358,2,0,True
+13008786,2024-10-20,"Denmark Open 2024, MS",MS,Anders Antonsen,215405,Watanabe K.,212159,2,0,True
+13132747,2024-11-20,"LI-NING China Masters 2024, MS",MS,Anders Antonsen,215405,Lee C.,182557,2,0,True
+13148962,2024-11-21,"LI-NING China Masters 2024, MS",MS,Anders Antonsen,215405,Obayashi T.,289687,2,0,True
+13152762,2024-11-22,"LI-NING China Masters 2024, MS",MS,Anders Antonsen,215405,Sen L.,244759,2,0,True
+13157841,2024-11-23,"LI-NING China Masters 2024, MS",MS,Anders Antonsen,215405,Viktor Axelsen,87484,2,1,True
+13160380,2024-11-24,"LI-NING China Masters 2024, MS",MS,Anders Antonsen,215405,Jonatan Christie,164088,2,0,True
+13211264,2024-12-11,"World Tour Finals 2024, MS, Group A",,Anders Antonsen,215405,Shifeng Li,283162,2,0,True
+13217315,2024-12-12,"World Tour Finals 2024, MS, Group A",,Anders Antonsen,215405,Lee Z.,244095,0,2,False
+13217320,2024-12-13,"World Tour Finals 2024, MS, Group A",,Anders Antonsen,215405,Tien Chen Chou,87480,1,2,False
+13227781,2024-12-14,"World Tour Finals 2024, MS, Finals",,Anders Antonsen,215405,Jonatan Christie,164088,2,1,True
+13230466,2024-12-15,"World Tour Finals 2024, MS, Finals",,Anders Antonsen,215405,Yuqi Shi,164376,0,2,False
+13304158,2025-01-08,"Malaysia Open 2025, MS",MS,Anders Antonsen,215405,Wang T.,142606,2,0,True
+13310945,2025-01-09,"Malaysia Open 2025, MS",MS,Anders Antonsen,215405,Watanabe K.,212159,2,1,True
+13317230,2025-01-10,"Malaysia Open 2025, MS",MS,Anders Antonsen,215405,Vitidsarn K.,207992,2,0,True
+13321549,2025-01-11,"Malaysia Open 2025, MS",MS,Anders Antonsen,215405,Naraoka K.,212157,2,0,True
+13325871,2025-01-12,"Malaysia Open 2025, MS",MS,Anders Antonsen,215405,Yuqi Shi,164376,0,2,False
+13360950,2025-01-22,"Indonesia Masters 2025, MS",MS,Anders Antonsen,215405,Ka Long Ng.,104289,1,2,False
+13587207,2025-03-12,"All England Open 2025, MS",MS,Anders Antonsen,215405,Chi Y.,211891,2,0,True
+13602088,2025-03-13,"All England Open 2025, MS",MS,Anders Antonsen,215405,Wang T.,142606,0,2,False
+13633763,2025-03-19,"Swiss Open 2025, MS",MS,Anders Antonsen,215405,Lei L.,311774,2,1,True
+13639563,2025-03-20,"Swiss Open 2025, MS",MS,Anders Antonsen,215405,Subramanian S.,335261,1,2,False
+13820910,2025-04-27,"BWF Sudirman Cup, 2025, MS",MS,Anders Antonsen,215405,Prannoy H.,96349,2,0,True
+13837165,2025-05-01,"BWF Sudirman Cup, 2025, MS",MS,Anders Antonsen,215405,Farhan A.,412918,1,2,False
+13843080,2025-05-02,"BWF Sudirman Cup, 2025, MS",MS,Anders Antonsen,215405,Jeon H.,182551,2,1,True
+13892158,2025-05-14,"Thailand Open, MS",MS,Anders Antonsen,215405,Wang T.,142606,2,1,True
+13897190,2025-05-15,"Thailand Open, MS",MS,Anders Antonsen,215405,Mannepalli T.,391936,2,0,True
+13901972,2025-05-16,"Thailand Open, MS",MS,Anders Antonsen,215405,Jeon H.,182551,2,0,True
+13909258,2025-05-17,"Thailand Open, MS",MS,Anders Antonsen,215405,Guangzu Lu,217992,2,1,True
+13913224,2025-05-18,"Thailand Open, MS",MS,Anders Antonsen,215405,Vitidsarn K.,207992,1,2,False
+13738559,2025-04-10,"Asia Championships 2025, MS",MS,Jonatan Christie,164088,Hoh J.,382660,2,0,True
+13743462,2025-04-11,"Asia Championships 2025, MS",MS,Jonatan Christie,164088,Guangzu Lu,217992,0,2,False
+13830211,2025-04-29,"BWF Sudirman Cup, 2025, MS",MS,Jonatan Christie,164088,Prannoy H.,96349,2,1,True
+13843164,2025-05-02,"BWF Sudirman Cup, 2025, MS",MS,Jonatan Christie,164088,Vitidsarn K.,207992,2,0,True
+13945420,2025-05-28,"Singapore Open 2025, MS",MS,Jonatan Christie,164088,Nguyen N.,246527,2,0,True
+13949714,2025-05-29,"Singapore Open 2025, MS",MS,Jonatan Christie,164088,Leong J.,244225,0,2,False
+13960769,2025-06-03,"Indonesia Open 2025, MS",MS,Jonatan Christie,164088,Teh J.,333188,2,1,True
+13969394,2025-06-05,"Indonesia Open 2025, MS",MS,Jonatan Christie,164088,Lee C.,182557,1,2,False
+14177463,2025-07-15,"Japan Open 2025, MS",MS,Jonatan Christie,164088,Nishimoto K.,146358,0,2,False
+14241904,2025-07-23,"China Open 2025, MS",MS,Jonatan Christie,164088,Teh J.,333188,2,0,True
+14256516,2025-07-24,"China Open 2025, MS",MS,Jonatan Christie,164088,Popov Christo,275000,1,2,False
+14497768,2025-08-26,BWF World Championships Men Singles,,Jonatan Christie,164088,Kicklitz M.,318502,2,0,True
+14550888,2025-08-27,BWF World Championships Men Singles,,Jonatan Christie,164088,Dwicahyo A.,280653,2,0,True
+14558856,2025-08-28,BWF World Championships Men Singles,,Jonatan Christie,164088,Lee C.,182557,2,0,True
+14567305,2025-08-29,BWF World Championships Men Singles,,Jonatan Christie,164088,Vitidsarn K.,207992,1,2,False
+14692241,2025-09-17,"LI-NING China Masters 2025, MS",MS,Jonatan Christie,164088,Nishimoto K.,146358,2,0,True
+14708412,2025-09-18,"LI-NING China Masters 2025, MS",MS,Jonatan Christie,164088,Chun-Yi L.,258097,0,2,False
+14745879,2025-09-24,"Korea Open 2025, MS",MS,Jonatan Christie,164088,Ka Long Ng.,104289,2,0,True
+14756523,2025-09-25,"Korea Open 2025, MS",MS,Jonatan Christie,164088,Lee C.,208969,2,1,True
+14768387,2025-09-26,"Korea Open 2025, MS",MS,Jonatan Christie,164088,Nishimoto K.,146358,2,0,True
+14778676,2025-09-27,"Korea Open 2025, MS",MS,Jonatan Christie,164088,Farhan A.,412918,2,1,True
+14785437,2025-09-28,"Korea Open 2025, MS",MS,Jonatan Christie,164088,Antonsen A.,215405,2,1,True
+14882019,2025-10-15,"Denmark Open 2025, MS",MS,Jonatan Christie,164088,Nishimoto K.,146358,2,1,True
+14893508,2025-10-16,"Denmark Open 2025, MS",MS,Jonatan Christie,164088,Naraoka K.,212157,2,0,True
+14900658,2025-10-17,"Denmark Open 2025, MS",MS,Jonatan Christie,164088,Shifeng Li,283162,2,1,True
+14907418,2025-10-18,"Denmark Open 2025, MS",MS,Jonatan Christie,164088,Lanier A.,339319,2,1,True
+14910804,2025-10-19,"Denmark Open 2025, MS",MS,Jonatan Christie,164088,Yuqi Shi,164376,2,1,True
+14916518,2025-10-22,"French Open 2025, MS",MS,Jonatan Christie,164088,Nishimoto K.,146358,2,0,True
+14933858,2025-10-23,"French Open 2025, MS",MS,Jonatan Christie,164088,Watanabe K.,212159,1,2,False
+12974842,2024-10-13,"Arctic Open 2024, MS",MS,Jonatan Christie,164088,Tien Chen Chou,87480,0,2,False
+12972197,2024-10-16,"Denmark Open 2024, MS",MS,Jonatan Christie,164088,Leong J.,244225,2,0,True
+12991974,2024-10-17,"Denmark Open 2024, MS",MS,Jonatan Christie,164088,Guangzu Lu,217992,1,2,False
+13108560,2024-11-13,"Kumamoto Masters Japan 2024, MS",MS,Jonatan Christie,164088,Tanaka Y.,343205,2,0,True
+13119426,2024-11-14,"Kumamoto Masters Japan 2024, MS",MS,Jonatan Christie,164088,Gemke R.,234811,2,0,True
+13123081,2024-11-15,"Kumamoto Masters Japan 2024, MS",MS,Jonatan Christie,164088,Lee Z.,244095,2,1,True
+13128339,2024-11-16,"Kumamoto Masters Japan 2024, MS",MS,Jonatan Christie,164088,Leong J.,244225,1,2,False
+13140780,2024-11-19,"LI-NING China Masters 2024, MS",MS,Jonatan Christie,164088,Loh Kean Yew,172746,2,1,True
+13144329,2024-11-21,"LI-NING China Masters 2024, MS",MS,Jonatan Christie,164088,Guangzu Lu,217992,2,0,True
+13152471,2024-11-22,"LI-NING China Masters 2024, MS",MS,Jonatan Christie,164088,Lei L.,311774,2,0,True
+13157450,2024-11-23,"LI-NING China Masters 2024, MS",MS,Jonatan Christie,164088,Yuqi Shi,164376,2,0,True
+13160380,2024-11-24,"LI-NING China Masters 2024, MS",MS,Jonatan Christie,164088,Antonsen A.,215405,0,2,False
+13211243,2024-12-11,"World Tour Finals 2024, MS, Group B",,Jonatan Christie,164088,Yuqi Shi,164376,1,2,False
+13217301,2024-12-12,"World Tour Finals 2024, MS, Group B",,Jonatan Christie,164088,Naraoka K.,212157,2,0,True
+13217296,2024-12-13,"World Tour Finals 2024, MS, Group B",,Jonatan Christie,164088,Vitidsarn K.,207992,2,0,True
+13227781,2024-12-14,"World Tour Finals 2024, MS, Finals",,Jonatan Christie,164088,Antonsen A.,215405,1,2,False
+13304147,2025-01-08,"Malaysia Open 2025, MS",MS,Jonatan Christie,164088,Popov T.,241059,1,2,False
+13330890,2025-01-15,"India Open 2025, MS",MS,Jonatan Christie,164088,Wang T.,142606,2,0,True
+13343670,2025-01-16,"India Open 2025, MS",MS,Jonatan Christie,164088,Yang S.,262764,2,0,True
+13348943,2025-01-17,"India Open 2025, MS",MS,Jonatan Christie,164088,Chun-Yi L.,258097,2,1,True
+13354524,2025-01-18,"India Open 2025, MS",MS,Jonatan Christie,164088,Viktor Axelsen,87484,1,2,False
+13360862,2025-01-22,"Indonesia Masters 2025, MS",MS,Jonatan Christie,164088,Yang S.,262764,2,0,True
+13374893,2025-01-23,"Indonesia Masters 2025, MS",MS,Jonatan Christie,164088,Chun-Yi L.,258097,2,1,True
+13378097,2025-01-24,"Indonesia Masters 2025, MS",MS,Jonatan Christie,164088,Nishimoto K.,146358,2,1,True
+13385693,2025-01-25,"Indonesia Masters 2025, MS",MS,Jonatan Christie,164088,Wang T.,142606,2,0,True
+13389238,2025-01-26,"Indonesia Masters 2025, MS",MS,Jonatan Christie,164088,Vitidsarn K.,207992,1,2,False
+13587206,2025-03-11,"All England Open 2025, MS",MS,Jonatan Christie,164088,Leong J.,244225,2,0,True
+13595809,2025-03-13,"All England Open 2025, MS",MS,Jonatan Christie,164088,Sen L.,244759,0,2,False
+13732447,2025-04-09,"Asia Championships 2025, MS",MS,Jonatan Christie,164088,Watanabe K.,212159,2,1,True
+12240337,2024-04-11,"Asia Championships 2024, MS",MS,Anthony Ginting,164374,Romdhani S.,495517,2,0,True
+12242041,2024-04-12,"Asia Championships 2024, MS",MS,Anthony Ginting,164374,Shifeng Li,283162,0,2,False
+12285793,2024-04-27,"BWF Thomas Cup, 2024, Singles",,Anthony Ginting,164374,Huang H.,330247,2,0,True
+12288898,2024-04-29,"BWF Thomas Cup, 2024, Singles",,Anthony Ginting,164374,Teeraratsakul P.,310233,2,0,True
+12297244,2024-05-01,"BWF Thomas Cup, 2024, Singles",,Anthony Ginting,164374,Prannoy H.,96349,1,2,False
+12302441,2024-05-03,"BWF Thomas Cup, 2024, Singles",,Anthony Ginting,164374,Jeon H.,182551,2,1,True
+12305386,2024-05-04,"BWF Thomas Cup, 2024, Singles",,Anthony Ginting,164374,Tien Chen Chou,87480,2,0,True
+12307715,2024-05-05,"BWF Thomas Cup, 2024, Singles",,Anthony Ginting,164374,Yuqi Shi,164376,0,2,False
+12372855,2024-05-29,"Singapore Open 2024, MS",MS,Anthony Ginting,164374,Lee Z.,244095,,,True
+12377581,2024-05-30,"Singapore Open 2024, MS",MS,Anthony Ginting,164374,Leong J.,244225,1,2,False
+12390674,2024-06-04,"Indonesia Open 2024, MS",MS,Anthony Ginting,164374,Nishimoto K.,146358,1,2,False
+12591915,2024-07-28,"Olympic Tournament, Singles",,Anthony Ginting,164374,Shu H.,111439,2,0,True
+12612528,2024-07-31,"Olympic Tournament, Singles",,Anthony Ginting,164374,Popov T.,241059,1,2,False
+12713602,2024-08-20,"Japan Open 2024, MS",MS,Anthony Ginting,164374,Tanaka Y.,343205,0,1,False
+12816929,2024-09-11,"Hong Kong Open 2024, MS",MS,Anthony Ginting,164374,Popov T.,241059,2,1,True
+12822705,2024-09-12,"Hong Kong Open 2024, MS",MS,Anthony Ginting,164374,Chi Y.,211891,2,1,True
+12828870,2024-09-13,"Hong Kong Open 2024, MS",MS,Anthony Ginting,164374,Gunawan J.,416081,2,1,True
+12837027,2024-09-14,"Hong Kong Open 2024, MS",MS,Anthony Ginting,164374,Viktor Axelsen,87484,0,2,False
+12866394,2024-09-17,"China Open 2024, MS",MS,Anthony Ginting,164374,DWI Wardoyo C.,231911,2,0,True
+12866491,2024-09-19,"China Open 2024, MS",MS,Anthony Ginting,164374,Yuqi Shi,164376,2,0,True
+12869920,2024-09-20,"China Open 2024, MS",MS,Anthony Ginting,164374,Vitidsarn K.,207992,1,2,False
+12954005,2024-10-09,"Arctic Open 2024, MS",MS,Anthony Ginting,164374,Guangzu Lu,217992,1,2,False
+12989338,2024-10-16,"Denmark Open 2024, MS",MS,Anthony Ginting,164374,Nishimoto K.,146358,1,2,False
+13304150,2025-01-08,"Malaysia Open 2025, MS",MS,Anthony Ginting,164374,Lee C.,208969,2,0,True
+13310711,2025-01-09,"Malaysia Open 2025, MS",MS,Anthony Ginting,164374,Vitidsarn K.,207992,0,2,False
+11744348,2023-10-17,"Denmark Open 2023, MS",MS,Anthony Ginting,164374,Popov Christo,275000,2,0,True
+11757058,2023-10-19,"Denmark Open 2023, MS",MS,Anthony Ginting,164374,Guangzu Lu,217992,2,0,True
+11760418,2023-10-20,"Denmark Open 2023, MS",MS,Anthony Ginting,164374,Weng H.,251935,0,2,False
+11770173,2023-10-25,"French Open 2023, MS",MS,Anthony Ginting,164374,Johannesen M.,316713,2,1,True
+11774758,2023-10-26,"French Open 2023, MS",MS,Anthony Ginting,164374,Popov T.,241059,2,1,True
+11777298,2023-10-27,"French Open 2023, MS",MS,Anthony Ginting,164374,Shifeng Li,283162,0,2,False
+11826469,2023-11-15,"Kumamoto Masters Japan 2023, MS",MS,Anthony Ginting,164374,Weng H.,251935,1,2,False
+11846981,2023-11-22,"Li-Ning China Masters, MS",MS,Anthony Ginting,164374,Loh Kean Yew,172746,2,0,True
+11850651,2023-11-23,"Li-Ning China Masters, MS",MS,Anthony Ginting,164374,Chun-Yi L.,258097,0,2,False
+11896361,2023-12-13,"World Tour Finals 2023, MS, Group A",,Anthony Ginting,164374,Naraoka K.,212157,2,1,True
+11897079,2023-12-14,"World Tour Finals 2023, MS, Group A",,Anthony Ginting,164374,Yuqi Shi,164376,2,1,True
+11899160,2023-12-15,"World Tour Finals 2023, MS, Group A",,Anthony Ginting,164374,Viktor Axelsen,87484,1,2,False
+11954555,2024-01-09,"Malaysia Open 2024, MS",MS,Anthony Ginting,164374,Yang S.,262764,2,0,True
+11960278,2024-01-11,"Malaysia Open 2024, MS",MS,Anthony Ginting,164374,Guangzu Lu,217992,0,2,False
+11972305,2024-01-17,"India Open 2024, MS",MS,Anthony Ginting,164374,Tsuneyama K.,181848,2,1,True
+11980552,2024-01-18,"India Open 2024, MS",MS,Anthony Ginting,164374,Nishimoto K.,146358,2,0,True
+11982550,2024-01-19,"India Open 2024, MS",MS,Anthony Ginting,164374,Lee C.,182557,1,2,False
+11997057,2024-01-24,"Indonesia Masters 2024, MS",MS,Anthony Ginting,164374,Wangcharoen K.,204983,2,0,True
+12002363,2024-01-25,"Indonesia Masters 2024, MS",MS,Anthony Ginting,164374,Leong J.,244225,2,0,True
+12005403,2024-01-26,"Indonesia Masters 2024, MS",MS,Anthony Ginting,164374,Loh Kean Yew,172746,2,0,True
+12008383,2024-01-27,"Indonesia Masters 2024, MS",MS,Anthony Ginting,164374,Yang B.,259994,1,2,False
+12122923,2024-03-05,"French Open 2024, MS",MS,Anthony Ginting,164374,Weng H.,251935,2,1,True
+12129690,2024-03-07,"French Open 2024, MS",MS,Anthony Ginting,164374,Loh Kean Yew,172746,1,2,False
+12151623,2024-03-12,"All England Open 2024, MS",MS,Anthony Ginting,164374,Lee C.,208969,2,0,True
+12154717,2024-03-14,"All England Open 2024, MS",MS,Anthony Ginting,164374,Nishimoto K.,146358,2,0,True
+12160843,2024-03-15,"All England Open 2024, MS",MS,Anthony Ginting,164374,Viktor Axelsen,87484,2,1,True
+12164222,2024-03-16,"All England Open 2024, MS",MS,Anthony Ginting,164374,Popov Christo,275000,2,1,True
+12166175,2024-03-17,"All England Open 2024, MS",MS,Anthony Ginting,164374,Jonatan Christie,164088,0,2,False
+12237725,2024-04-10,"Asia Championships 2024, MS",MS,Anthony Ginting,164374,Srikanth K.,96359,2,0,True
+13587216,2025-03-11,"All England Open 2025, MS",MS,Loh Kean Yew,172746,Teh J.,333188,2,1,True
+13596473,2025-03-13,"All England Open 2025, MS",MS,Loh Kean Yew,172746,Ka Long Ng.,104289,2,0,True
+13607647,2025-03-14,"All England Open 2025, MS",MS,Loh Kean Yew,172746,Yuqi Shi,164376,0,2,False
+13732416,2025-04-09,"Asia Championships 2025, MS",MS,Loh Kean Yew,172746,DWI Wardoyo C.,231911,2,0,True
+13740260,2025-04-10,"Asia Championships 2025, MS",MS,Loh Kean Yew,172746,Lee C.,208969,2,0,True
+13745412,2025-04-11,"Asia Championships 2025, MS",MS,Loh Kean Yew,172746,Yuqi Shi,164376,2,1,True
+13753590,2025-04-12,"Asia Championships 2025, MS",MS,Loh Kean Yew,172746,Vitidsarn K.,207992,0,2,False
+13859312,2025-05-07,"Taipei Open 2025, MS",MS,Loh Kean Yew,172746,Chan Y.,239453,2,1,True
+13864269,2025-05-08,"Taipei Open 2025, MS",MS,Loh Kean Yew,172746,Oldorff J.,318383,2,0,True
+13867606,2025-05-09,"Taipei Open 2025, MS",MS,Loh Kean Yew,172746,Teeraratsakul P.,310233,2,0,True
+13875291,2025-05-10,"Taipei Open 2025, MS",MS,Loh Kean Yew,172746,Wang T.,142606,2,0,True
+13879841,2025-05-11,"Taipei Open 2025, MS",MS,Loh Kean Yew,172746,Tien Chen Chou,87480,2,1,True
+13892144,2025-05-14,"Thailand Open, MS",MS,Loh Kean Yew,172746,Gunawan J.,416081,2,0,True
+13895841,2025-05-15,"Thailand Open, MS",MS,Loh Kean Yew,172746,Nguyen N.,246527,2,0,True
+13902422,2025-05-16,"Thailand Open, MS",MS,Loh Kean Yew,172746,Gemke R.,234811,2,1,True
+13907390,2025-05-17,"Thailand Open, MS",MS,Loh Kean Yew,172746,Vitidsarn K.,207992,0,2,False
+13941753,2025-05-27,"Singapore Open 2025, MS",MS,Loh Kean Yew,172746,Lanier A.,339319,2,1,True
+13948326,2025-05-29,"Singapore Open 2025, MS",MS,Loh Kean Yew,172746,Popov T.,241059,2,1,True
+13952594,2025-05-30,"Singapore Open 2025, MS",MS,Loh Kean Yew,172746,Popov Christo,275000,0,2,False
+13960789,2025-06-04,"Indonesia Open 2025, MS",MS,Loh Kean Yew,172746,George K.,244765,2,0,True
+13973276,2025-06-05,"Indonesia Open 2025, MS",MS,Loh Kean Yew,172746,Lanier A.,339319,1,2,False
+14497792,2025-08-25,BWF World Championships Men Singles,,Loh Kean Yew,172746,Paul G.,263744,2,0,True
+14542140,2025-08-27,BWF World Championships Men Singles,,Loh Kean Yew,172746,Koljonen K.,177532,2,0,True
+14558833,2025-08-28,BWF World Championships Men Singles,,Loh Kean Yew,172746,Naraoka K.,212157,2,1,True
+14567324,2025-08-29,BWF World Championships Men Singles,,Loh Kean Yew,172746,Victor Lai,408761,0,2,False
+14653518,2025-09-10,"Hong Kong Open 2025, MS",MS,Loh Kean Yew,172746,Yang B.,259994,2,0,True
+14660689,2025-09-11,"Hong Kong Open 2025, MS",MS,Loh Kean Yew,172746,Gemke R.,234811,2,0,True
+14665683,2025-09-12,"Hong Kong Open 2025, MS",MS,Loh Kean Yew,172746,Popov Christo,275000,1,2,False
+14691991,2025-09-16,"LI-NING China Masters 2025, MS",MS,Loh Kean Yew,172746,Nguyen N.,246527,0,2,False
+12392484,2024-06-04,"Indonesia Open 2024, MS",MS,Loh Kean Yew,172746,Vitidsarn K.,207992,0,2,False
+12413411,2024-06-12,"Australian Open 2024, MS",MS,Loh Kean Yew,172746,Koljonen K.,177532,2,0,True
+12416528,2024-06-13,"Australian Open 2024, MS",MS,Loh Kean Yew,172746,Verma S.,188617,1,2,False
+12591906,2024-07-28,"Olympic Tournament, Singles",,Loh Kean Yew,172746,Louda J.,249861,2,0,True
+12612531,2024-07-31,"Olympic Tournament, Singles",,Loh Kean Yew,172746,Canjura Artiga U.,252173,2,0,True
+12630463,2024-08-01,"Olympic Games, Final Round",,Loh Kean Yew,172746,Shifeng Li,283162,2,0,True
+12633403,2024-08-02,"Olympic Games, Final Round",,Loh Kean Yew,172746,Viktor Axelsen,87484,0,2,False
+12713627,2024-08-21,"Japan Open 2024, MS",MS,Loh Kean Yew,172746,Wang T.,142606,0,2,False
+12816923,2024-09-11,"Hong Kong Open 2024, MS",MS,Loh Kean Yew,172746,Jeon H.,182551,0,2,False
+12866451,2024-09-18,"China Open 2024, MS",MS,Loh Kean Yew,172746,Tanaka Y.,343205,2,1,True
+12866331,2024-09-19,"China Open 2024, MS",MS,Loh Kean Yew,172746,Antonsen A.,215405,1,2,False
+12972185,2024-10-15,"Denmark Open 2024, MS",MS,Loh Kean Yew,172746,Naraoka K.,212157,2,0,True
+12989717,2024-10-17,"Denmark Open 2024, MS",MS,Loh Kean Yew,172746,Lee C.,182557,2,1,True
+12999114,2024-10-18,"Denmark Open 2024, MS",MS,Loh Kean Yew,172746,Lanier A.,339319,1,2,False
+13108568,2024-11-13,"Kumamoto Masters Japan 2024, MS",MS,Loh Kean Yew,172746,Lei L.,311774,0,2,False
+13140780,2024-11-19,"LI-NING China Masters 2024, MS",MS,Loh Kean Yew,172746,Jonatan Christie,164088,1,2,False
+13304156,2025-01-08,"Malaysia Open 2025, MS",MS,Loh Kean Yew,172746,Watanabe K.,212159,0,2,False
+13330872,2025-01-15,"India Open 2025, MS",MS,Loh Kean Yew,172746,Lee C.,208969,2,0,True
+13343342,2025-01-16,"India Open 2025, MS",MS,Loh Kean Yew,172746,Naraoka K.,212157,2,0,True
+13348042,2025-01-17,"India Open 2025, MS",MS,Loh Kean Yew,172746,Viktor Axelsen,87484,1,2,False
+13360858,2025-01-22,"Indonesia Masters 2025, MS",MS,Loh Kean Yew,172746,Chun-Yi L.,258097,1,2,False
+13535411,2025-02-26,"German Open 2025, MS",MS,Loh Kean Yew,172746,Merkle Arnaud,249178,2,0,True
+13540951,2025-02-27,"German Open 2025, MS",MS,Loh Kean Yew,172746,Cheam J.,187968,2,1,True
+13545788,2025-02-28,"German Open 2025, MS",MS,Loh Kean Yew,172746,Teh J.,333188,2,0,True
+13551496,2025-03-01,"German Open 2025, MS",MS,Loh Kean Yew,172746,Takahashi K.,483654,2,0,True
+13554946,2025-03-02,"German Open 2025, MS",MS,Loh Kean Yew,172746,Viktor Axelsen,87484,0,2,False
+13565958,2025-03-05,"Orleans Masters 2025, MS",MS,Loh Kean Yew,172746,Shetty A.,501106,0,2,False
+12357980,2024-05-23,"Malaysia Masters 2024, MS",MS,Lee Zii Jia,244095,George K.,244765,2,0,True
+12360629,2024-05-24,"Malaysia Masters 2024, MS",MS,Lee Zii Jia,244095,Antonsen A.,215405,2,1,True
+12364713,2024-05-25,"Malaysia Masters 2024, MS",MS,Lee Zii Jia,244095,Ka Long Ng.,104289,2,0,True
+12369495,2024-05-26,"Malaysia Masters 2024, MS",MS,Lee Zii Jia,244095,Viktor Axelsen,87484,1,2,False
+12372855,2024-05-29,"Singapore Open 2024, MS",MS,Lee Zii Jia,244095,Anthony G.,164374,,,False
+12392485,2024-06-04,"Indonesia Open 2024, MS",MS,Lee Zii Jia,244095,Ka Long Ng.,104289,2,0,True
+12394042,2024-06-06,"Indonesia Open 2024, MS",MS,Lee Zii Jia,244095,Weng H.,251935,2,1,True
+12400057,2024-06-07,"Indonesia Open 2024, MS",MS,Lee Zii Jia,244095,Vitidsarn K.,207992,0,2,False
+12413399,2024-06-12,"Australian Open 2024, MS",MS,Lee Zii Jia,244095,Subramanian S.,335261,2,1,True
+12416670,2024-06-13,"Australian Open 2024, MS",MS,Lee Zii Jia,244095,Soong J.,146402,2,0,True
+12420779,2024-06-14,"Australian Open 2024, MS",MS,Lee Zii Jia,244095,Nishimoto K.,146358,2,1,True
+12428443,2024-06-16,"Australian Open 2024, MS",MS,Lee Zii Jia,244095,Naraoka K.,212157,2,1,True
+12606870,2024-07-28,"Olympic Tournament, Singles",,Lee Zii Jia,244095,Nettasinghe V.,419755,2,0,True
+12612520,2024-07-31,"Olympic Tournament, Singles",,Lee Zii Jia,244095,Abian P.,24518,2,0,True
+12631692,2024-08-01,"Olympic Games, Final Round",,Lee Zii Jia,244095,Popov T.,241059,2,0,True
+12633401,2024-08-02,"Olympic Games, Final Round",,Lee Zii Jia,244095,Antonsen A.,215405,2,0,True
+12638746,2024-08-04,"Olympic Games, Final Round",,Lee Zii Jia,244095,Vitidsarn K.,207992,0,2,False
+12644231,2024-08-05,"Olympic Games, Final Round",,Lee Zii Jia,244095,Sen L.,244759,2,1,True
+12712791,2024-08-20,"Japan Open 2024, MS",MS,Lee Zii Jia,244095,Lanier A.,339319,0,2,False
+12866420,2024-09-17,"China Open 2024, MS",MS,Lee Zii Jia,244095,Watanabe K.,212159,0,2,False
+12954002,2024-10-09,"Arctic Open 2024, MS",MS,Lee Zii Jia,244095,Popov Christo,275000,2,0,True
+12962342,2024-10-10,"Arctic Open 2024, MS",MS,Lee Zii Jia,244095,Tanaka Y.,343205,2,0,True
+12965530,2024-10-11,"Arctic Open 2024, MS",MS,Lee Zii Jia,244095,Watanabe K.,212159,1,2,False
+13116118,2024-11-13,"Kumamoto Masters Japan 2024, MS",MS,Lee Zii Jia,244095,Hoh J.,382660,2,1,True
+13119643,2024-11-14,"Kumamoto Masters Japan 2024, MS",MS,Lee Zii Jia,244095,Yang S.,262764,2,1,True
+13123081,2024-11-15,"Kumamoto Masters Japan 2024, MS",MS,Lee Zii Jia,244095,Jonatan Christie,164088,1,2,False
+11846991,2023-11-22,"Li-Ning China Masters, MS",MS,Lee Zii Jia,244095,Tze Yong NG.,325704,2,1,True
+11850652,2023-11-23,"Li-Ning China Masters, MS",MS,Lee Zii Jia,244095,Guangzu Lu,217992,2,0,True
+11853714,2023-11-24,"Li-Ning China Masters, MS",MS,Lee Zii Jia,244095,Nishimoto K.,146358,0,2,False
+11954557,2024-01-09,"Malaysia Open 2024, MS",MS,Lee Zii Jia,244095,Guangzu Lu,217992,1,2,False
+11972304,2024-01-17,"India Open 2024, MS",MS,Lee Zii Jia,244095,Yang B.,259994,2,0,True
+11979660,2024-01-18,"India Open 2024, MS",MS,Lee Zii Jia,244095,Jonatan Christie,164088,2,0,True
+11982783,2024-01-19,"India Open 2024, MS",MS,Lee Zii Jia,244095,Naraoka K.,212157,1,2,False
+11995327,2024-01-24,"Indonesia Masters 2024, MS",MS,Lee Zii Jia,244095,Srikanth K.,96359,2,1,True
+12002362,2024-01-25,"Indonesia Masters 2024, MS",MS,Lee Zii Jia,244095,Ka Long Ng.,104289,2,0,True
+12005408,2024-01-26,"Indonesia Masters 2024, MS",MS,Lee Zii Jia,244095,Yang B.,259994,0,1,False
+12122915,2024-03-06,"French Open 2024, MS",MS,Lee Zii Jia,244095,Johannesen M.,316713,0,2,False
+12151629,2024-03-13,"All England Open 2024, MS",MS,Lee Zii Jia,244095,Naraoka K.,212157,2,0,True
+12157741,2024-03-14,"All England Open 2024, MS",MS,Lee Zii Jia,244095,Loh Kean Yew,172746,2,0,True
+12161089,2024-03-15,"All England Open 2024, MS",MS,Lee Zii Jia,244095,Sen L.,244759,1,2,False
+12173092,2024-03-20,"Swiss Open 2024, MS",MS,Lee Zii Jia,244095,Yang S.,262764,2,0,True
+12176829,2024-03-21,"Swiss Open 2024, MS",MS,Lee Zii Jia,244095,Srikanth K.,96359,0,2,False
+12237735,2024-04-10,"Asia Championships 2024, MS",MS,Lee Zii Jia,244095,Rajawat P.,392222,2,0,True
+12238383,2024-04-11,"Asia Championships 2024, MS",MS,Lee Zii Jia,244095,Tien Chen Chou,87480,2,0,True
+12242015,2024-04-12,"Asia Championships 2024, MS",MS,Lee Zii Jia,244095,Jonatan Christie,164088,0,2,False
+12287617,2024-04-28,"BWF Thomas Cup, 2024, Singles",,Lee Zii Jia,244095,Hamek A.,210940,2,0,True
+12294013,2024-04-30,"BWF Thomas Cup, 2024, Singles",,Lee Zii Jia,244095,Viktor Axelsen,87484,0,2,False
+12299710,2024-05-02,"BWF Thomas Cup, 2024, Singles",,Lee Zii Jia,244095,Nishimoto K.,146358,2,0,True
+12305375,2024-05-04,"BWF Thomas Cup, 2024, Singles",,Lee Zii Jia,244095,Yuqi Shi,164376,0,2,False
+12334373,2024-05-15,"Thailand Open 2024, MS",MS,Lee Zii Jia,244095,Lei L.,311774,2,0,True
+12337370,2024-05-16,"Thailand Open 2024, MS",MS,Lee Zii Jia,244095,Jeon H.,182551,2,0,True
+12338998,2024-05-17,"Thailand Open 2024, MS",MS,Lee Zii Jia,244095,Guangzu Lu,217992,2,1,True
+12341231,2024-05-18,"Thailand Open 2024, MS",MS,Lee Zii Jia,244095,Tien Chen Chou,87480,2,1,True
+12344015,2024-05-19,"Thailand Open 2024, MS",MS,Lee Zii Jia,244095,Ka Long Ng.,104289,2,0,True
+12352536,2024-05-22,"Malaysia Masters 2024, MS",MS,Lee Zii Jia,244095,Junpeng Z.,248594,2,1,True
+12825153,2024-09-12,"Hong Kong Open 2024, MS",MS,Lee Cheuk Yiu,182557,Leong J.,244225,2,1,True
+12832570,2024-09-13,"Hong Kong Open 2024, MS",MS,Lee Cheuk Yiu,182557,Lei L.,311774,1,2,False
+12866466,2024-09-18,"China Open 2024, MS",MS,Lee Cheuk Yiu,182557,Weng H.,251935,0,2,False
+12889199,2024-09-25,"Macau Open 2024, MS",MS,Lee Cheuk Yiu,182557,Panarin D.,276618,2,0,True
+12898579,2024-09-26,"Macau Open 2024, MS",MS,Lee Cheuk Yiu,182557,Huang Y.,314023,2,1,True
+12903875,2024-09-27,"Macau Open 2024, MS",MS,Lee Cheuk Yiu,182557,Teh J.,333188,0,2,False
+12953990,2024-10-09,"Arctic Open 2024, MS",MS,Lee Cheuk Yiu,182557,Leong J.,244225,2,0,True
+12962343,2024-10-10,"Arctic Open 2024, MS",MS,Lee Cheuk Yiu,182557,Shifeng Li,283162,2,0,True
+12965724,2024-10-11,"Arctic Open 2024, MS",MS,Lee Cheuk Yiu,182557,Jonatan Christie,164088,0,2,False
+12972194,2024-10-15,"Denmark Open 2024, MS",MS,Lee Cheuk Yiu,182557,Lei L.,311774,2,1,True
+12989717,2024-10-17,"Denmark Open 2024, MS",MS,Lee Cheuk Yiu,182557,Loh Kean Yew,172746,1,2,False
+13108547,2024-11-13,"Kumamoto Masters Japan 2024, MS",MS,Lee Cheuk Yiu,182557,Gemke R.,234811,1,2,False
+13132747,2024-11-20,"LI-NING China Masters 2024, MS",MS,Lee Cheuk Yiu,182557,Antonsen A.,215405,0,2,False
+13304126,2025-01-07,"Malaysia Open 2025, MS",MS,Lee Cheuk Yiu,182557,Viktor Axelsen,87484,2,0,True
+13307833,2025-01-09,"Malaysia Open 2025, MS",MS,Lee Cheuk Yiu,182557,Chi Y.,211891,1,2,False
+13332047,2025-01-14,"India Open 2025, MS",MS,Lee Cheuk Yiu,182557,Watanabe K.,212159,2,0,True
+13334491,2025-01-16,"India Open 2025, MS",MS,Lee Cheuk Yiu,182557,Popov T.,241059,2,1,True
+13349867,2025-01-17,"India Open 2025, MS",MS,Lee Cheuk Yiu,182557,Tien Chen Chou,87480,2,0,True
+13354412,2025-01-18,"India Open 2025, MS",MS,Lee Cheuk Yiu,182557,Weng H.,251935,2,1,True
+13356976,2025-01-19,"India Open 2025, MS",MS,Lee Cheuk Yiu,182557,Viktor Axelsen,87484,0,2,False
+13565956,2025-03-05,"Orleans Masters 2025, MS",MS,Lee Cheuk Yiu,182557,Wangcharoen K.,204983,1,2,False
+13732410,2025-04-09,"Asia Championships 2025, MS",MS,Lee Cheuk Yiu,182557,Naraoka K.,212157,0,2,False
+13823475,2025-04-28,"BWF Sudirman Cup, 2025, MS",MS,Lee Cheuk Yiu,182557,Yuqi Shi,164376,1,2,False
+13892135,2025-05-14,"Thailand Open, MS",MS,Lee Cheuk Yiu,182557,Nishimoto K.,146358,0,2,False
+13941740,2025-05-28,"Singapore Open 2025, MS",MS,Lee Cheuk Yiu,182557,Wang T.,142606,2,0,True
+13949722,2025-05-29,"Singapore Open 2025, MS",MS,Lee Cheuk Yiu,182557,Tien Chen Chou,87480,2,0,True
+13951672,2025-05-30,"Singapore Open 2025, MS",MS,Lee Cheuk Yiu,182557,Chun-Yi L.,258097,0,2,False
+14497766,2025-08-27,BWF World Championships Men Singles,,Chou Tien Chen,87480,Louda J.,249861,,,True
+14550867,2025-08-27,BWF World Championships Men Singles,,Chou Tien Chen,87480,Rose E.,298462,2,0,True
+14558862,2025-08-28,BWF World Championships Men Singles,,Chou Tien Chen,87480,Nishimoto K.,146358,2,1,True
+14567766,2025-08-29,BWF World Championships Men Singles,,Chou Tien Chen,87480,Antonsen A.,215405,0,2,False
+14653553,2025-09-10,"Hong Kong Open 2025, MS",MS,Chou Tien Chen,87480,Zhengxing Wang,454757,2,0,True
+14660765,2025-09-11,"Hong Kong Open 2025, MS",MS,Chou Tien Chen,87480,George K.,244765,2,0,True
+14668910,2025-09-12,"Hong Kong Open 2025, MS",MS,Chou Tien Chen,87480,Farhan A.,412918,2,1,True
+14674904,2025-09-13,"Hong Kong Open 2025, MS",MS,Chou Tien Chen,87480,Sen L.,244759,0,2,False
+14692075,2025-09-16,"LI-NING China Masters 2025, MS",MS,Chou Tien Chen,87480,Shetty A.,501106,2,1,True
+14698662,2025-09-18,"LI-NING China Masters 2025, MS",MS,Chou Tien Chen,87480,Popov Christo,275000,1,2,False
+14753607,2025-09-24,"Korea Open 2025, MS",MS,Chou Tien Chen,87480,Johannesen M.,316713,2,0,True
+14760283,2025-09-25,"Korea Open 2025, MS",MS,Chou Tien Chen,87480,DWI Wardoyo C.,231911,2,0,True
+14765401,2025-09-26,"Korea Open 2025, MS",MS,Chou Tien Chen,87480,Loh Kean Yew,172746,2,0,True
+14778708,2025-09-27,"Korea Open 2025, MS",MS,Chou Tien Chen,87480,Antonsen A.,215405,1,2,False
+14848213,2025-10-08,"Arctic Open 2025, MS",MS,Chou Tien Chen,87480,Holm D.,251253,2,1,True
+14854965,2025-10-09,"Arctic Open 2025, MS",MS,Chou Tien Chen,87480,Wang T.,142606,2,1,True
+14860869,2025-10-10,"Arctic Open 2025, MS",MS,Chou Tien Chen,87480,Guangzu Lu,217992,2,1,True
+14867052,2025-10-11,"Arctic Open 2025, MS",MS,Chou Tien Chen,87480,Merkle Arnaud,249178,2,1,True
+14871295,2025-10-12,"Arctic Open 2025, MS",MS,Chou Tien Chen,87480,Vitidsarn K.,207992,2,1,True
+14882022,2025-10-15,"Denmark Open 2025, MS",MS,Chou Tien Chen,87480,Viktor Axelsen,87484,0,2,False
+14916517,2025-10-22,"French Open 2025, MS",MS,Chou Tien Chen,87480,Gemke R.,234811,2,1,True
+14933835,2025-10-23,"French Open 2025, MS",MS,Chou Tien Chen,87480,Viktor Axelsen,87484,0,2,False
+14963385,2025-10-29,"Hylo Open 2025, MS",MS,Chou Tien Chen,87480,Koljonen K.,177532,1,2,False
+15029506,2025-11-12,"Kumamoto Masters Japan 2025, MS",MS,Chou Tien Chen,87480,Yang S.,262764,2,1,True
+15039012,2025-11-13,"Kumamoto Masters Japan 2025, MS",MS,Chou Tien Chen,87480,Teeraratsakul P.,310233,0,2,False
+15119362,2025-11-19,"Australian Open 2025, MS",MS,Chou Tien Chen,87480,Tang R.,476524,2,0,True
+15121262,2025-11-20,"Australian Open 2025, MS",MS,Chou Tien Chen,87480,Ooi A.,523926,2,0,True
+15125497,2025-11-21,"Australian Open 2025, MS",MS,Chou Tien Chen,87480,Farhan A.,412918,2,1,True
+15129485,2025-11-22,"Australian Open 2025, MS",MS,Chou Tien Chen,87480,Sen L.,244759,1,2,False
+15227235,2025-12-17,"World Tour Finals 2025, MS, Group B ",,Chou Tien Chen,87480,Naraoka K.,212157,0,2,False
+13820723,2025-04-27,"BWF Sudirman Cup, 2025, MS",MS,Chou Tien Chen,87480,Yang B.,259994,2,1,True
+13841423,2025-05-02,"BWF Sudirman Cup, 2025, MS",MS,Chou Tien Chen,87480,Watanabe K.,212159,1,2,False
+13859268,2025-05-07,"Taipei Open 2025, MS",MS,Chou Tien Chen,87480,Obayashi T.,289687,2,1,True
+13861265,2025-05-08,"Taipei Open 2025, MS",MS,Chou Tien Chen,87480,Aidil S.,320187,2,0,True
+13868502,2025-05-09,"Taipei Open 2025, MS",MS,Chou Tien Chen,87480,Ubaidillah M.,830391,2,1,True
+13876645,2025-05-10,"Taipei Open 2025, MS",MS,Chou Tien Chen,87480,Shetty A.,501106,2,0,True
+13879841,2025-05-11,"Taipei Open 2025, MS",MS,Chou Tien Chen,87480,Loh Kean Yew,172746,1,2,False
+13892140,2025-05-14,"Thailand Open, MS",MS,Chou Tien Chen,87480,Tanaka Y.,343205,2,0,True
+13896636,2025-05-15,"Thailand Open, MS",MS,Chou Tien Chen,87480,Gemke R.,234811,1,2,False
+13922177,2025-05-21,"Malaysia Masters 2025, MS",MS,Chou Tien Chen,87480,Karunakaran S.,390671,0,2,False
+13941745,2025-05-28,"Singapore Open 2025, MS",MS,Chou Tien Chen,87480,Chi Y.,211891,2,0,True
+13949722,2025-05-29,"Singapore Open 2025, MS",MS,Chou Tien Chen,87480,Lee C.,182557,0,2,False
+13960758,2025-06-04,"Indonesia Open 2025, MS",MS,Chou Tien Chen,87480,Chun-Yi L.,258097,2,0,True
+13973280,2025-06-05,"Indonesia Open 2025, MS",MS,Chou Tien Chen,87480,Popov Christo,275000,2,1,True
+13976952,2025-06-06,"Indonesia Open 2025, MS",MS,Chou Tien Chen,87480,Shifeng Li,283162,2,1,True
+13979596,2025-06-07,"Indonesia Open 2025, MS",MS,Chou Tien Chen,87480,Vitidsarn K.,207992,2,0,True
+13983246,2025-06-08,"Indonesia Open 2025, MS",MS,Chou Tien Chen,87480,Antonsen A.,215405,0,2,False
+14048630,2025-06-25,"US Open 2025, MS",MS,Chou Tien Chen,87480,Koljonen K.,177532,2,0,True
+14053192,2025-06-26,"US Open 2025, MS",MS,Chou Tien Chen,87480,Nguyen H.,310255,2,0,True
+14058893,2025-06-27,"US Open 2025, MS",MS,Chou Tien Chen,87480,Victor Lai,408761,2,0,True
+14064529,2025-06-28,"US Open 2025, MS",MS,Chou Tien Chen,87480,Shetty A.,501106,1,2,False
+14076934,2025-07-02,"Canada Open 2025, MS",MS,Chou Tien Chen,87480,Carraggi J.,266046,2,1,True
+14089231,2025-07-03,"Canada Open 2025, MS",MS,Chou Tien Chen,87480,Huang P.,311771,2,1,True
+14095757,2025-07-04,"Canada Open 2025, MS",MS,Chou Tien Chen,87480,Srikanth K.,96359,0,2,False
+14177461,2025-07-15,"Japan Open 2025, MS",MS,Chou Tien Chen,87480,Teh J.,333188,2,1,True
+14193583,2025-07-17,"Japan Open 2025, MS",MS,Chou Tien Chen,87480,Watanabe K.,212159,1,2,False
+14241882,2025-07-22,"China Open 2025, MS",MS,Chou Tien Chen,87480,Wang T.,142606,2,0,True
+14246812,2025-07-24,"China Open 2025, MS",MS,Chou Tien Chen,87480,Prannoy H.,96349,2,1,True
+14259827,2025-07-25,"China Open 2025, MS",MS,Chou Tien Chen,87480,Vitidsarn K.,207992,2,0,True
+14270088,2025-07-26,"China Open 2025, MS",MS,Chou Tien Chen,87480,Yuqi Shi,164376,0,2,False
+13932501,2025-05-24,"Malaysia Masters 2025, MS",MS,Kodai Naraoka,212157,Shifeng Li,283162,0,2,False
+13941721,2025-05-27,"Singapore Open 2025, MS",MS,Kodai Naraoka,212157,Rajawat P.,392222,2,1,True
+13948330,2025-05-29,"Singapore Open 2025, MS",MS,Kodai Naraoka,212157,Weng H.,251935,2,0,True
+13951906,2025-05-30,"Singapore Open 2025, MS",MS,Kodai Naraoka,212157,Guangzu Lu,217992,1,2,False
+13960759,2025-06-03,"Indonesia Open 2025, MS",MS,Kodai Naraoka,212157,Gemke R.,234811,0,2,False
+14076938,2025-07-02,"Canada Open 2025, MS",MS,Kodai Naraoka,212157,Liao J.,396197,2,0,True
+14089238,2025-07-03,"Canada Open 2025, MS",MS,Kodai Naraoka,212157,Nguyen H.,310255,2,0,True
+14095751,2025-07-04,"Canada Open 2025, MS",MS,Kodai Naraoka,212157,Hatano R.,337622,2,0,True
+14106571,2025-07-05,"Canada Open 2025, MS",MS,Kodai Naraoka,212157,Victor Lai,408761,1,2,False
+14177466,2025-07-16,"Japan Open 2025, MS",MS,Kodai Naraoka,212157,Anthony G.,164374,2,0,True
+14196404,2025-07-17,"Japan Open 2025, MS",MS,Kodai Naraoka,212157,Sen L.,244759,2,0,True
+14207289,2025-07-18,"Japan Open 2025, MS",MS,Kodai Naraoka,212157,Popov Christo,275000,1,2,False
+14241902,2025-07-23,"China Open 2025, MS",MS,Kodai Naraoka,212157,Zhengxing Wang,454757,1,2,False
+14497788,2025-08-25,BWF World Championships Men Singles,,Kodai Naraoka,212157,Abeywickrama D.,418537,2,0,True
+14544481,2025-08-27,BWF World Championships Men Singles,,Kodai Naraoka,212157,Nguyen N.,246527,2,0,True
+14558833,2025-08-28,BWF World Championships Men Singles,,Kodai Naraoka,212157,Loh Kean Yew,172746,1,2,False
+14653551,2025-09-10,"Hong Kong Open 2025, MS",MS,Kodai Naraoka,212157,Viktor Axelsen,87484,2,0,True
+14660695,2025-09-11,"Hong Kong Open 2025, MS",MS,Kodai Naraoka,212157,Shetty A.,501106,1,2,False
+14691960,2025-09-16,"LI-NING China Masters 2025, MS",MS,Kodai Naraoka,212157,Weng H.,251935,0,2,False
+14753617,2025-09-24,"Korea Open 2025, MS",MS,Kodai Naraoka,212157,Gunawan J.,416081,2,0,True
+14760285,2025-09-25,"Korea Open 2025, MS",MS,Kodai Naraoka,212157,Yang S.,262764,2,0,True
+14768365,2025-09-26,"Korea Open 2025, MS",MS,Kodai Naraoka,212157,Antonsen A.,215405,,,False
+14848214,2025-10-08,"Arctic Open 2025, MS",MS,Kodai Naraoka,212157,Sen L.,244759,2,0,True
+14854940,2025-10-09,"Arctic Open 2025, MS",MS,Kodai Naraoka,212157,Lee C.,208969,2,0,True
+14860771,2025-10-10,"Arctic Open 2025, MS",MS,Kodai Naraoka,212157,Gemke R.,234811,0,2,False
+14882023,2025-10-15,"Denmark Open 2025, MS",MS,Kodai Naraoka,212157,Chi Y.,211891,2,0,True
+14893508,2025-10-16,"Denmark Open 2025, MS",MS,Kodai Naraoka,212157,Jonatan Christie,164088,0,2,False
+14922294,2025-10-21,"French Open 2025, MS",MS,Kodai Naraoka,212157,Victor Lai,408761,2,0,True
+14925984,2025-10-23,"French Open 2025, MS",MS,Kodai Naraoka,212157,Vitidsarn K.,207992,0,2,False
+12966864,2024-10-11,"Arctic Open 2024, MS",MS,Kodai Naraoka,212157,Vitidsarn K.,207992,0,2,False
+12972185,2024-10-15,"Denmark Open 2024, MS",MS,Kodai Naraoka,212157,Loh Kean Yew,172746,0,2,False
+13108562,2024-11-13,"Kumamoto Masters Japan 2024, MS",MS,Kodai Naraoka,212157,Lee C.,208969,2,0,True
+13118372,2024-11-14,"Kumamoto Masters Japan 2024, MS",MS,Kodai Naraoka,212157,Popov T.,241059,2,0,True
+13122829,2024-11-15,"Kumamoto Masters Japan 2024, MS",MS,Kodai Naraoka,212157,Leong J.,244225,1,2,False
+13211287,2024-12-11,"World Tour Finals 2024, MS, Group B",,Kodai Naraoka,212157,Vitidsarn K.,207992,0,2,False
+13217301,2024-12-12,"World Tour Finals 2024, MS, Group B",,Kodai Naraoka,212157,Jonatan Christie,164088,0,2,False
+13217290,2024-12-13,"World Tour Finals 2024, MS, Group B",,Kodai Naraoka,212157,Yuqi Shi,164376,2,0,True
+13304141,2025-01-08,"Malaysia Open 2025, MS",MS,Kodai Naraoka,212157,Popov Christo,275000,2,0,True
+13312791,2025-01-09,"Malaysia Open 2025, MS",MS,Kodai Naraoka,212157,Chun-Yi L.,258097,2,0,True
+13314999,2025-01-10,"Malaysia Open 2025, MS",MS,Kodai Naraoka,212157,Ka Long Ng.,104289,2,0,True
+13321549,2025-01-11,"Malaysia Open 2025, MS",MS,Kodai Naraoka,212157,Antonsen A.,215405,0,2,False
+13330873,2025-01-15,"India Open 2025, MS",MS,Kodai Naraoka,212157,Rajawat P.,392222,2,1,True
+13343342,2025-01-16,"India Open 2025, MS",MS,Kodai Naraoka,212157,Loh Kean Yew,172746,0,2,False
+13360955,2025-01-22,"Indonesia Masters 2025, MS",MS,Kodai Naraoka,212157,Rajawat P.,392222,2,1,True
+13374953,2025-01-23,"Indonesia Masters 2025, MS",MS,Kodai Naraoka,212157,Teh J.,333188,0,2,False
+13587219,2025-03-12,"All England Open 2025, MS",MS,Kodai Naraoka,212157,Tanaka Y.,343205,1,2,False
+13732410,2025-04-09,"Asia Championships 2025, MS",MS,Kodai Naraoka,212157,Lee C.,182557,2,0,True
+13741325,2025-04-10,"Asia Championships 2025, MS",MS,Kodai Naraoka,212157,Rajawat P.,392222,2,0,True
+13745413,2025-04-11,"Asia Championships 2025, MS",MS,Kodai Naraoka,212157,Shifeng Li,283162,0,2,False
+13822957,2025-04-28,"BWF Sudirman Cup, 2025, MS",MS,Kodai Naraoka,212157,Jack Yu.,476930,2,0,True
+13837143,2025-05-01,"BWF Sudirman Cup, 2025, MS",MS,Kodai Naraoka,212157,Leong J.,244225,1,2,False
+13846545,2025-05-03,"BWF Sudirman Cup, 2025, MS",MS,Kodai Naraoka,212157,Yuqi Shi,164376,0,2,False
+13892149,2025-05-14,"Thailand Open, MS",MS,Kodai Naraoka,212157,Obayashi T.,289687,2,1,True
+13897090,2025-05-15,"Thailand Open, MS",MS,Kodai Naraoka,212157,Weng H.,251935,2,0,True
+13901969,2025-05-16,"Thailand Open, MS",MS,Kodai Naraoka,212157,Guangzu Lu,217992,0,2,False
+13922187,2025-05-21,"Malaysia Masters 2025, MS",MS,Kodai Naraoka,212157,Hoh J.,382660,2,0,True
+13925702,2025-05-22,"Malaysia Masters 2025, MS",MS,Kodai Naraoka,212157,DWI Wardoyo C.,231911,2,0,True
+13929284,2025-05-23,"Malaysia Masters 2025, MS",MS,Kodai Naraoka,212157,Weng H.,251935,2,0,True
+12151626,2024-03-12,"All England Open 2024, MS",MS,Prannoy H. S.,96349,Yang S.,262764,1,2,False
+12237744,2024-04-10,"Asia Championships 2024, MS",MS,Prannoy H. S.,96349,Guangzu Lu,217992,2,1,True
+12240336,2024-04-11,"Asia Championships 2024, MS",MS,Prannoy H. S.,96349,Chun-Yi L.,258097,0,2,False
+12285792,2024-04-27,"BWF Thomas Cup, 2024, Singles",,Prannoy H. S.,96349,Vitidsarn K.,207992,0,2,False
+12288899,2024-04-29,"BWF Thomas Cup, 2024, Singles",,Prannoy H. S.,96349,Huang H.,330247,2,0,True
+12297244,2024-05-01,"BWF Thomas Cup, 2024, Singles",,Prannoy H. S.,96349,Anthony G.,164374,2,1,True
+12299711,2024-05-02,"BWF Thomas Cup, 2024, Singles",,Prannoy H. S.,96349,Yuqi Shi,164376,1,2,False
+12334365,2024-05-15,"Thailand Open 2024, MS",MS,Prannoy H. S.,96349,Luwang M.,382656,0,2,False
+12372860,2024-05-29,"Singapore Open 2024, MS",MS,Prannoy H. S.,96349,Carraggi J.,266046,2,1,True
+12378577,2024-05-30,"Singapore Open 2024, MS",MS,Prannoy H. S.,96349,Nishimoto K.,146358,1,2,False
+12390673,2024-06-04,"Indonesia Open 2024, MS",MS,Prannoy H. S.,96349,Rajawat P.,392222,0,2,False
+12413414,2024-06-12,"Australian Open 2024, MS",MS,Prannoy H. S.,96349,De Oliveira Y.,198669,2,0,True
+12416479,2024-06-13,"Australian Open 2024, MS",MS,Prannoy H. S.,96349,Zilberman M.,76595,2,0,True
+12420781,2024-06-14,"Australian Open 2024, MS",MS,Prannoy H. S.,96349,Naraoka K.,212157,0,2,False
+12591959,2024-07-28,"Olympic Tournament, Singles",,Prannoy H. S.,96349,Roth F.,179024,2,0,True
+12612530,2024-07-31,"Olympic Tournament, Singles",,Prannoy H. S.,96349,Duc Phat LE.,227750,2,1,True
+12630462,2024-08-01,"Olympic Games, Final Round",,Prannoy H. S.,96349,Sen L.,244759,0,2,False
+13304134,2025-01-08,"Malaysia Open 2025, MS",MS,Prannoy H. S.,96349,Yang B.,259994,2,1,True
+13309918,2025-01-09,"Malaysia Open 2025, MS",MS,Prannoy H. S.,96349,Shifeng Li,283162,1,2,False
+13330888,2025-01-15,"India Open 2025, MS",MS,Prannoy H. S.,96349,Yang S.,262764,1,2,False
+13565960,2025-03-05,"Orleans Masters 2025, MS",MS,Prannoy H. S.,96349,Wang T.,142606,2,1,True
+13568575,2025-03-06,"Orleans Masters 2025, MS",MS,Prannoy H. S.,96349,Chun-Yi L.,258097,0,2,False
+13587198,2025-03-11,"All England Open 2025, MS",MS,Prannoy H. S.,96349,Popov T.,241059,0,2,False
+13633751,2025-03-19,"Swiss Open 2025, MS",MS,Prannoy H. S.,96349,Srikanth K.,96359,0,2,False
+13732398,2025-04-09,"Asia Championships 2025, MS",MS,Prannoy H. S.,96349,Guangzu Lu,217992,1,2,False
+13820910,2025-04-27,"BWF Sudirman Cup, 2025, MS",MS,Prannoy H. S.,96349,Antonsen A.,215405,0,2,False
+13830211,2025-04-29,"BWF Sudirman Cup, 2025, MS",MS,Prannoy H. S.,96349,Jonatan Christie,164088,1,2,False
+13922179,2025-05-21,"Malaysia Masters 2025, MS",MS,Prannoy H. S.,96349,Nishimoto K.,146358,2,1,True
+13924493,2025-05-22,"Malaysia Masters 2025, MS",MS,Prannoy H. S.,96349,Tanaka Y.,343205,0,2,False
+13941738,2025-05-27,"Singapore Open 2025, MS",MS,Prannoy H. S.,96349,Gemke R.,234811,2,1,True
+11448754,2023-07-19,"Korea Open 2023, MS",MS,Prannoy H. S.,96349,Carraggi J.,266046,2,0,True
+11453593,2023-07-20,"Korea Open 2023, MS",MS,Prannoy H. S.,96349,Lee C.,182557,1,2,False
+11467637,2023-07-25,"Japan Open 2023, MS",MS,Prannoy H. S.,96349,Shifeng Li,283162,2,0,True
+11469840,2023-07-27,"Japan Open 2023, MS",MS,Prannoy H. S.,96349,Srikanth K.,96359,2,1,True
+11479482,2023-07-28,"Japan Open 2023, MS",MS,Prannoy H. S.,96349,Viktor Axelsen,87484,1,2,False
+11495115,2023-08-02,"Australian Open 2023, MS",MS,Prannoy H. S.,96349,Lee C.,182557,2,1,True
+11498411,2023-08-03,"Australian Open 2023, MS",MS,Prannoy H. S.,96349,Chi Y.,211891,2,1,True
+11502277,2023-08-04,"Australian Open 2023, MS",MS,Prannoy H. S.,96349,Anthony G.,164374,2,1,True
+11503214,2023-08-05,"Australian Open 2023, MS",MS,Prannoy H. S.,96349,Rajawat P.,392222,2,0,True
+11509318,2023-08-06,"Australian Open 2023, MS",MS,Prannoy H. S.,96349,Weng H.,251935,1,2,False
+11540701,2023-08-21,"World Championships 2023, MS",MS,Prannoy H. S.,96349,Koljonen K.,177532,2,0,True
+11562347,2023-08-22,"World Championships 2023, MS",MS,Prannoy H. S.,96349,DWI Wardoyo C.,231911,2,0,True
+11566589,2023-08-24,"World Championships 2023, MS",MS,Prannoy H. S.,96349,Loh Kean Yew,172746,2,1,True
+11579091,2023-08-25,"World Championships 2023, MS",MS,Prannoy H. S.,96349,Viktor Axelsen,87484,2,1,True
+11583604,2023-08-26,"World Championships 2023, MS",MS,Prannoy H. S.,96349,Vitidsarn K.,207992,1,2,False
+11611281,2023-09-05,"China Open 2023, MS",MS,Prannoy H. S.,96349,Tze Yong NG.,325704,1,2,False
+11826472,2023-11-15,"Kumamoto Masters Japan 2023, MS",MS,Prannoy H. S.,96349,Lee C.,182557,2,1,True
+11835019,2023-11-16,"Kumamoto Masters Japan 2023, MS",MS,Prannoy H. S.,96349,Tien Chen Chou,87480,1,2,False
+11846910,2023-11-21,"Li-Ning China Masters, MS",MS,Prannoy H. S.,96349,Tien Chen Chou,87480,2,0,True
+11850371,2023-11-23,"Li-Ning China Masters, MS",MS,Prannoy H. S.,96349,Johannesen M.,316713,2,0,True
+11853839,2023-11-24,"Li-Ning China Masters, MS",MS,Prannoy H. S.,96349,Naraoka K.,212157,0,2,False
+11954566,2024-01-10,"Malaysia Open 2024, MS",MS,Prannoy H. S.,96349,Antonsen A.,215405,0,2,False
+11972314,2024-01-16,"India Open 2024, MS",MS,Prannoy H. S.,96349,Tien Chen Chou,87480,2,0,True
+11977419,2024-01-18,"India Open 2024, MS",MS,Prannoy H. S.,96349,Rajawat P.,392222,2,1,True
+11983012,2024-01-19,"India Open 2024, MS",MS,Prannoy H. S.,96349,Wang T.,142606,2,1,True
+11987616,2024-01-20,"India Open 2024, MS",MS,Prannoy H. S.,96349,Yuqi Shi,164376,0,2,False
+11995331,2024-01-24,"Indonesia Masters 2024, MS",MS,Prannoy H. S.,96349,Loh Kean Yew,172746,1,2,False
+12122916,2024-03-06,"French Open 2024, MS",MS,Prannoy H. S.,96349,Guangzu Lu,217992,0,2,False
+13732406,2025-04-09,"Asia Championships 2025, MS",MS,Lakshya Sen,244759,Lee C.,208969,0,2,False
+13892128,2025-05-14,"Thailand Open, MS",MS,Lakshya Sen,244759,Nguyen N.,246527,1,2,False
+13941752,2025-05-28,"Singapore Open 2025, MS",MS,Lakshya Sen,244759,Chun-Yi L.,258097,1,1,False
+13960772,2025-06-03,"Indonesia Open 2025, MS",MS,Lakshya Sen,244759,Yuqi Shi,164376,1,2,False
+14177507,2025-07-16,"Japan Open 2025, MS",MS,Lakshya Sen,244759,Zhengxing Wang,454757,2,0,True
+14196404,2025-07-17,"Japan Open 2025, MS",MS,Lakshya Sen,244759,Naraoka K.,212157,0,2,False
+14241866,2025-07-22,"China Open 2025, MS",MS,Lakshya Sen,244759,Shifeng Li,283162,1,2,False
+14306801,2025-07-30,"Macau Open 2025, MS",MS,Lakshya Sen,244759,Jeon H.,182551,2,0,True
+14313142,2025-07-31,"Macau Open 2025, MS",MS,Lakshya Sen,244759,DWI Wardoyo C.,231911,2,1,True
+14320886,2025-08-01,"Macau Open 2025, MS",MS,Lakshya Sen,244759,Zhu X.,466255,2,1,True
+14327662,2025-08-02,"Macau Open 2025, MS",MS,Lakshya Sen,244759,Farhan A.,412918,0,2,False
+14497795,2025-08-25,BWF World Championships Men Singles,,Lakshya Sen,244759,Yuqi Shi,164376,0,2,False
+14653546,2025-09-10,"Hong Kong Open 2025, MS",MS,Lakshya Sen,244759,Wang T.,142606,2,1,True
+14660754,2025-09-11,"Hong Kong Open 2025, MS",MS,Lakshya Sen,244759,Prannoy H.,96349,2,1,True
+14668907,2025-09-12,"Hong Kong Open 2025, MS",MS,Lakshya Sen,244759,Shetty A.,501106,2,1,True
+14674904,2025-09-13,"Hong Kong Open 2025, MS",MS,Lakshya Sen,244759,Tien Chen Chou,87480,2,0,True
+14679024,2025-09-14,"Hong Kong Open 2025, MS",MS,Lakshya Sen,244759,Shifeng Li,283162,0,2,False
+14692246,2025-09-17,"LI-NING China Masters 2025, MS",MS,Lakshya Sen,244759,Popov T.,241059,0,2,False
+14848214,2025-10-08,"Arctic Open 2025, MS",MS,Lakshya Sen,244759,Naraoka K.,212157,0,2,False
+14882014,2025-10-15,"Denmark Open 2025, MS",MS,Lakshya Sen,244759,Nguyen N.,246527,2,1,True
+14892927,2025-10-16,"Denmark Open 2025, MS",MS,Lakshya Sen,244759,Antonsen A.,215405,2,0,True
+14901021,2025-10-17,"Denmark Open 2025, MS",MS,Lakshya Sen,244759,Lanier A.,339319,0,2,False
+14916502,2025-10-21,"French Open 2025, MS",MS,Lakshya Sen,244759,Nguyen N.,246527,0,2,False
+14963332,2025-10-29,"Hylo Open 2025, MS",MS,Lakshya Sen,244759,Popov Christo,275000,2,0,True
+14970788,2025-10-30,"Hylo Open 2025, MS",MS,Lakshya Sen,244759,Subramanian S.,335261,2,0,True
+14976349,2025-10-31,"Hylo Open 2025, MS",MS,Lakshya Sen,244759,Lanier A.,339319,1,2,False
+15029475,2025-11-12,"Kumamoto Masters Japan 2025, MS",MS,Lakshya Sen,244759,Watanabe K.,212159,2,0,True
+15039011,2025-11-13,"Kumamoto Masters Japan 2025, MS",MS,Lakshya Sen,244759,Teh J.,333188,2,0,True
+15042133,2025-11-14,"Kumamoto Masters Japan 2025, MS",MS,Lakshya Sen,244759,Loh Kean Yew,172746,2,0,True
+15087597,2025-11-15,"Kumamoto Masters Japan 2025, MS",MS,Lakshya Sen,244759,Nishimoto K.,146358,1,2,False
+12399830,2024-06-07,"Indonesia Open 2024, MS",MS,Lakshya Sen,244759,Antonsen A.,215405,0,2,False
+12602394,2024-07-27,"Olympic Tournament, Singles",,Lakshya Sen,244759,Cordon K.,24526,2,0,True
+12612565,2024-07-29,"Olympic Tournament, Singles",,Lakshya Sen,244759,Carraggi J.,266046,2,0,True
+12612539,2024-07-31,"Olympic Tournament, Singles",,Lakshya Sen,244759,Jonatan Christie,164088,2,0,True
+12630462,2024-08-01,"Olympic Games, Final Round",,Lakshya Sen,244759,Prannoy H.,96349,2,0,True
+12633400,2024-08-02,"Olympic Games, Final Round",,Lakshya Sen,244759,Tien Chen Chou,87480,2,1,True
+12638747,2024-08-04,"Olympic Games, Final Round",,Lakshya Sen,244759,Viktor Axelsen,87484,0,2,False
+12644231,2024-08-05,"Olympic Games, Final Round",,Lakshya Sen,244759,Lee Z.,244095,1,2,False
+12953987,2024-10-09,"Arctic Open 2024, MS",MS,Lakshya Sen,244759,Gemke R.,234811,,,True
+12962868,2024-10-10,"Arctic Open 2024, MS",MS,Lakshya Sen,244759,Tien Chen Chou,87480,1,2,False
+12972195,2024-10-15,"Denmark Open 2024, MS",MS,Lakshya Sen,244759,Guangzu Lu,217992,1,2,False
+13108558,2024-11-13,"Kumamoto Masters Japan 2024, MS",MS,Lakshya Sen,244759,Leong J.,244225,1,2,False
+13132749,2024-11-20,"LI-NING China Masters 2024, MS",MS,Lakshya Sen,244759,Lee Z.,244095,2,1,True
+13149021,2024-11-21,"LI-NING China Masters 2024, MS",MS,Lakshya Sen,244759,Gemke R.,234811,2,0,True
+13152762,2024-11-22,"LI-NING China Masters 2024, MS",MS,Lakshya Sen,244759,Antonsen A.,215405,0,2,False
+13171524,2024-11-27,"India International 2024, MS",MS,Lakshya Sen,244759,Aidil S.,320187,2,0,True
+13172484,2024-11-28,"India International 2024, MS",MS,Lakshya Sen,244759,Dubovenko D.,406585,2,0,True
+13175778,2024-11-29,"India International 2024, MS",MS,Lakshya Sen,244759,Luwang M.,382656,2,0,True
+13179370,2024-11-30,"India International 2024, MS",MS,Lakshya Sen,244759,Ogawa S.,490966,2,0,True
+13182924,2024-12-01,"India International 2024, MS",MS,Lakshya Sen,244759,Teh J.,333188,2,0,True
+13304129,2025-01-07,"Malaysia Open 2025, MS",MS,Lakshya Sen,244759,Chi Y.,211891,0,2,False
+13332057,2025-01-15,"India Open 2025, MS",MS,Lakshya Sen,244759,Chun-Yi L.,258097,0,2,False
+13370621,2025-01-22,"Indonesia Masters 2025, MS",MS,Lakshya Sen,244759,Obayashi T.,289687,2,0,True
+13375248,2025-01-23,"Indonesia Masters 2025, MS",MS,Lakshya Sen,244759,Nishimoto K.,146358,1,2,False
+13591276,2025-03-11,"All England Open 2025, MS",MS,Lakshya Sen,244759,Yang S.,262764,2,1,True
+13595809,2025-03-13,"All England Open 2025, MS",MS,Lakshya Sen,244759,Jonatan Christie,164088,2,0,True
+13608664,2025-03-14,"All England Open 2025, MS",MS,Lakshya Sen,244759,Shifeng Li,283162,0,2,False
+14848489,2025-10-08,"Arctic Open 2025, MS",MS,Toma Junior Popov,241059,Mannepalli T.,391936,1,2,False
+14848356,2025-10-08,"Arctic Open 2025, MD",MD,Toma Junior Popov,241059,Chiu H C / Wang C,828213,0,2,False
+14881919,2025-10-14,"Denmark Open 2025, MS",MS,Toma Junior Popov,241059,Shetty A.,501106,2,1,True
+14882068,2025-10-15,"Denmark Open 2025, MD",MD,Toma Junior Popov,241059,Ong Y S / Teo E Y,211298,2,0,True
+14893507,2025-10-16,"Denmark Open 2025, MS",MS,Toma Junior Popov,241059,Vitidsarn K.,207992,1,2,False
+14892956,2025-10-16,"Denmark Open 2025, MD",MD,Toma Junior Popov,241059,Chen B Y / Liu Y,454765,0,2,False
+14916524,2025-10-21,"French Open 2025, MS",MS,Toma Junior Popov,241059,Lee C.,208969,0,2,False
+14917578,2025-10-22,"French Open 2025, MD",MD,Toma Junior Popov,241059,Lundgaard D / Vestergaard M,468792,0,2,False
+14963331,2025-10-29,"Hylo Open 2025, MS",MS,Toma Junior Popov,241059,Huang H.,330247,2,1,True
+14963399,2025-10-29,"Hylo Open 2025, MD",MD,Toma Junior Popov,241059,Krishnamurthy Roy P / Pratheek K S,961988,2,0,True
+14970780,2025-10-30,"Hylo Open 2025, MS",MS,Toma Junior Popov,241059,George K.,244765,1,2,False
+14970782,2025-10-30,"Hylo Open 2025, MD",MD,Toma Junior Popov,241059,Gutama S K / Isfahani M R P,339099,0,2,False
+15318544,2026-01-06,"Malaysia Open 2026, MS",MS,Toma Junior Popov,241059,Nishimoto K.,146358,1,2,False
+15318624,2026-01-07,"Malaysia Open 2026, MD",MD,Toma Junior Popov,241059,Chen Z R / Lin Y C,509951,1,2,False
+15358768,2026-01-13,"India Open 2026, MS",MS,Toma Junior Popov,241059,Victor Lai,408761,1,2,False
+15358816,2026-01-13,"India Open 2026, MD",MD,Toma Junior Popov,241059,Choong H J / Haikal M,490349,2,0,True
+15364225,2026-01-15,"India Open 2026, MD",MD,Toma Junior Popov,241059,Man W C / Tee K W,378878,1,2,False
+15591470,2026-02-24,"German Open 2026, MD",MD,Toma Junior Popov,241059,Kjaer C F / Kjaer R,1149854,2,0,True
+15591484,2026-02-25,"German Open 2026, MS",MS,Toma Junior Popov,241059,Dinata A.,382637,2,1,True
+15622625,2026-02-26,"German Open 2026, MS",MS,Toma Junior Popov,241059,Wang T.,142606,2,0,True
+15614892,2026-02-26,"German Open 2026, MD",MD,Toma Junior Popov,241059,Liang W K / Wang C,421343,1,2,False
+15628025,2026-02-27,"German Open 2026, MS",MS,Toma Junior Popov,241059,Koga M.,282829,2,1,True
+15633366,2026-02-28,"German Open 2026, MS",MS,Toma Junior Popov,241059,Chi Y.,211891,2,0,True
+15634839,2026-03-04,"All England Open 2026, MD",MD,Toma Junior Popov,241059,Gutama S K / Isfahani M R P,339099,2,0,True
+15634857,2026-03-04,"All England Open 2026, MS",MS,Toma Junior Popov,241059,Tanaka Y.,343205,2,0,True
+15663442,2026-03-05,"All England Open 2026, MS",MS,Toma Junior Popov,241059,Vitidsarn K.,207992,1,2,False
+15659495,2026-03-05,"All England Open 2026, MD",MD,Toma Junior Popov,241059,Hoki T / Kobayashi Y,198671,2,1,True
+15671016,2026-03-06,"All England Open 2026, MD",MD,Toma Junior Popov,241059,KIM W H / Seo S J,254314,1,2,False
+15779379,2026-03-18,"Orleans Masters 2026, MS",MS,Toma Junior Popov,241059,Zhu X.,466255,2,0,True
+13758886,2025-04-13,"European Championships 2025, MS",MS,Toma Junior Popov,241059,Lanier A.,339319,0,2,False
+13758889,2025-04-13,"European Championships 2025, MD",MD,Toma Junior Popov,241059,Adam E / Rossi L,495147,2,1,True
+13922176,2025-05-21,"Malaysia Masters 2025, MS",MS,Toma Junior Popov,241059,Zhengxing Wang,454757,2,0,True
+13920840,2025-05-21,"Malaysia Masters 2025, MD",MD,Toma Junior Popov,241059,Chang K-C / PO L-W,310213,2,1,True
+13924497,2025-05-22,"Malaysia Masters 2025, MS",MS,Toma Junior Popov,241059,Shetty A.,501106,2,0,True
+13926362,2025-05-22,"Malaysia Masters 2025, MD",MD,Toma Junior Popov,241059,Liang W K / Wang C,421343,0,2,False
+13929282,2025-05-23,"Malaysia Masters 2025, MS",MS,Toma Junior Popov,241059,Srikanth K.,96359,1,2,False
+13941744,2025-05-27,"Singapore Open 2025, MS",MS,Toma Junior Popov,241059,Tanaka Y.,343205,2,0,True
+13941807,2025-05-27,"Singapore Open 2025, MD",MD,Toma Junior Popov,241059,Chen B Y / Liu Y,454765,2,1,True
+13948326,2025-05-29,"Singapore Open 2025, MS",MS,Toma Junior Popov,241059,Loh Kean Yew,172746,1,2,False
+13948332,2025-05-29,"Singapore Open 2025, MD",MD,Toma Junior Popov,241059,KIM W H / Seo S J,254314,1,2,False
+13960794,2025-06-04,"Indonesia Open 2025, MD",MD,Toma Junior Popov,241059,Kittinupong K / Dechapol P,274826,1,2,False
+14177503,2025-07-15,"Japan Open 2025, MD",MD,Toma Junior Popov,241059,Azriyn N M A A / Tan W K,481195,1,2,False
+14177473,2025-07-16,"Japan Open 2025, MS",MS,Toma Junior Popov,241059,Yuqi Shi,164376,1,2,False
+14241900,2025-07-23,"China Open 2025, MS",MS,Toma Junior Popov,241059,Lanier A.,339319,2,1,True
+14241418,2025-07-23,"China Open 2025, MD",MD,Toma Junior Popov,241059,LEE K / Lindeman T A,408733,2,0,True
+14256517,2025-07-24,"China Open 2025, MS",MS,Toma Junior Popov,241059,Yang B.,259994,2,0,True
+14256491,2025-07-24,"China Open 2025, MD",MD,Toma Junior Popov,241059,Chia A / Soh W Y,275324,0,2,False
+14264202,2025-07-25,"China Open 2025, MS",MS,Toma Junior Popov,241059,Antonsen A.,215405,1,2,False
+14497947,2025-08-25,BWF World Championships Men Doubles,,Toma Junior Popov,241059,Edison K M / Yu J,490353,2,0,True
+14497774,2025-08-26,BWF World Championships Men Singles,,Toma Junior Popov,241059,Anthony G.,164374,2,1,True
+14541732,2025-08-26,BWF World Championships Men Doubles,,Toma Junior Popov,241059,Man W C / Tee K W,378878,1,2,False
+14550889,2025-08-27,BWF World Championships Men Singles,,Toma Junior Popov,241059,Nettasinghe V.,419755,2,0,True
+14559181,2025-08-28,BWF World Championships Men Singles,,Toma Junior Popov,241059,Antonsen A.,215405,1,2,False
+14653517,2025-09-10,"Hong Kong Open 2025, MS",MS,Toma Junior Popov,241059,Hoh J.,382660,0,2,False
+14653536,2025-09-10,"Hong Kong Open 2025, MD",MD,Toma Junior Popov,241059,Chen C K / Lin B-W,1077918,0,2,False
+14692246,2025-09-17,"LI-NING China Masters 2025, MS",MS,Toma Junior Popov,241059,Sen L.,244759,2,0,True
+14692211,2025-09-17,"LI-NING China Masters 2025, MD",MD,Toma Junior Popov,241059,Man W C / Tee K W,378878,1,2,False
+14703879,2025-09-18,"LI-NING China Masters 2025, MS",MS,Toma Junior Popov,241059,Weng H.,251935,0,2,False
+13375248,2025-01-23,"Indonesia Masters 2025, MS",MS,Kenta Nishimoto,146358,Sen L.,244759,2,1,True
+13378097,2025-01-24,"Indonesia Masters 2025, MS",MS,Kenta Nishimoto,146358,Jonatan Christie,164088,1,2,False
+13565953,2025-03-05,"Orleans Masters 2025, MS",MS,Kenta Nishimoto,146358,Subramanian S.,335261,2,0,True
+13569533,2025-03-06,"Orleans Masters 2025, MS",MS,Kenta Nishimoto,146358,Jeon H.,182551,2,0,True
+13574148,2025-03-07,"Orleans Masters 2025, MS",MS,Kenta Nishimoto,146358,Lanier A.,339319,1,2,False
+13587194,2025-03-12,"All England Open 2025, MS",MS,Kenta Nishimoto,146358,Lei L.,311774,2,0,True
+13602962,2025-03-13,"All England Open 2025, MS",MS,Kenta Nishimoto,146358,Chun-Yi L.,258097,2,0,True
+13609164,2025-03-14,"All England Open 2025, MS",MS,Kenta Nishimoto,146358,Lee C.,208969,0,2,False
+13633740,2025-03-19,"Swiss Open 2025, MS",MS,Kenta Nishimoto,146358,Shetty A.,501106,2,0,True
+13637665,2025-03-20,"Swiss Open 2025, MS",MS,Kenta Nishimoto,146358,Leong J.,244225,2,1,True
+13646830,2025-03-21,"Swiss Open 2025, MS",MS,Kenta Nishimoto,146358,Weng H.,251935,0,2,False
+13732394,2025-04-09,"Asia Championships 2025, MS",MS,Kenta Nishimoto,146358,Tien Chen Chou,87480,2,0,True
+13741272,2025-04-10,"Asia Championships 2025, MS",MS,Kenta Nishimoto,146358,Farhan A.,412918,2,0,True
+13745411,2025-04-11,"Asia Championships 2025, MS",MS,Kenta Nishimoto,146358,Vitidsarn K.,207992,1,2,False
+13892135,2025-05-14,"Thailand Open, MS",MS,Kenta Nishimoto,146358,Lee C.,182557,2,0,True
+13895837,2025-05-15,"Thailand Open, MS",MS,Kenta Nishimoto,146358,Farhan A.,412918,2,1,True
+13900860,2025-05-16,"Thailand Open, MS",MS,Kenta Nishimoto,146358,Vitidsarn K.,207992,0,2,False
+13922179,2025-05-21,"Malaysia Masters 2025, MS",MS,Kenta Nishimoto,146358,Prannoy H.,96349,1,2,False
+13941749,2025-05-28,"Singapore Open 2025, MS",MS,Kenta Nishimoto,146358,Vitidsarn K.,207992,0,2,False
+13960757,2025-06-03,"Indonesia Open 2025, MS",MS,Kenta Nishimoto,146358,Zhengxing Wang,454757,0,2,False
+14048604,2025-06-26,"US Open 2025, MS",MS,Kenta Nishimoto,146358,Kicklitz M.,318502,2,0,True
+14053312,2025-06-26,"US Open 2025, MS",MS,Kenta Nishimoto,146358,Huang Y.,314023,2,0,True
+14058892,2025-06-27,"US Open 2025, MS",MS,Kenta Nishimoto,146358,Liao J.,396197,0,2,False
+14076930,2025-07-02,"Canada Open 2025, MS",MS,Kenta Nishimoto,146358,Christophersen M.,251304,2,1,True
+14089230,2025-07-03,"Canada Open 2025, MS",MS,Kenta Nishimoto,146358,Oldorff J.,318383,2,0,True
+14097154,2025-07-04,"Canada Open 2025, MS",MS,Kenta Nishimoto,146358,Subramanian S.,335261,2,1,True
+14106588,2025-07-05,"Canada Open 2025, MS",MS,Kenta Nishimoto,146358,Srikanth K.,96359,2,1,True
+14114049,2025-07-06,"Canada Open 2025, MS",MS,Kenta Nishimoto,146358,Victor Lai,408761,2,0,True
+14177463,2025-07-15,"Japan Open 2025, MS",MS,Kenta Nishimoto,146358,Jonatan Christie,164088,2,0,True
+14193586,2025-07-17,"Japan Open 2025, MS",MS,Kenta Nishimoto,146358,Chi Y.,211891,0,2,False
+12394678,2024-06-06,"Indonesia Open 2024, MS",MS,Kenta Nishimoto,146358,Sen L.,244759,0,2,False
+12413401,2024-06-12,"Australian Open 2024, MS",MS,Kenta Nishimoto,146358,Asuncion E.,408688,2,0,True
+12416633,2024-06-13,"Australian Open 2024, MS",MS,Kenta Nishimoto,146358,George K.,244765,2,0,True
+12420779,2024-06-14,"Australian Open 2024, MS",MS,Kenta Nishimoto,146358,Lee Z.,244095,1,2,False
+12493165,2024-07-03,"Canada Open 2024, MS",MS,Kenta Nishimoto,146358,Oldorff J.,318383,2,0,True
+12496850,2024-07-04,"Canada Open 2024, MS",MS,Kenta Nishimoto,146358,Zhengxing Wang,454757,2,0,True
+12502201,2024-07-05,"Canada Open 2024, MS",MS,Kenta Nishimoto,146358,Lanier A.,339319,0,2,False
+12606869,2024-07-28,"Olympic Tournament, Singles",,Kenta Nishimoto,146358,Panarin D.,276618,2,0,True
+12612526,2024-07-31,"Olympic Tournament, Singles",,Kenta Nishimoto,146358,Yang B.,259994,2,0,True
+12631691,2024-08-01,"Olympic Games, Final Round",,Kenta Nishimoto,146358,Vitidsarn K.,207992,1,2,False
+12712789,2024-08-20,"Japan Open 2024, MS",MS,Kenta Nishimoto,146358,Weng H.,251935,2,0,True
+12717653,2024-08-22,"Japan Open 2024, MS",MS,Kenta Nishimoto,146358,Takahashi K.,483654,2,1,True
+12729003,2024-08-23,"Japan Open 2024, MS",MS,Kenta Nishimoto,146358,Lanier A.,339319,0,2,False
+12747944,2024-08-28,"Korea Open 2024, MS",MS,Kenta Nishimoto,146358,Yang S.,262764,1,2,False
+12816927,2024-09-11,"Hong Kong Open 2024, MS",MS,Kenta Nishimoto,146358,Gunawan J.,416081,0,2,False
+12866488,2024-09-18,"China Open 2024, MS",MS,Kenta Nishimoto,146358,George K.,244765,2,1,True
+12866322,2024-09-19,"China Open 2024, MS",MS,Kenta Nishimoto,146358,Lei L.,311774,0,2,False
+12953989,2024-10-09,"Arctic Open 2024, MS",MS,Kenta Nishimoto,146358,Yang S.,262764,1,2,False
+12989338,2024-10-16,"Denmark Open 2024, MS",MS,Kenta Nishimoto,146358,Anthony G.,164374,2,1,True
+12994947,2024-10-17,"Denmark Open 2024, MS",MS,Kenta Nishimoto,146358,Gemke R.,234811,2,1,True
+12999417,2024-10-18,"Denmark Open 2024, MS",MS,Kenta Nishimoto,146358,Weng H.,251935,2,1,True
+13004345,2024-10-19,"Denmark Open 2024, MS",MS,Kenta Nishimoto,146358,Antonsen A.,215405,0,2,False
+13108552,2024-11-13,"Kumamoto Masters Japan 2024, MS",MS,Kenta Nishimoto,146358,Obayashi T.,289687,2,0,True
+13119425,2024-11-14,"Kumamoto Masters Japan 2024, MS",MS,Kenta Nishimoto,146358,Shifeng Li,283162,0,2,False
+13132750,2024-11-20,"LI-NING China Masters 2024, MS",MS,Kenta Nishimoto,146358,Gemke R.,234811,1,2,False
+13304108,2025-01-07,"Malaysia Open 2025, MS",MS,Kenta Nishimoto,146358,Yuqi Shi,164376,1,2,False
+13330848,2025-01-14,"India Open 2025, MS",MS,Kenta Nishimoto,146358,Popov T.,241059,1,2,False
+13360854,2025-01-22,"Indonesia Masters 2025, MS",MS,Kenta Nishimoto,146358,DWI Wardoyo C.,231911,2,0,True
+14207319,2025-07-18,"Japan Open 2025, WS",WS,Chen Yu Fei,185150,Se Young An.,276710,0,2,False
+14241864,2025-07-22,"China Open 2025, WS",WS,Chen Yu Fei,185150,Kim G.,210377,2,0,True
+14246844,2025-07-24,"China Open 2025, WS",WS,Chen Yu Fei,185150,Gao F.,454771,2,1,True
+14266180,2025-07-25,"China Open 2025, WS",WS,Chen Yu Fei,185150,Se Young An.,276710,0,2,False
+14306636,2025-07-30,"Macau Open 2025, WS",WS,Chen Yu Fei,185150,Mir T.,396414,2,0,True
+14311513,2025-07-31,"Macau Open 2025, WS",WS,Chen Yu Fei,185150,Goh J.,213650,2,1,True
+14320955,2025-08-01,"Macau Open 2025, WS",WS,Chen Yu Fei,185150,Okuhara N.,87940,2,0,True
+14327769,2025-08-02,"Macau Open 2025, WS",WS,Chen Yu Fei,185150,Lin H.,234614,2,0,True
+14337521,2025-08-03,"Macau Open 2025, WS",WS,Chen Yu Fei,185150,Christophersen L.,266052,2,0,True
+14497911,2025-08-25,BWF World Championships Women Singles,,Chen Yu Fei,185150,Tatranova A.,378691,2,0,True
+14542127,2025-08-27,BWF World Championships Women Singles,,Chen Yu Fei,185150,Blichfeldt M.,127230,2,1,True
+14558807,2025-08-28,BWF World Championships Women Singles,,Chen Yu Fei,185150,Nguyen T.,227776,2,0,True
+14567764,2025-08-29,BWF World Championships Women Singles,,Chen Yu Fei,185150,Chochuwong P.,134898,2,0,True
+14576022,2025-08-30,BWF World Championships Women Singles,,Chen Yu Fei,185150,Se Young An.,276710,2,0,True
+14581935,2025-08-31,BWF World Championships Women Singles,,Chen Yu Fei,185150,Yamaguchi A.,122086,0,2,False
+14692237,2025-09-17,"LI-NING China Masters 2025, WS",WS,Chen Yu Fei,185150,Han Q.,466687,2,0,True
+14708433,2025-09-18,"LI-NING China Masters 2025, WS",WS,Chen Yu Fei,185150,Christophersen L.,266052,2,0,True
+14712973,2025-09-19,"LI-NING China Masters 2025, WS",WS,Chen Yu Fei,185150,Han Y.,231956,1,2,False
+14882088,2025-10-15,"Denmark Open 2025, WS",WS,Chen Yu Fei,185150,Jakobsen J.,235364,2,0,True
+14892928,2025-10-16,"Denmark Open 2025, WS",WS,Chen Yu Fei,185150,Blichfeldt M.,127230,0,2,False
+14917607,2025-10-21,"French Open 2025, WS",WS,Chen Yu Fei,185150,Ongbumrungpan B.,87514,1,0,True
+14925983,2025-10-23,"French Open 2025, WS",WS,Chen Yu Fei,185150,Yigit N.,76619,2,0,True
+14940241,2025-10-24,"French Open 2025, WS",WS,Chen Yu Fei,185150,Yamaguchi A.,122086,2,1,True
+14945054,2025-10-25,"French Open 2025, WS",WS,Chen Yu Fei,185150,Se Young An.,276710,1,2,False
+15319243,2026-01-06,"Malaysia Open 2026, WS",WS,Chen Yu Fei,185150,Opatniput P.,310326,2,1,True
+15326028,2026-01-08,"Malaysia Open 2026, WS",WS,Chen Yu Fei,185150,Ongbumrungpan B.,87514,2,1,True
+15331666,2026-01-09,"Malaysia Open 2026, WS",WS,Chen Yu Fei,185150,Intanon R.,76653,2,0,True
+15335312,2026-01-10,"Malaysia Open 2026, WS",WS,Chen Yu Fei,185150,Se Young An.,276710,,,False
+15358709,2026-01-14,"India Open 2026, WS",WS,Chen Yu Fei,185150,Lin H.,234614,2,0,True
+13607518,2025-03-14,"All England Open 2025, WS",WS,Chen Yu Fei,185150,Se Young An.,276710,0,2,False
+13633757,2025-03-19,"Swiss Open 2025, WS",WS,Chen Yu Fei,185150,Gilmour K.,87934,2,0,True
+13638408,2025-03-20,"Swiss Open 2025, WS",WS,Chen Yu Fei,185150,Christophersen L.,266052,2,1,True
+13647959,2025-03-21,"Swiss Open 2025, WS",WS,Chen Yu Fei,185150,Katethong S.,193799,,,True
+13651876,2025-03-22,"Swiss Open 2025, WS",WS,Chen Yu Fei,185150,Wardani P.,299250,2,0,True
+13658160,2025-03-23,"Swiss Open 2025, WS",WS,Chen Yu Fei,185150,Kjaersfeldt L.,111511,2,0,True
+13732448,2025-04-09,"Asia Championships 2025, WS",WS,Chen Yu Fei,185150,Lin H.,234614,2,0,True
+13738892,2025-04-10,"Asia Championships 2025, WS",WS,Chen Yu Fei,185150,Ongbumrungpan B.,87514,2,0,True
+13745448,2025-04-11,"Asia Championships 2025, WS",WS,Chen Yu Fei,185150,Yamaguchi A.,122086,2,0,True
+13753589,2025-04-12,"Asia Championships 2025, WS",WS,Chen Yu Fei,185150,Sim Y.,240748,2,0,True
+13756125,2025-04-13,"Asia Championships 2025, WS",WS,Chen Yu Fei,185150,Han Y.,231956,2,1,True
+13824565,2025-04-28,"BWF Sudirman Cup, 2025, WS",WS,Chen Yu Fei,185150,Sin Yan Happy LO.,418580,2,0,True
+13841096,2025-05-02,"BWF Sudirman Cup, 2025, WS",WS,Chen Yu Fei,185150,Karupathevan L.,384414,2,0,True
+13846573,2025-05-03,"BWF Sudirman Cup, 2025, WS",WS,Chen Yu Fei,185150,Yamaguchi A.,122086,2,1,True
+13892192,2025-05-14,"Thailand Open, WS",WS,Chen Yu Fei,185150,Goh J.,213650,2,0,True
+13897201,2025-05-15,"Thailand Open, WS",WS,Chen Yu Fei,185150,Sim Y.,240748,2,0,True
+13901419,2025-05-16,"Thailand Open, WS",WS,Chen Yu Fei,185150,Choeikeewong P.,277524,2,0,True
+13908131,2025-05-17,"Thailand Open, WS",WS,Chen Yu Fei,185150,Miyazaki T.,490088,2,0,True
+13913225,2025-05-18,"Thailand Open, WS",WS,Chen Yu Fei,185150,Chochuwong P.,134898,2,0,True
+13941780,2025-05-27,"Singapore Open 2025, WS",WS,Chen Yu Fei,185150,Kharb A.,516819,2,0,True
+13948327,2025-05-29,"Singapore Open 2025, WS",WS,Chen Yu Fei,185150,Sindhu P.,87500,2,1,True
+13952611,2025-05-30,"Singapore Open 2025, WS",WS,Chen Yu Fei,185150,Se Young An.,276710,2,0,True
+13955574,2025-05-31,"Singapore Open 2025, WS",WS,Chen Yu Fei,185150,Han Y.,231956,2,1,True
+13958862,2025-06-01,"Singapore Open 2025, WS",WS,Chen Yu Fei,185150,Wang Zhiyi,243842,2,0,True
+13960755,2025-06-04,"Indonesia Open 2025, WS",WS,Chen Yu Fei,185150,Choeikeewong P.,277524,2,0,True
+13973266,2025-06-05,"Indonesia Open 2025, WS",WS,Chen Yu Fei,185150,Nidaira N.,195158,2,0,True
+13975627,2025-06-06,"Indonesia Open 2025, WS",WS,Chen Yu Fei,185150,Han Y.,231956,,,False
+14181948,2025-07-15,"Japan Open 2025, WS",WS,Chen Yu Fei,185150,Buhrova P.,296939,2,0,True
+14193590,2025-07-17,"Japan Open 2025, WS",WS,Chen Yu Fei,185150,Michelle Li.,76613,2,1,True
+14256572,2025-07-24,"China Open 2025, WS",WS,Akane Yamaguchi,122086,Ongbumrungpan B.,87514,2,0,True
+14264185,2025-07-25,"China Open 2025, WS",WS,Akane Yamaguchi,122086,Hooda U.,407075,2,0,True
+14271241,2025-07-26,"China Open 2025, WS",WS,Akane Yamaguchi,122086,Wang Zhiyi,243842,0,2,False
+14497851,2025-08-26,BWF World Championships Women Singles,,Akane Yamaguchi,122086,Teoh K.,466688,2,0,True
+14550893,2025-08-27,BWF World Championships Women Singles,,Akane Yamaguchi,122086,Kim G.,210377,2,0,True
+14558854,2025-08-28,BWF World Championships Women Singles,,Akane Yamaguchi,122086,Katethong S.,193799,2,0,True
+14567354,2025-08-29,BWF World Championships Women Singles,,Akane Yamaguchi,122086,Han Y.,231956,2,0,True
+14577056,2025-08-30,BWF World Championships Women Singles,,Akane Yamaguchi,122086,Wardani P.,299250,2,1,True
+14581935,2025-08-31,BWF World Championships Women Singles,,Akane Yamaguchi,122086,Chen Y.,185150,2,0,True
+14692067,2025-09-16,"LI-NING China Masters 2025, WS",WS,Akane Yamaguchi,122086,Katethong S.,193799,2,0,True
+14702650,2025-09-18,"LI-NING China Masters 2025, WS",WS,Akane Yamaguchi,122086,Michelle Li.,76613,2,0,True
+14718020,2025-09-19,"LI-NING China Masters 2025, WS",WS,Akane Yamaguchi,122086,Wardani P.,299250,2,0,True
+14723276,2025-09-20,"LI-NING China Masters 2025, WS",WS,Akane Yamaguchi,122086,Se Young An.,276710,0,2,False
+14745867,2025-09-24,"Korea Open 2025, WS",WS,Akane Yamaguchi,122086,Sung S.,181866,2,0,True
+14760182,2025-09-25,"Korea Open 2025, WS",WS,Akane Yamaguchi,122086,Tung C.,313472,2,0,True
+14768411,2025-09-26,"Korea Open 2025, WS",WS,Akane Yamaguchi,122086,Katethong S.,193799,2,1,True
+14778744,2025-09-27,"Korea Open 2025, WS",WS,Akane Yamaguchi,122086,Wardani P.,299250,2,0,True
+14785436,2025-09-28,"Korea Open 2025, WS",WS,Akane Yamaguchi,122086,Se Young An.,276710,2,0,True
+14840707,2025-10-07,"Arctic Open 2025, WS",WS,Akane Yamaguchi,122086,Luo Yu Wu.,466690,2,0,True
+14850032,2025-10-09,"Arctic Open 2025, WS",WS,Akane Yamaguchi,122086,Gunji R.,313473,2,0,True
+14860804,2025-10-10,"Arctic Open 2025, WS",WS,Akane Yamaguchi,122086,Blichfeldt M.,127230,1,0,True
+14867054,2025-10-11,"Arctic Open 2025, WS",WS,Akane Yamaguchi,122086,Kharb A.,516819,2,0,True
+14871293,2025-10-12,"Arctic Open 2025, WS",WS,Akane Yamaguchi,122086,Ongbumrungpan B.,87514,2,0,True
+14882092,2025-10-15,"Denmark Open 2025, WS",WS,Akane Yamaguchi,122086,Katethong S.,193799,2,0,True
+14892957,2025-10-16,"Denmark Open 2025, WS",WS,Akane Yamaguchi,122086,Han Q.,466687,2,0,True
+14900982,2025-10-17,"Denmark Open 2025, WS",WS,Akane Yamaguchi,122086,Chiu P.,302386,2,1,True
+14907414,2025-10-18,"Denmark Open 2025, WS",WS,Akane Yamaguchi,122086,Se Young An.,276710,1,2,False
+14917609,2025-10-21,"French Open 2025, WS",WS,Akane Yamaguchi,122086,Han Q.,466687,2,0,True
+14928945,2025-10-23,"French Open 2025, WS",WS,Akane Yamaguchi,122086,Christophersen L.,266052,2,0,True
+14940241,2025-10-24,"French Open 2025, WS",WS,Akane Yamaguchi,122086,Chen Y.,185150,1,2,False
+13211242,2024-12-11,"World Tour Finals 2024, WS, Group B",,Akane Yamaguchi,122086,Han Y.,231956,0,2,False
+13217309,2024-12-12,"World Tour Finals 2024, WS, Group B",,Akane Yamaguchi,122086,Se Young An.,276710,2,1,True
+13217307,2024-12-13,"World Tour Finals 2024, WS, Group B",,Akane Yamaguchi,122086,Katethong S.,193799,2,1,True
+13587209,2025-03-11,"All England Open 2025, WS",WS,Akane Yamaguchi,122086,Nguyen T.,227776,2,0,True
+13595816,2025-03-13,"All England Open 2025, WS",WS,Akane Yamaguchi,122086,Bansod M.,330887,2,0,True
+13607481,2025-03-14,"All England Open 2025, WS",WS,Akane Yamaguchi,122086,Miyazaki T.,490088,2,0,True
+13613763,2025-03-15,"All England Open 2025, WS",WS,Akane Yamaguchi,122086,Se Young An.,276710,0,2,False
+13732402,2025-04-09,"Asia Championships 2025, WS",WS,Akane Yamaguchi,122086,Nguyen T.,227776,2,0,True
+13741281,2025-04-10,"Asia Championships 2025, WS",WS,Akane Yamaguchi,122086,Sindhu P.,87500,2,1,True
+13745448,2025-04-11,"Asia Championships 2025, WS",WS,Akane Yamaguchi,122086,Chen Y.,185150,0,2,False
+13828783,2025-04-29,"BWF Sudirman Cup, 2025, WS",WS,Akane Yamaguchi,122086,Tatranova A.,378691,2,0,True
+13841461,2025-05-02,"BWF Sudirman Cup, 2025, WS",WS,Akane Yamaguchi,122086,Hsu W.,257999,2,1,True
+13846573,2025-05-03,"BWF Sudirman Cup, 2025, WS",WS,Akane Yamaguchi,122086,Chen Y.,185150,1,2,False
+13920995,2025-05-21,"Malaysia Masters 2025, WS",WS,Akane Yamaguchi,122086,Tung C.,313472,2,0,True
+13924791,2025-05-22,"Malaysia Masters 2025, WS",WS,Akane Yamaguchi,122086,Okuhara N.,87940,2,1,True
+13928475,2025-05-23,"Malaysia Masters 2025, WS",WS,Akane Yamaguchi,122086,Gao F.,454771,2,1,True
+13932168,2025-05-24,"Malaysia Masters 2025, WS",WS,Akane Yamaguchi,122086,Han Y.,231956,0,2,False
+13941786,2025-05-28,"Singapore Open 2025, WS",WS,Akane Yamaguchi,122086,Buhrova P.,296939,2,0,True
+13949734,2025-05-29,"Singapore Open 2025, WS",WS,Akane Yamaguchi,122086,Sung S.,181866,2,0,True
+13952610,2025-05-30,"Singapore Open 2025, WS",WS,Akane Yamaguchi,122086,Michelle Li.,76613,2,0,True
+13955577,2025-05-31,"Singapore Open 2025, WS",WS,Akane Yamaguchi,122086,Wang Zhiyi,243842,1,2,False
+13960816,2025-06-03,"Indonesia Open 2025, WS",WS,Akane Yamaguchi,122086,Kjaersfeldt L.,111511,2,0,True
+13969427,2025-06-05,"Indonesia Open 2025, WS",WS,Akane Yamaguchi,122086,Sung S.,181866,2,0,True
+13975626,2025-06-06,"Indonesia Open 2025, WS",WS,Akane Yamaguchi,122086,Wardani P.,299250,2,0,True
+13979607,2025-06-07,"Indonesia Open 2025, WS",WS,Akane Yamaguchi,122086,Se Young An.,276710,0,2,False
+14177472,2025-07-16,"Japan Open 2025, WS",WS,Akane Yamaguchi,122086,Blichfeldt M.,127230,2,0,True
+14196386,2025-07-17,"Japan Open 2025, WS",WS,Akane Yamaguchi,122086,Sim Y.,240748,2,0,True
+14207336,2025-07-18,"Japan Open 2025, WS",WS,Akane Yamaguchi,122086,Chochuwong P.,134898,2,0,True
+14216356,2025-07-19,"Japan Open 2025, WS",WS,Akane Yamaguchi,122086,Wang Zhiyi,243842,0,2,False
+14241941,2025-07-23,"China Open 2025, WS",WS,Akane Yamaguchi,122086,Blichfeldt M.,127230,2,0,True
+13108602,2024-11-13,"Kumamoto Masters Japan 2024, WS",WS,P. V. Sindhu,87500,Ongbumrungpan B.,87514,2,0,True
+13118388,2024-11-14,"Kumamoto Masters Japan 2024, WS",WS,P. V. Sindhu,87500,Michelle Li.,76613,1,2,False
+13144205,2024-11-20,"LI-NING China Masters 2024, WS",WS,P. V. Sindhu,87500,Ongbumrungpan B.,87514,2,0,True
+13148940,2024-11-21,"LI-NING China Masters 2024, WS",WS,P. V. Sindhu,87500,Yeo J.,211678,1,2,False
+13159899,2024-11-27,"India International 2024, WS",WS,P. V. Sindhu,87500,Kharb A.,516819,2,0,True
+13172239,2024-11-28,"India International 2024, WS",WS,P. V. Sindhu,87500,Sharma I.,244949,2,1,True
+13175531,2024-11-29,"India International 2024, WS",WS,P. V. Sindhu,87500,Wang D.,283308,2,0,True
+13179253,2024-11-30,"India International 2024, WS",WS,P. V. Sindhu,87500,Hooda U.,407075,2,0,True
+13182881,2024-12-01,"India International 2024, WS",WS,P. V. Sindhu,87500,Luo Yu Wu.,466690,2,0,True
+13332408,2025-01-14,"India Open 2025, WS",WS,P. V. Sindhu,87500,Sung S.,181866,2,0,True
+13336931,2025-01-16,"India Open 2025, WS",WS,P. V. Sindhu,87500,Suizu M.,491257,2,0,True
+13347783,2025-01-17,"India Open 2025, WS",WS,P. V. Sindhu,87500,Mariska G.,174190,1,2,False
+13368991,2025-01-22,"Indonesia Masters 2025, WS",WS,P. V. Sindhu,87500,Nguyen T.,227776,0,2,False
+13587215,2025-03-12,"All England Open 2025, WS",WS,P. V. Sindhu,87500,Kim G.,210377,1,2,False
+13633738,2025-03-19,"Swiss Open 2025, WS",WS,P. V. Sindhu,87500,Jakobsen J.,235364,0,2,False
+13732407,2025-04-09,"Asia Championships 2025, WS",WS,P. V. Sindhu,87500,Wardoyo E.,394598,2,0,True
+13741281,2025-04-10,"Asia Championships 2025, WS",WS,P. V. Sindhu,87500,Yamaguchi A.,122086,1,2,False
+13820917,2025-04-27,"BWF Sudirman Cup, 2025, WS",WS,P. V. Sindhu,87500,Kjaersfeldt L.,111511,0,2,False
+13830210,2025-04-29,"BWF Sudirman Cup, 2025, WS",WS,P. V. Sindhu,87500,Wardani P.,299250,0,2,False
+13920986,2025-05-21,"Malaysia Masters 2025, WS",WS,P. V. Sindhu,87500,Nguyen T.,227776,1,2,False
+13941782,2025-05-27,"Singapore Open 2025, WS",WS,P. V. Sindhu,87500,Zhang W.,337619,2,0,True
+13948327,2025-05-29,"Singapore Open 2025, WS",WS,P. V. Sindhu,87500,Chen Y.,185150,1,2,False
+13960771,2025-06-03,"Indonesia Open 2025, WS",WS,P. V. Sindhu,87500,Okuhara N.,87940,2,1,True
+13969404,2025-06-05,"Indonesia Open 2025, WS",WS,P. V. Sindhu,87500,Chochuwong P.,134898,1,2,False
+14177460,2025-07-16,"Japan Open 2025, WS",WS,P. V. Sindhu,87500,Sim Y.,240748,0,2,False
+14241938,2025-07-23,"China Open 2025, WS",WS,P. V. Sindhu,87500,Miyazaki T.,490088,2,1,True
+14256555,2025-07-24,"China Open 2025, WS",WS,P. V. Sindhu,87500,Hooda U.,407075,1,2,False
+11762476,2023-10-21,"Denmark Open 2023, WS",WS,P. V. Sindhu,87500,Marín C.,76651,1,2,False
+11770312,2023-10-24,"French Open 2023, WS",WS,P. V. Sindhu,87500,Mariska G.,174190,2,1,True
+11772531,2023-10-26,"French Open 2023, WS",WS,P. V. Sindhu,87500,Katethong S.,193799,1,0,False
+12122951,2024-03-06,"French Open 2024, WS",WS,P. V. Sindhu,87500,Michelle Li.,76613,2,1,True
+12133460,2024-03-07,"French Open 2024, WS",WS,P. V. Sindhu,87500,Zhang B.,141600,2,1,True
+12136871,2024-03-08,"French Open 2024, WS",WS,P. V. Sindhu,87500,Chen Y.,185150,1,2,False
+12151762,2024-03-12,"All England Open 2024, WS",WS,P. V. Sindhu,87500,Yvonne LI.,234774,1,0,True
+12157686,2024-03-14,"All England Open 2024, WS",WS,P. V. Sindhu,87500,Se Young An.,276710,0,2,False
+12174200,2024-03-20,"Swiss Open 2024, WS",WS,P. V. Sindhu,87500,Choeikeewong P.,277524,2,0,True
+12177302,2024-03-21,"Swiss Open 2024, WS",WS,P. V. Sindhu,87500,Miyazaki T.,490088,1,2,False
+12196045,2024-03-27,"Spain Masters 2024, WS",WS,P. V. Sindhu,87500,Zhang W.,337619,2,0,True
+12199726,2024-03-28,"Spain Masters 2024, WS",WS,P. V. Sindhu,87500,Huang Y.,311374,2,0,True
+12202899,2024-03-29,"Spain Masters 2024, WS",WS,P. V. Sindhu,87500,Katethong S.,193799,1,2,False
+12237734,2024-04-10,"Asia Championships 2024, WS",WS,P. V. Sindhu,87500,Goh J.,213650,2,1,True
+12240236,2024-04-11,"Asia Championships 2024, WS",WS,P. V. Sindhu,87500,Han Y.,231956,1,2,False
+12352612,2024-05-22,"Malaysia Masters 2024, WS",WS,P. V. Sindhu,87500,Gilmour K.,87934,2,0,True
+12356174,2024-05-23,"Malaysia Masters 2024, WS",WS,P. V. Sindhu,87500,Sim Y.,240748,2,1,True
+12359717,2024-05-24,"Malaysia Masters 2024, WS",WS,P. V. Sindhu,87500,Han Y.,231956,2,1,True
+12364077,2024-05-25,"Malaysia Masters 2024, WS",WS,P. V. Sindhu,87500,Ongbumrungpan B.,87514,2,1,True
+12368813,2024-05-26,"Malaysia Masters 2024, WS",WS,P. V. Sindhu,87500,Wang Zhiyi,243842,1,2,False
+12372633,2024-05-29,"Singapore Open 2024, WS",WS,P. V. Sindhu,87500,Kjaersfeldt L.,111511,2,0,True
+12378303,2024-05-30,"Singapore Open 2024, WS",WS,P. V. Sindhu,87500,Marín C.,76651,1,2,False
+12390663,2024-06-05,"Indonesia Open 2024, WS",WS,P. V. Sindhu,87500,Hsu W.,257999,1,2,False
+12591931,2024-07-28,"Olympic Tournament, Singles, Women",,P. V. Sindhu,87500,Abdul Razzaq F.,387522,2,0,True
+12612515,2024-07-31,"Olympic Tournament, Singles, Women",,P. V. Sindhu,87500,Kuuba K.,265533,2,0,True
+12631765,2024-08-01,"Olympic Games Women, Final Round",,P. V. Sindhu,87500,Bing Jiao He.,131486,0,2,False
+12953983,2024-10-08,"Arctic Open 2024, WS",WS,P. V. Sindhu,87500,Michelle Li.,76613,0,2,False
+12972230,2024-10-15,"Denmark Open 2024, WS",WS,P. V. Sindhu,87500,Pai Yu Po.,142646,1,0,True
+12992930,2024-10-17,"Denmark Open 2024, WS",WS,P. V. Sindhu,87500,Han Y.,231956,2,1,True
+12998433,2024-10-18,"Denmark Open 2024, WS",WS,P. V. Sindhu,87500,Mariska G.,174190,1,2,False
+11349796,2023-06-15,"Indonesia Open 2023, WS",WS,He Bing Jiao,131486,Yvonne LI.,234774,2,0,True
+11352762,2023-06-16,"Indonesia Open 2023, WS",WS,He Bing Jiao,131486,Se Young An.,276710,1,2,False
+11448721,2023-07-19,"Korea Open, Women, 2023, WS",WS,He Bing Jiao,131486,Yeo J.,211678,2,0,True
+11449991,2023-07-20,"Korea Open, Women, 2023, WS",WS,He Bing Jiao,131486,Kim G.,210377,0,2,False
+11467648,2023-07-25,"Japan Open 2023, WS",WS,He Bing Jiao,131486,Blichfeldt M.,127230,2,1,True
+11473158,2023-07-27,"Japan Open 2023, WS",WS,He Bing Jiao,131486,Wang Zhiyi,243842,2,0,True
+11479673,2023-07-28,"Japan Open 2023, WS",WS,He Bing Jiao,131486,Zhang B.,141600,2,0,True
+11483581,2023-07-29,"Japan Open 2023, WS",WS,He Bing Jiao,131486,Mariska G.,174190,2,1,True
+11486653,2023-07-30,"Japan Open 2023, WS",WS,He Bing Jiao,131486,Se Young An.,276710,0,2,False
+11561646,2023-08-22,"World Championships 2023, WS",WS,He Bing Jiao,131486,Wardani P.,299250,2,1,True
+11567865,2023-08-24,"World Championships 2023, WS",WS,He Bing Jiao,131486,Wang Zhiyi,243842,1,2,False
+11611391,2023-09-06,"China Open 2023, WS",WS,He Bing Jiao,131486,Sung S.,181866,2,0,True
+11619206,2023-09-07,"China Open 2023, WS",WS,He Bing Jiao,131486,Kawakami S.,195154,2,0,True
+11624056,2023-09-08,"China Open 2023, WS",WS,He Bing Jiao,131486,Chen Y.,185150,0,2,False
+11744291,2023-10-18,"Denmark Open 2023, WS",WS,He Bing Jiao,131486,Goh J.,213650,2,0,True
+11757618,2023-10-19,"Denmark Open 2023, WS",WS,He Bing Jiao,131486,Chochuwong P.,134898,2,1,True
+11760193,2023-10-20,"Denmark Open 2023, WS",WS,He Bing Jiao,131486,Chen Y.,185150,0,2,False
+11770311,2023-10-24,"French Open 2023, WS",WS,He Bing Jiao,131486,Kjaersfeldt L.,111511,2,0,True
+11772237,2023-10-26,"French Open 2023, WS",WS,He Bing Jiao,131486,Zhang Y.,322310,2,1,True
+11777709,2023-10-27,"French Open 2023, WS",WS,He Bing Jiao,131486,Chochuwong P.,134898,2,0,True
+11779825,2023-10-28,"French Open 2023, WS",WS,He Bing Jiao,131486,Chen Y.,185150,1,2,False
+11847044,2023-11-22,"Li-Ning China Masters, WS",WS,He Bing Jiao,131486,Gilmour K.,87934,2,0,True
+11850656,2023-11-23,"Li-Ning China Masters, WS",WS,He Bing Jiao,131486,Yvonne LI.,234774,,,True
+11853829,2023-11-24,"Li-Ning China Masters, WS",WS,He Bing Jiao,131486,Chen Y.,185150,1,1,False
+11954551,2024-01-10,"Malaysia Open 2024, WS",WS,He Bing Jiao,131486,Blichfeldt M.,127230,2,0,True
+11961828,2024-01-11,"Malaysia Open 2024, WS",WS,He Bing Jiao,131486,Wang Zhiyi,243842,2,1,True
+11964769,2024-01-12,"Malaysia Open 2024, WS",WS,He Bing Jiao,131486,Tai T.,76645,0,2,False
+11972374,2024-01-16,"India Open 2024, WS",WS,He Bing Jiao,131486,Michelle Li.,76613,2,0,True
+11977630,2024-01-18,"India Open 2024, WS",WS,He Bing Jiao,131486,Chochuwong P.,134898,2,0,True
+11981832,2024-01-19,"India Open 2024, WS",WS,He Bing Jiao,131486,Tai T.,76645,0,2,False
+10925102,2022-12-08,"World Tour Finals 2022, WS, Group B",,He Bing Jiao,131486,Intanon R.,76653,2,0,True
+10925105,2022-12-09,"World Tour Finals 2022, WS, Group B",,He Bing Jiao,131486,Ongbumrungpan B.,87514,2,1,True
+10930171,2022-12-10,"World Tour Finals 2022, WS",WS,He Bing Jiao,131486,Tai T.,76645,0,2,False
+10979473,2023-01-10,"Malaysia Open 2023, WS",WS,He Bing Jiao,131486,Mariska G.,174190,0,2,False
+10994973,2023-01-18,"India Open 2023, WS",WS,He Bing Jiao,131486,Kjaersfeldt L.,111511,2,0,True
+10999186,2023-01-19,"India Open 2023, WS",WS,He Bing Jiao,131486,Kim G.,210377,2,0,True
+11002873,2023-01-20,"India Open 2023, WS",WS,He Bing Jiao,131486,Zhang B.,141600,2,0,True
+11004970,2023-01-21,"India Open 2023, WS",WS,He Bing Jiao,131486,Se Young An.,276710,1,2,False
+11011271,2023-01-25,"Indonesia Masters 2023, WS",WS,He Bing Jiao,131486,Okuhara N.,87940,2,1,True
+11014209,2023-01-26,"Indonesia Masters 2023, WS",WS,He Bing Jiao,131486,Mariska G.,174190,0,2,False
+11112322,2023-03-08,"German Open 2023, WS",WS,He Bing Jiao,131486,Kuuba K.,265533,2,0,True
+11114855,2023-03-09,"German Open 2023, WS",WS,He Bing Jiao,131486,Kawakami S.,195154,2,1,True
+11119620,2023-03-10,"German Open 2023, WS",WS,He Bing Jiao,131486,Hsu W.,257999,2,0,True
+11120950,2023-03-11,"German Open 2023, WS",WS,He Bing Jiao,131486,Se Young An.,276710,0,2,False
+11126526,2023-03-15,"All England Open 2023, WS",WS,He Bing Jiao,131486,Wang I.,149906,2,1,True
+11133060,2023-03-16,"All England Open 2023, WS",WS,He Bing Jiao,131486,Zhang Y.,322310,2,1,True
+11135586,2023-03-17,"All England Open 2023, WS",WS,He Bing Jiao,131486,Tai T.,76645,0,2,False
+11237965,2023-04-26,"Asia Championships 2023, WS",WS,He Bing Jiao,131486,Kim G.,210377,2,0,True
+11239522,2023-04-27,"Asia Championships 2023, WS",WS,He Bing Jiao,131486,Nguyen T.,227776,2,0,True
+11241315,2023-04-28,"Asia Championships 2023, WS",WS,He Bing Jiao,131486,Tai T.,76645,1,2,False
+11286262,2023-05-16,"BWF Sudirman Cup, 2023, WS",WS,He Bing Jiao,131486,Yeo J.,211678,2,0,True
+11319948,2023-05-31,"Thailand Open 2023, WS",WS,He Bing Jiao,131486,Wardani P.,299250,2,0,True
+11322942,2023-06-01,"Thailand Open 2023, WS",WS,He Bing Jiao,131486,Nehwal S.,24621,2,0,True
+11324534,2023-06-02,"Thailand Open 2023, WS",WS,He Bing Jiao,131486,Chochuwong P.,134898,2,0,True
+11326759,2023-06-03,"Thailand Open 2023, WS",WS,He Bing Jiao,131486,Blichfeldt M.,127230,2,0,True
+11328556,2023-06-04,"Thailand Open 2023, WS",WS,He Bing Jiao,131486,Se Young An.,276710,0,2,False
+11332024,2023-06-07,"Singapore Open 2023, WS",WS,He Bing Jiao,131486,Wang I.,149906,2,0,True
+11337343,2023-06-08,"Singapore Open 2023, WS",WS,He Bing Jiao,131486,Han Y.,231956,2,1,True
+11338963,2023-06-09,"Singapore Open 2023, WS",WS,He Bing Jiao,131486,Tai T.,76645,0,2,False
+11345375,2023-06-14,"Indonesia Open 2023, WS",WS,He Bing Jiao,131486,Pai Yu Po.,142646,2,1,True
+13569003,2025-03-06,"Orleans Masters 2025, WS",WS,Pornpawee Chochuwong,134898,Zhang B.,141600,0,2,False
+13587214,2025-03-12,"All England Open 2025, WS",WS,Pornpawee Chochuwong,134898,Nidaira N.,195158,2,1,True
+13603186,2025-03-13,"All England Open 2025, WS",WS,Pornpawee Chochuwong,134898,Chiu P.,302386,2,0,True
+13609186,2025-03-14,"All England Open 2025, WS",WS,Pornpawee Chochuwong,134898,Wang Zhiyi,243842,0,2,False
+13633721,2025-03-19,"Swiss Open 2025, WS",WS,Pornpawee Chochuwong,134898,Chen S.,173316,2,0,True
+13640615,2025-03-20,"Swiss Open 2025, WS",WS,Pornpawee Chochuwong,134898,Luo Yu Wu.,466690,2,0,True
+13649158,2025-03-21,"Swiss Open 2025, WS",WS,Pornpawee Chochuwong,134898,Kjaersfeldt L.,111511,0,2,False
+13820722,2025-04-27,"BWF Sudirman Cup, 2025, WS",WS,Pornpawee Chochuwong,134898,Sin Yan Happy LO.,418580,2,0,True
+13842931,2025-05-02,"BWF Sudirman Cup, 2025, WS",WS,Pornpawee Chochuwong,134898,Wardani P.,299250,0,2,False
+13892164,2025-05-14,"Thailand Open, WS",WS,Pornpawee Chochuwong,134898,Sin Yan Happy LO.,418580,2,0,True
+13895782,2025-05-15,"Thailand Open, WS",WS,Pornpawee Chochuwong,134898,Hooda U.,407075,2,0,True
+13900858,2025-05-16,"Thailand Open, WS",WS,Pornpawee Chochuwong,134898,Yeo J.,211678,2,1,True
+13909260,2025-05-17,"Thailand Open, WS",WS,Pornpawee Chochuwong,134898,Katethong S.,193799,2,0,True
+13913225,2025-05-18,"Thailand Open, WS",WS,Pornpawee Chochuwong,134898,Chen Y.,185150,0,2,False
+13941785,2025-05-28,"Singapore Open 2025, WS",WS,Pornpawee Chochuwong,134898,Chiu P.,302386,2,0,True
+13949737,2025-05-29,"Singapore Open 2025, WS",WS,Pornpawee Chochuwong,134898,Intanon R.,76653,2,1,True
+13952613,2025-05-30,"Singapore Open 2025, WS",WS,Pornpawee Chochuwong,134898,Wang Zhiyi,243842,0,2,False
+13960777,2025-06-03,"Indonesia Open 2025, WS",WS,Pornpawee Chochuwong,134898,Chiu P.,302386,2,0,True
+13969404,2025-06-05,"Indonesia Open 2025, WS",WS,Pornpawee Chochuwong,134898,Sindhu P.,87500,2,1,True
+13975625,2025-06-06,"Indonesia Open 2025, WS",WS,Pornpawee Chochuwong,134898,Se Young An.,276710,0,2,False
+14177454,2025-07-16,"Japan Open 2025, WS",WS,Pornpawee Chochuwong,134898,Hooda U.,407075,2,0,True
+14196399,2025-07-17,"Japan Open 2025, WS",WS,Pornpawee Chochuwong,134898,Lin H.,234614,2,0,True
+14207336,2025-07-18,"Japan Open 2025, WS",WS,Pornpawee Chochuwong,134898,Yamaguchi A.,122086,0,2,False
+14241940,2025-07-23,"China Open 2025, WS",WS,Pornpawee Chochuwong,134898,Chiu P.,302386,1,1,False
+14497868,2025-08-25,BWF World Championships Women Singles,,Pornpawee Chochuwong,134898,Hooi Y.,249731,2,0,True
+14542128,2025-08-27,BWF World Championships Women Singles,,Pornpawee Chochuwong,134898,Jaiswal I.,406438,2,0,True
+14558869,2025-08-28,BWF World Championships Women Singles,,Pornpawee Chochuwong,134898,Ongbumrungpan B.,87514,2,0,True
+14567764,2025-08-29,BWF World Championships Women Singles,,Pornpawee Chochuwong,134898,Chen Y.,185150,0,2,False
+14653562,2025-09-10,"Hong Kong Open 2025, WS",WS,Pornpawee Chochuwong,134898,Opatniput P.,310326,2,1,True
+12866421,2024-09-17,"China Open 2024, WS",WS,Pornpawee Chochuwong,134898,Kim G.,210377,2,0,True
+12866470,2024-09-19,"China Open 2024, WS",WS,Pornpawee Chochuwong,134898,Kjaersfeldt L.,111511,2,1,True
+12870268,2024-09-20,"China Open 2024, WS",WS,Pornpawee Chochuwong,134898,Ohori A.,122080,0,2,False
+12889510,2024-09-25,"Macau Open 2024, WS",WS,Pornpawee Chochuwong,134898,Pui C.,312347,2,0,True
+12899946,2024-09-26,"Macau Open 2024, WS",WS,Pornpawee Chochuwong,134898,Luo Yu Wu.,466690,0,2,False
+12953992,2024-10-08,"Arctic Open 2024, WS",WS,Pornpawee Chochuwong,134898,Choeikeewong P.,277524,2,0,True
+12962101,2024-10-10,"Arctic Open 2024, WS",WS,Pornpawee Chochuwong,134898,Yeo J.,211678,0,2,False
+12972229,2024-10-16,"Denmark Open 2024, WS",WS,Pornpawee Chochuwong,134898,Han Y.,231956,1,2,False
+13108598,2024-11-13,"Kumamoto Masters Japan 2024, WS",WS,Pornpawee Chochuwong,134898,Pai Yu Po.,142646,2,0,True
+13119420,2024-11-14,"Kumamoto Masters Japan 2024, WS",WS,Pornpawee Chochuwong,134898,Han Y.,231956,2,1,True
+13122949,2024-11-15,"Kumamoto Masters Japan 2024, WS",WS,Pornpawee Chochuwong,134898,Katethong S.,193799,2,0,True
+13127563,2024-11-16,"Kumamoto Masters Japan 2024, WS",WS,Pornpawee Chochuwong,134898,Yamaguchi A.,122086,1,2,False
+13132761,2024-11-20,"LI-NING China Masters 2024, WS",WS,Pornpawee Chochuwong,134898,Mariska G.,174190,2,0,True
+13149008,2024-11-21,"LI-NING China Masters 2024, WS",WS,Pornpawee Chochuwong,134898,Lin H.,234614,2,0,True
+13152817,2024-11-22,"LI-NING China Masters 2024, WS",WS,Pornpawee Chochuwong,134898,Gao F.,454771,0,2,False
+13304128,2025-01-08,"Malaysia Open 2025, WS",WS,Pornpawee Chochuwong,134898,Upadhyaya A.,341790,2,1,True
+13312711,2025-01-09,"Malaysia Open 2025, WS",WS,Pornpawee Chochuwong,134898,Intanon R.,76653,0,2,False
+13330883,2025-01-15,"India Open 2025, WS",WS,Pornpawee Chochuwong,134898,Kashyap A.,244950,2,0,True
+13341242,2025-01-16,"India Open 2025, WS",WS,Pornpawee Chochuwong,134898,Gao F.,454771,2,1,True
+13349277,2025-01-17,"India Open 2025, WS",WS,Pornpawee Chochuwong,134898,Han Y.,231956,2,0,True
+13352906,2025-01-18,"India Open 2025, WS",WS,Pornpawee Chochuwong,134898,Miyazaki T.,490088,2,1,True
+13356731,2025-01-19,"India Open 2025, WS",WS,Pornpawee Chochuwong,134898,Se Young An.,276710,0,2,False
+13368988,2025-01-22,"Indonesia Masters 2025, WS",WS,Pornpawee Chochuwong,134898,AZ Zahra K.,466691,2,0,True
+13373985,2025-01-23,"Indonesia Masters 2025, WS",WS,Pornpawee Chochuwong,134898,Hsu W.,257999,1,2,False
+13392786,2025-01-29,"Thailand Masters 2025, WS",WS,Pornpawee Chochuwong,134898,Thet Htar T.,282028,2,0,True
+13400835,2025-01-30,"Thailand Masters 2025, WS",WS,Pornpawee Chochuwong,134898,Chen S.,173316,2,0,True
+13408550,2025-01-31,"Thailand Masters 2025, WS",WS,Pornpawee Chochuwong,134898,Sim Y.,240748,2,1,True
+13412344,2025-02-01,"Thailand Masters 2025, WS",WS,Pornpawee Chochuwong,134898,Wardani P.,299250,2,0,True
+13416121,2025-02-02,"Thailand Masters 2025, WS",WS,Pornpawee Chochuwong,134898,Dewi K.,333325,2,1,True
+13566111,2025-03-05,"Orleans Masters 2025, WS",WS,Pornpawee Chochuwong,134898,Sung S.,181866,2,0,True

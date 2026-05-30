@@ -1,0 +1,129 @@
+{
+  "_readme": "Official BWF World Ranking (singles), parsed from https://en.wikipedia.org/wiki/BWF_World_Ranking via the MediaWiki API. Refresh with: python backend/fetch_wikipedia_rankings.py . Names normalized to match src/players.ts. Served by the backend at GET /rankings.",
+  "as_of": "2026-05-26",
+  "source": "en.wikipedia.org",
+  "men": [
+    {
+      "rank": 1,
+      "name": "Shi Yu Qi",
+      "country": "CHN",
+      "points": 108905
+    },
+    {
+      "rank": 2,
+      "name": "Kunlavut Vitidsarn",
+      "country": "THA",
+      "points": 96865
+    },
+    {
+      "rank": 3,
+      "name": "Anders Antonsen",
+      "country": "DEN",
+      "points": 95455
+    },
+    {
+      "rank": 4,
+      "name": "Christo Popov",
+      "country": "FRA",
+      "points": 85962
+    },
+    {
+      "rank": 5,
+      "name": "Jonatan Christie",
+      "country": "INA",
+      "points": 83631
+    },
+    {
+      "rank": 6,
+      "name": "Chou Tien Chen",
+      "country": "TPE",
+      "points": 82080
+    },
+    {
+      "rank": 7,
+      "name": "Li Shi Feng",
+      "country": "CHN",
+      "points": 74783
+    },
+    {
+      "rank": 8,
+      "name": "Lin Chun-Yi",
+      "country": "TPE",
+      "points": 73414
+    },
+    {
+      "rank": 9,
+      "name": "Alex Lanier",
+      "country": "FRA",
+      "points": 68565
+    },
+    {
+      "rank": 10,
+      "name": "Lakshya Sen",
+      "country": "IND",
+      "points": 68363
+    }
+  ],
+  "women": [
+    {
+      "rank": 1,
+      "name": "An Se-young",
+      "country": "KOR",
+      "points": 117787
+    },
+    {
+      "rank": 2,
+      "name": "Wang Zhiyi",
+      "country": "CHN",
+      "points": 107689
+    },
+    {
+      "rank": 3,
+      "name": "Akane Yamaguchi",
+      "country": "JPN",
+      "points": 96876
+    },
+    {
+      "rank": 4,
+      "name": "Chen Yu Fei",
+      "country": "CHN",
+      "points": 90251
+    },
+    {
+      "rank": 5,
+      "name": "Han Yue",
+      "country": "CHN",
+      "points": 86288
+    },
+    {
+      "rank": 6,
+      "name": "Putri Kusuma Wardani",
+      "country": "INA",
+      "points": 75223
+    },
+    {
+      "rank": 7,
+      "name": "Ratchanok Intanon",
+      "country": "THA",
+      "points": 72616
+    },
+    {
+      "rank": 8,
+      "name": "Pornpawee Chochuwong",
+      "country": "THA",
+      "points": 64977
+    },
+    {
+      "rank": 9,
+      "name": "Tomoka Miyazaki",
+      "country": "JPN",
+      "points": 61076
+    },
+    {
+      "rank": 10,
+      "name": "Michelle Li",
+      "country": "CAN",
+      "points": 58577
+    }
+  ]
+}

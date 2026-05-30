@@ -55,6 +55,12 @@ export const PLAYERS: Player[] = [
   { id: 'll', name: 'Lakshya Sen', country: 'IND', flag: '🇮🇳', rank: 13, elo: 2402, form: [1, 1, 0, 0, 1], hand: 'R', height: 180 },
   { id: 'tp', name: 'Toma Junior Popov', country: 'FRA', flag: '🇫🇷', rank: 14, elo: 2380, form: [0, 1, 1, 1, 0], hand: 'R', height: 186 },
   { id: 'kk', name: 'Kenta Nishimoto', country: 'JPN', flag: '🇯🇵', rank: 15, elo: 2365, form: [1, 0, 1, 0, 1], hand: 'R', height: 175 },
+  // Added so the BWF-rankings ladder can show the real top 8 (these three sit in
+  // it but had no ingested match history). Elo/height are demo placeholders like
+  // the rest of the roster; rank/points shown on the ladder come from /rankings.
+  { id: 'cpo', name: 'Christo Popov', country: 'FRA', flag: '🇫🇷', rank: 4, elo: 2520, form: [1, 1, 0, 1, 1], hand: 'R', height: 183 },
+  { id: 'lsf', name: 'Li Shi Feng', country: 'CHN', flag: '🇨🇳', rank: 7, elo: 2545, form: [1, 0, 1, 1, 0], hand: 'R', height: 180 },
+  { id: 'lcy', name: 'Lin Chun-Yi', country: 'TPE', flag: '🇹🇼', rank: 8, elo: 2495, form: [0, 1, 1, 0, 1], hand: 'R', height: 178 },
   { id: 'as', name: 'An Se-young', country: 'KOR', flag: '🇰🇷', rank: 1, elo: 2720, form: [1, 1, 1, 1, 1], hand: 'R', height: 168, women: true },
   { id: 'cy', name: 'Chen Yu Fei', country: 'CHN', flag: '🇨🇳', rank: 2, elo: 2640, form: [1, 1, 0, 1, 1], hand: 'R', height: 171, women: true },
   { id: 'ay', name: 'Akane Yamaguchi', country: 'JPN', flag: '🇯🇵', rank: 3, elo: 2610, form: [1, 0, 1, 1, 1], hand: 'R', height: 156, women: true },
@@ -63,6 +69,13 @@ export const PLAYERS: Player[] = [
   { id: 'ps', name: 'P. V. Sindhu', country: 'IND', flag: '🇮🇳', rank: 11, elo: 2440, form: [0, 1, 0, 1, 1], hand: 'R', height: 179, women: true },
   { id: 'hb', name: 'He Bing Jiao', country: 'CHN', flag: '🇨🇳', rank: 6, elo: 2548, form: [1, 0, 1, 1, 0], hand: 'L', height: 169, women: true },
   { id: 'pc', name: 'Pornpawee Chochuwong', country: 'THA', flag: '🇹🇭', rank: 8, elo: 2492, form: [1, 1, 0, 0, 1], hand: 'R', height: 173, women: true },
+  // Added so the women's BWF-rankings ladder shows real avatars/Pick metadata for
+  // its current top 8. Names match backend/data/bwf_rankings.json exactly so the
+  // ladder can join; Elo/height are demo placeholders, rank/points come from /rankings.
+  { id: 'wzy', name: 'Wang Zhiyi', country: 'CHN', flag: '🇨🇳', rank: 2, elo: 2618, form: [1, 1, 1, 0, 1], hand: 'R', height: 172, women: true },
+  { id: 'hy', name: 'Han Yue', country: 'CHN', flag: '🇨🇳', rank: 5, elo: 2560, form: [1, 0, 1, 1, 0], hand: 'R', height: 170, women: true },
+  { id: 'pkw', name: 'Putri Kusuma Wardani', country: 'INA', flag: '🇮🇩', rank: 6, elo: 2530, form: [1, 1, 0, 1, 1], hand: 'R', height: 168, women: true },
+  { id: 'ri', name: 'Ratchanok Intanon', country: 'THA', flag: '🇹🇭', rank: 7, elo: 2520, form: [0, 1, 1, 0, 1], hand: 'R', height: 168, women: true },
 ]
 
 // Curated sample matchups for the "Try these →" chips.
@@ -79,6 +92,107 @@ export const SURFACES: Surface[] = ['Mat', 'Wood', 'Cement']
 
 export function findPlayer(id: string): Player | undefined {
   return PLAYERS.find((p) => p.id === id)
+}
+
+// ---- Live leaderboard data (real Elo + record + form from the backend) ----
+// The roster above stays the canonical source for hand/height/flag/country
+// code; the leaderboard enriches it with these real, match-derived stats.
+export const API_BASE_URL = import.meta.env.VITE_API_URL ?? 'http://localhost:8000'
+
+export type RealStats = {
+  elo: number
+  wins: number
+  losses: number
+  played: number
+  form: number[] // last 5 results, oldest -> newest, 1 = win
+}
+
+export type LeaderboardData = {
+  available: boolean
+  season: string
+  stats: Map<string, RealStats> // keyed by player name
+}
+
+type LeaderboardApiResponse = {
+  available: boolean
+  season: string
+  players: (RealStats & { name: string })[]
+}
+
+// Fetch /players and index real stats by name. Never throws: on any failure
+// (backend offline, no ingested data) returns available:false so callers fall
+// back to the static demo roster.
+export async function fetchLeaderboard(): Promise<LeaderboardData> {
+  try {
+    const res = await fetch(`${API_BASE_URL}/players`)
+    if (!res.ok) throw new Error(`HTTP ${res.status}`)
+    const data = (await res.json()) as LeaderboardApiResponse
+    const stats = new Map<string, RealStats>()
+    if (data.available) {
+      for (const p of data.players) {
+        stats.set(p.name, {
+          elo: p.elo,
+          wins: p.wins,
+          losses: p.losses,
+          played: p.played,
+          form: p.form,
+        })
+      }
+    }
+    return { available: stats.size > 0, season: data.season ?? '', stats }
+  } catch {
+    return { available: false, season: '', stats: new Map() }
+  }
+}
+
+// ---- Official BWF World Rankings (snapshot served by the backend) ----
+// Real rank + points from Wikipedia (see backend/fetch_wikipedia_rankings.py),
+// enriched with match-derived record/form (null for players we have no history for).
+export type RankingEntry = {
+  rank: number
+  name: string
+  country: string // 3-letter nation code
+  points: number
+  tournaments: number | null
+  wins: number | null
+  losses: number | null
+  form: number[] | null
+  elo: number | null
+}
+
+export type RankingsData = {
+  available: boolean
+  asOf: string
+  source: string
+  men: RankingEntry[]
+  women: RankingEntry[]
+}
+
+type RankingsApiResponse = {
+  available: boolean
+  as_of: string
+  source: string
+  men: RankingEntry[]
+  women: RankingEntry[]
+}
+
+// Fetch /rankings. Never throws: on failure returns available:false so the
+// leaderboard falls back to the static demo roster.
+export async function fetchRankings(): Promise<RankingsData> {
+  try {
+    const res = await fetch(`${API_BASE_URL}/rankings`)
+    if (!res.ok) throw new Error(`HTTP ${res.status}`)
+    const d = (await res.json()) as RankingsApiResponse
+    return {
+      available: Boolean(d.available),
+      asOf: d.as_of ?? '',
+      source: d.source ?? '',
+      men: d.men ?? [],
+      women: d.women ?? [],
+    }
+  } catch {
+    return { available: false, asOf: '', source: '', men: [], women: [] }
+  }
 }
 
 export function initials(name: string): string {

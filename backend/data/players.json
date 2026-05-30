@@ -1,0 +1,182 @@
+[
+  {
+    "name": "Viktor Axelsen",
+    "id": "87484",
+    "country": "Denmark",
+    "gender": "M",
+    "rank": null,
+    "matches_pulled": 57,
+    "elo": 1716
+  },
+  {
+    "name": "Kunlavut Vitidsarn",
+    "id": "207992",
+    "country": "Thailand",
+    "gender": "M",
+    "rank": null,
+    "matches_pulled": 57,
+    "elo": 1690
+  },
+  {
+    "name": "Anders Antonsen",
+    "id": "215405",
+    "country": "Denmark",
+    "gender": "M",
+    "rank": null,
+    "matches_pulled": 60,
+    "elo": 1691
+  },
+  {
+    "name": "Shi Yu Qi",
+    "id": "312179",
+    "country": null,
+    "gender": "M",
+    "rank": null,
+    "matches_pulled": 0,
+    "elo": null
+  },
+  {
+    "name": "Jonatan Christie",
+    "id": "164088",
+    "country": "Indonesia",
+    "gender": "M",
+    "rank": null,
+    "matches_pulled": 58,
+    "elo": 1677
+  },
+  {
+    "name": "Anthony Ginting",
+    "id": "164374",
+    "country": "Indonesia",
+    "gender": "M",
+    "rank": null,
+    "matches_pulled": 54,
+    "elo": 1546
+  },
+  {
+    "name": "Loh Kean Yew",
+    "id": "172746",
+    "country": "Singapore",
+    "gender": "M",
+    "rank": null,
+    "matches_pulled": 56,
+    "elo": 1617
+  },
+  {
+    "name": "Lee Zii Jia",
+    "id": "244095",
+    "country": "Malaysia",
+    "gender": "M",
+    "rank": null,
+    "matches_pulled": 55,
+    "elo": 1665
+  },
+  {
+    "name": "Lee Cheuk Yiu",
+    "id": "182557",
+    "country": "Hong Kong",
+    "gender": "M",
+    "rank": null,
+    "matches_pulled": 27,
+    "elo": 1497
+  },
+  {
+    "name": "Chou Tien Chen",
+    "id": "87480",
+    "country": "Chinese Taipei",
+    "gender": "M",
+    "rank": null,
+    "matches_pulled": 60,
+    "elo": 1595
+  },
+  {
+    "name": "Kodai Naraoka",
+    "id": "212157",
+    "country": "Japan",
+    "gender": "M",
+    "rank": null,
+    "matches_pulled": 58,
+    "elo": 1598
+  },
+  {
+    "name": "Prannoy H. S.",
+    "id": "96349",
+    "country": "India",
+    "gender": "M",
+    "rank": null,
+    "matches_pulled": 58,
+    "elo": 1458
+  },
+  {
+    "name": "Lakshya Sen",
+    "id": "244759",
+    "country": "India",
+    "gender": "M",
+    "rank": null,
+    "matches_pulled": 57,
+    "elo": 1534
+  },
+  {
+    "name": "Toma Junior Popov",
+    "id": "241059",
+    "country": "France",
+    "gender": "M",
+    "rank": null,
+    "matches_pulled": 58,
+    "elo": 1518
+  },
+  {
+    "name": "Kenta Nishimoto",
+    "id": "146358",
+    "country": "Japan",
+    "gender": "M",
+    "rank": null,
+    "matches_pulled": 58,
+    "elo": 1599
+  },
+  {
+    "name": "Chen Yu Fei",
+    "id": "185150",
+    "country": "China",
+    "gender": "F",
+    "rank": null,
+    "matches_pulled": 58,
+    "elo": 1722
+  },
+  {
+    "name": "Akane Yamaguchi",
+    "id": "122086",
+    "country": "Japan",
+    "gender": "F",
+    "rank": null,
+    "matches_pulled": 60,
+    "elo": 1767
+  },
+  {
+    "name": "P. V. Sindhu",
+    "id": "87500",
+    "country": "India",
+    "gender": "F",
+    "rank": null,
+    "matches_pulled": 57,
+    "elo": 1482
+  },
+  {
+    "name": "He Bing Jiao",
+    "id": "131486",
+    "country": "China",
+    "gender": "F",
+    "rank": null,
+    "matches_pulled": 60,
+    "elo": 1623
+  },
+  {
+    "name": "Pornpawee Chochuwong",
+    "id": "134898",
+    "country": "Thailand",
+    "gender": "F",
+    "rank": null,
+    "matches_pulled": 59,
+    "elo": 1660
+  }
+]

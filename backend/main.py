@@ -4,6 +4,9 @@ from pydantic import BaseModel, Field, field_validator
 import joblib
 import numpy as np
 import os
+import csv
+import json
+from collections import defaultdict
 from typing import Optional
 
 app = FastAPI(title="🏸 Badminton Match Predictor API")
@@ -90,6 +93,122 @@ def get_tournament_tier(name: str) -> int:
         return 1
     return 0
 
+# ============ LEADERBOARD / RANKINGS (real data, pre-computed at startup) ============
+# Two real-data sources live in backend/data/:
+#   * players.json + matches.csv  -> match-derived Elo / win-loss / form
+#     (from the SportsAPIPro ingestion, see ingest_data.py)
+#   * bwf_rankings.json           -> official BWF World Ranking snapshot
+#     (rank + points, parsed from Wikipedia; see fetch_wikipedia_rankings.py)
+# /players serves the Elo ladder; /rankings serves the BWF ladder enriched with
+# the match stats. Both degrade to available=False if their data files are
+# missing, so the frontend can fall back to its static demo roster.
+DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
+
+
+def _match_stats() -> tuple[dict, str]:
+    """Per-player match-derived stats keyed by name (real Elo from players.json +
+    win/loss + last-5 form from matches.csv), plus the season span string.
+    Returns ({}, "") if the data files are absent."""
+    try:
+        with open(os.path.join(DATA_DIR, "players.json"), encoding="utf-8") as f:
+            roster = json.load(f)
+    except (OSError, json.JSONDecodeError):
+        return {}, ""
+
+    elo_by_name = {e.get("name"): e.get("elo") for e in roster}
+    history: dict[str, list[dict]] = defaultdict(list)
+    dates: list[str] = []
+    try:
+        with open(os.path.join(DATA_DIR, "matches.csv"), encoding="utf-8", newline="") as f:
+            for row in csv.DictReader(f):
+                if row.get("player"):
+                    history[row["player"]].append(row)
+                if row.get("date"):
+                    dates.append(row["date"])
+    except OSError:
+        pass
+
+    stats: dict[str, dict] = {}
+    for name, rows in history.items():
+        rows.sort(key=lambda r: r.get("date") or "")
+        wins = sum(1 for r in rows if r.get("won") == "True")
+        played = len(rows)
+        elo = elo_by_name.get(name)
+        stats[name] = {
+            "elo": int(elo) if elo is not None else None,
+            "wins": wins,
+            "losses": played - wins,
+            "played": played,
+            # Last 5 results, oldest -> newest (left -> right in the UI).
+            "form": [1 if r.get("won") == "True" else 0 for r in rows[-5:]],
+        }
+
+    season = ""
+    if dates:
+        lo, hi = min(dates)[:4], max(dates)[:4]
+        season = lo if lo == hi else f"{lo}–{hi[2:]}"  # e.g. "2022–26"
+    return stats, season
+
+
+def _load_leaderboard() -> dict:
+    """Elo strength ladder from ingested match history (served at /players)."""
+    stats, season = _match_stats()
+    players = [
+        {"name": name, **s} for name, s in stats.items() if s["elo"] is not None
+    ]
+    players.sort(key=lambda p: p["elo"], reverse=True)
+    return {"available": bool(players), "season": season, "players": players}
+
+
+def _load_rankings() -> dict:
+    """Official BWF World Ranking snapshot (served at /rankings), enriched with
+    match-derived record + form where we have history. Sorted by world rank.
+    The snapshot is refreshed from Wikipedia by fetch_wikipedia_rankings.py.
+    Degrades to available=False if the file is missing."""
+    try:
+        with open(os.path.join(DATA_DIR, "bwf_rankings.json"), encoding="utf-8") as f:
+            snapshot = json.load(f)
+    except (OSError, json.JSONDecodeError):
+        return {"available": False, "as_of": "", "source": "", "men": [], "women": []}
+
+    stats, _ = _match_stats()
+
+    def enrich(entries: list[dict]) -> list[dict]:
+        out = []
+        for e in sorted(entries, key=lambda x: x.get("rank") or 9999):
+            s = stats.get(e.get("name"), {})
+            out.append({
+                "rank": e.get("rank"),
+                "name": e.get("name"),
+                "country": e.get("country"),
+                "points": e.get("points"),
+                "tournaments": e.get("tournaments"),
+                # match-derived extras (null when we have no history for them)
+                "wins": s.get("wins"),
+                "losses": s.get("losses"),
+                "form": s.get("form"),
+                "elo": s.get("elo"),
+            })
+        return out
+
+    men = enrich(snapshot.get("men", []))
+    women = enrich(snapshot.get("women", []))
+    return {
+        "available": bool(men or women),
+        "as_of": snapshot.get("as_of", ""),
+        "source": snapshot.get("source", ""),
+        "men": men,
+        "women": women,
+    }
+
+
+LEADERBOARD = _load_leaderboard()
+RANKINGS = _load_rankings()
+print(f"📊 /players: {len(LEADERBOARD['players'])} players "
+      f"({LEADERBOARD['season'] or 'no matches'})  |  "
+      f"📈 /rankings: {len(RANKINGS['men'])} men + {len(RANKINGS['women'])} women "
+      f"(as of {RANKINGS['as_of'] or 'n/a'})")
+
 # ============ ENDPOINTS ============
 @app.get("/")
 def read_root():
@@ -98,6 +217,20 @@ def read_root():
         "status": "online",
         "model_accuracy": "76.3%"
     }
+
+@app.get("/rankings")
+def get_rankings():
+    """Official BWF World Ranking snapshot (men + women), sorted by world rank
+    and enriched with match-derived record/form where available. Pre-computed at
+    startup. Returns {available, as_of, source, men[], women[]}."""
+    return RANKINGS
+
+@app.get("/players")
+def list_players():
+    """Real leaderboard data (Elo + win/loss + last-5 form) for players we have
+    ingested match history for, sorted by Elo descending. Pre-computed at
+    startup. Returns {available, season, players[]}."""
+    return LEADERBOARD
 
 @app.post("/predict", response_model=MatchPredictionResponse)
 def predict_match(request: MatchPredictionRequest):

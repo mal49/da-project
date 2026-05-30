@@ -867,7 +867,7 @@
 }
 .lb-row {
   display: grid;
-  grid-template-columns: 48px minmax(210px, 1.8fr) 80px 90px 120px 84px;
+  grid-template-columns: 48px minmax(196px, 1.8fr) 92px 90px 120px 84px;
   align-items: center;
   gap: 14px;
   padding: 14px 22px;
@@ -891,6 +891,31 @@
 }
 .lb-row:last-child {
   border-bottom: none;
+}
+
+.lb-caption {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--ink-3);
+  margin-top: 10px;
+  padding-left: 4px;
+}
+.lb-caption.live {
+  color: var(--ink-2);
+}
+.lb-caption.demo {
+  color: var(--accent);
+}
+
+.lb-empty {
+  padding: 28px 22px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--ink-3);
+}
+.lb-form-na {
+  color: var(--ink-3);
 }
 
 .lb-rank {
