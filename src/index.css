@@ -127,3 +127,12 @@ select {
 [data-bg='plain'] .bg-canvas::after {
   display: none;
 }
+
+/* tighter vertical rhythm + softer corners on small screens */
+@media (max-width: 760px) {
+  :root {
+    --gap-lg: 44px;
+    --gap-md: 22px;
+    --r-xl: 22px;
+  }
+}

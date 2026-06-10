@@ -151,7 +151,8 @@ export function Leaderboard({ onPickPlayer }: Props) {
             aria-selected={disc === d}
             onClick={() => setDisc(d)}
           >
-            {DISCIPLINE_LABEL[d]}
+            <span className="tab-l">{DISCIPLINE_LABEL[d]}</span>
+            <span className="tab-s">{d}</span>
           </button>
         ))}
       </div>

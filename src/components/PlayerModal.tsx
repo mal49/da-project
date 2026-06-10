@@ -161,7 +161,8 @@ export function PlayerModal({
                   setSelected(0)
                 }}
               >
-                {c.label}
+                <span className="tab-l">{c.label}</span>
+                <span className="tab-s">{c.key === 'all' ? 'All' : c.key}</span>
               </button>
             ))}
           </div>

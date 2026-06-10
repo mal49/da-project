@@ -337,7 +337,8 @@ function App() {
                     aria-selected={discipline === d}
                     onClick={() => changeDiscipline(d)}
                   >
-                    {DISCIPLINE_LABEL[d]}
+                    <span className="tab-l">{DISCIPLINE_LABEL[d]}</span>
+                    <span className="tab-s">{d}</span>
                   </button>
                 ))}
               </div>

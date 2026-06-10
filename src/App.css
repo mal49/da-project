@@ -98,6 +98,28 @@
   align-items: center;
   justify-self: end;
 }
+/* Hamburger toggle — hidden on desktop, shown in the mobile breakpoint. */
+.nav-burger {
+  display: none;
+  width: 38px;
+  height: 38px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  background: color-mix(in oklab, var(--paper) 38%, transparent);
+  backdrop-filter: blur(18px) saturate(1.5);
+  -webkit-backdrop-filter: blur(18px) saturate(1.5);
+  box-shadow:
+    0 8px 24px -8px rgba(20, 20, 30, 0.14),
+    inset 0 1px 0 rgba(255, 255, 255, 0.75);
+  color: var(--ink);
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s;
+}
+.nav-burger:hover {
+  background: rgba(255, 255, 255, 0.55);
+}
 .api-pill {
   font-family: var(--font-mono);
   font-size: 11px;
@@ -958,6 +980,10 @@
   background: var(--ink);
   color: var(--paper);
 }
+/* dual tab labels: full text on desktop, BWF short code (MS/WS/…) on mobile */
+.tab .tab-s {
+  display: none;
+}
 
 .lb-table {
   background: var(--paper);
@@ -1312,23 +1338,58 @@ footer .right {
 }
 
 @media (max-width: 760px) {
-  /* stack the nav island on its own row under brand + api pill */
+  /* collapse the nav island behind a hamburger: brand left, api pill +
+     burger right, nav becomes a dropdown panel under the bar */
   .topbar {
     grid-template-columns: 1fr auto;
-    row-gap: 10px;
   }
-  .brand {
-    grid-row: 1;
-    grid-column: 1;
-  }
-  .top-actions {
-    grid-row: 1;
-    grid-column: 2;
+  .nav-burger {
+    display: inline-flex;
   }
   .top-nav {
-    grid-row: 2;
-    grid-column: 1 / -1;
-    justify-self: center;
+    display: none;
+    position: absolute;
+    top: calc(100% - 4px);
+    right: var(--pad-x);
+    flex-direction: column;
+    align-items: stretch;
+    min-width: 200px;
+    padding: 8px;
+    border-radius: 20px;
+    background: color-mix(in oklab, var(--paper) 92%, transparent);
+  }
+  .top-nav.open {
+    display: flex;
+  }
+  .top-nav button {
+    text-align: left;
+    padding: 11px 16px;
+    font-size: 15px;
+  }
+  /* segmented pills switch to a different mobile UI: full-width equal
+     segments showing BWF short codes (MS/WS/MD/WD/XD), one row, no wrap */
+  .tabs,
+  .modal-filters .tabs {
+    display: flex;
+    width: 100%;
+    max-width: 420px;
+    flex-wrap: nowrap;
+  }
+  .tab {
+    flex: 1 1 0;
+    padding: 9px 4px;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 13.5px;
+    font-weight: 600;
+  }
+  .tab .tab-l {
+    display: none;
+  }
+  .tab .tab-s {
+    display: inline;
+    font-family: var(--font-mono);
+    letter-spacing: 0.06em;
   }
   .vs-bar {
     grid-template-columns: 1fr;
@@ -1361,11 +1422,74 @@ footer .right {
   .pslot.right .meta {
     justify-content: flex-start;
   }
+  /* tighter player slots so long pair names fit beside the avatar */
+  .pslot {
+    padding: 16px;
+    gap: 12px;
+  }
+  .vs-bar .pavatar {
+    width: 48px;
+    height: 48px;
+    font-size: 16px;
+  }
+  /* thumb-friendly full-width primary action */
+  .vs-actions .predict-btn {
+    width: 100%;
+    justify-content: center;
+  }
+  /* sample matchups: different mobile UI — a stacked list of full-width
+     matchup rows instead of centered floating chips */
+  .chip-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+  .chip-row .chip-label {
+    justify-content: center;
+    padding: 0 0 2px;
+  }
+  .chip {
+    width: 100%;
+    padding: 11px 14px;
+  }
+  /* matchup chips align as columns: flag | name › | VS | ‹ name | flag */
+  .chip:not(.chip-random) {
+    display: grid;
+    grid-template-columns: auto 1fr auto 1fr auto;
+    gap: 8px;
+    align-items: center;
+  }
+  .chip:not(.chip-random) > span:nth-child(2),
+  .chip:not(.chip-random) > span:nth-child(4) {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .chip:not(.chip-random) > span:nth-child(2) {
+    text-align: right;
+  }
+  .chip:not(.chip-random) > span:nth-child(4) {
+    text-align: left;
+  }
+  .chip-random {
+    justify-content: center;
+  }
   .ctx-panel {
     grid-template-columns: repeat(2, 1fr);
+    padding: 16px;
+    gap: 12px;
   }
   .result-grid {
     grid-template-columns: 1fr;
+  }
+  /* stacked result content is taller than the desktop reveal allowance */
+  .result-shell[data-open='true'] {
+    max-height: 2400px;
+  }
+  /* section headers: kicker text and helper copy were nowrap on desktop */
+  .section-head .right {
+    white-space: normal;
   }
   .lb-row {
     grid-template-columns: 36px 1fr 70px;
@@ -1376,6 +1500,27 @@ footer .right {
   .lb-row .lb-rec,
   .lb-row .lb-form {
     display: none;
+  }
+  /* header row mirrors the 3 columns data rows collapse to (its cells are
+     plain spans, so the class-based hiding above doesn't catch them) */
+  .lb-row.head span:nth-child(3),
+  .lb-row.head span:nth-child(4),
+  .lb-row.head span:nth-child(5) {
+    display: none;
+  }
+  /* player search modal: use more of the viewport, drop the ESC key hint */
+  .modal-backdrop {
+    padding-top: 4vh;
+  }
+  .modal {
+    width: min(560px, 94vw);
+  }
+  .modal-kbd {
+    display: none;
+  }
+  footer {
+    justify-content: center;
+    text-align: center;
   }
 }
 
@@ -1756,9 +1901,19 @@ footer .right {
 }
 
 @media (max-width: 760px) {
+  /* toolbar actions: two ghost buttons side by side, simulate full width */
   .sim-actions {
     margin-left: 0;
     width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .sim-actions .ghost-btn {
+    justify-content: center;
+  }
+  .sim-actions .predict-btn {
+    grid-column: 1 / -1;
+    justify-content: center;
   }
   .tbracket {
     --cg: 30px;
