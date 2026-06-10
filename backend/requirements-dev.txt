@@ -1,0 +1,4 @@
+# Training/analysis-only dependencies (NOT needed to run the API).
+# Install on top of requirements.txt to enable train.py's plots:
+#   pip install -r requirements.txt -r requirements-dev.txt
+matplotlib

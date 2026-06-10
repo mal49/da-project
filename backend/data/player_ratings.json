@@ -1,0 +1,4580 @@
+[
+  {
+    "name": "Viktor Axelsen",
+    "type": "MS",
+    "elo": 2447,
+    "rank": 4,
+    "wins": 67,
+    "losses": 11,
+    "played": 78,
+    "form": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2025-03-12"
+  },
+  {
+    "name": "Kunlavut Vitidsarn",
+    "type": "MS",
+    "elo": 2432,
+    "rank": 2,
+    "wins": 54,
+    "losses": 28,
+    "played": 82,
+    "form": [
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2026-03-07"
+  },
+  {
+    "name": "Anders Antonsen",
+    "type": "MS",
+    "elo": 2344,
+    "rank": 3,
+    "wins": 57,
+    "losses": 26,
+    "played": 83,
+    "form": [
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2026-03-03"
+  },
+  {
+    "name": "Shi Yu Qi",
+    "type": "MS",
+    "elo": 2530,
+    "rank": 1,
+    "wins": 64,
+    "losses": 16,
+    "played": 80,
+    "form": [
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2026-03-03"
+  },
+  {
+    "name": "Jonatan Christie",
+    "type": "MS",
+    "elo": 2331,
+    "rank": 4,
+    "wins": 42,
+    "losses": 30,
+    "played": 72,
+    "form": [
+      1,
+      1,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2026-03-05"
+  },
+  {
+    "name": "Anthony Ginting",
+    "type": "MS",
+    "elo": 2057,
+    "rank": 73,
+    "wins": 32,
+    "losses": 22,
+    "played": 54,
+    "form": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2025-08-26"
+  },
+  {
+    "name": "Loh Kean Yew",
+    "type": "MS",
+    "elo": 2240,
+    "rank": 10,
+    "wins": 32,
+    "losses": 22,
+    "played": 54,
+    "form": [
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2026-03-05"
+  },
+  {
+    "name": "Lee Zii Jia",
+    "type": "MS",
+    "elo": 2094,
+    "rank": 144,
+    "wins": 26,
+    "losses": 23,
+    "played": 49,
+    "form": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2026-01-06"
+  },
+  {
+    "name": "Lee Cheuk Yiu",
+    "type": "MS",
+    "elo": 2122,
+    "rank": 25,
+    "wins": 19,
+    "losses": 22,
+    "played": 41,
+    "form": [
+      1,
+      1,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2026-03-05"
+  },
+  {
+    "name": "Chou Tien Chen",
+    "type": "MS",
+    "elo": 2132,
+    "rank": 7,
+    "wins": 36,
+    "losses": 32,
+    "played": 68,
+    "form": [
+      1,
+      1,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2026-03-05"
+  },
+  {
+    "name": "Kodai Naraoka",
+    "type": "MS",
+    "elo": 2216,
+    "rank": 9,
+    "wins": 34,
+    "losses": 26,
+    "played": 60,
+    "form": [
+      0,
+      1,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2026-03-04"
+  },
+  {
+    "name": "Prannoy H. S.",
+    "type": "MS",
+    "elo": 2005,
+    "rank": 34,
+    "wins": 25,
+    "losses": 21,
+    "played": 46,
+    "form": [
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2025-08-27"
+  },
+  {
+    "name": "Lakshya Sen",
+    "type": "MS",
+    "elo": 2274,
+    "rank": 12,
+    "wins": 28,
+    "losses": 22,
+    "played": 50,
+    "form": [
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2026-03-08"
+  },
+  {
+    "name": "Toma Junior Popov",
+    "type": "MS",
+    "elo": 2131,
+    "rank": 17,
+    "wins": 15,
+    "losses": 24,
+    "played": 39,
+    "form": [
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2026-03-05"
+  },
+  {
+    "name": "Kenta Nishimoto",
+    "type": "MS",
+    "elo": 2050,
+    "rank": 13,
+    "wins": 21,
+    "losses": 22,
+    "played": 43,
+    "form": [
+      0,
+      1,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2026-03-03"
+  },
+  {
+    "name": "Christo Popov",
+    "type": "MS",
+    "elo": 2380,
+    "rank": 5,
+    "wins": 18,
+    "losses": 15,
+    "played": 33,
+    "form": [
+      1,
+      0,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2026-03-06"
+  },
+  {
+    "name": "Li Shi Feng",
+    "type": "MS",
+    "elo": 2235,
+    "rank": 6,
+    "wins": 33,
+    "losses": 20,
+    "played": 53,
+    "form": [
+      0,
+      0,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2026-03-06"
+  },
+  {
+    "name": "Lin Chun-Yi",
+    "type": "MS",
+    "elo": 2353,
+    "rank": 11,
+    "wins": 13,
+    "losses": 11,
+    "played": 24,
+    "form": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "as_of": "2026-03-08"
+  },
+  {
+    "name": "An Se-young",
+    "type": "WS",
+    "elo": 2813,
+    "rank": 1,
+    "wins": 99,
+    "losses": 20,
+    "played": 119,
+    "form": [
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2026-03-08"
+  },
+  {
+    "name": "Chen Yu Fei",
+    "type": "WS",
+    "elo": 2574,
+    "rank": 3,
+    "wins": 63,
+    "losses": 20,
+    "played": 83,
+    "form": [
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2026-03-07"
+  },
+  {
+    "name": "Akane Yamaguchi",
+    "type": "WS",
+    "elo": 2486,
+    "rank": 4,
+    "wins": 76,
+    "losses": 21,
+    "played": 97,
+    "form": [
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2026-03-07"
+  },
+  {
+    "name": "Tai Tzu-ying",
+    "type": "WS",
+    "elo": 2407,
+    "rank": 4,
+    "wins": 49,
+    "losses": 16,
+    "played": 65,
+    "form": [
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2024-09-18"
+  },
+  {
+    "name": "Carolina Marin",
+    "type": "WS",
+    "elo": 2502,
+    "rank": 3,
+    "wins": 33,
+    "losses": 13,
+    "played": 46,
+    "form": [
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2024-06-08"
+  },
+  {
+    "name": "P. V. Sindhu",
+    "type": "WS",
+    "elo": 2146,
+    "rank": 18,
+    "wins": 22,
+    "losses": 21,
+    "played": 43,
+    "form": [
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2026-01-10"
+  },
+  {
+    "name": "He Bing Jiao",
+    "type": "WS",
+    "elo": 2410,
+    "rank": 8,
+    "wins": 25,
+    "losses": 14,
+    "played": 39,
+    "form": [
+      1,
+      0,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2024-06-07"
+  },
+  {
+    "name": "Pornpawee Chochuwong",
+    "type": "WS",
+    "elo": 2240,
+    "rank": 8,
+    "wins": 28,
+    "losses": 23,
+    "played": 51,
+    "form": [
+      1,
+      0,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2026-03-06"
+  },
+  {
+    "name": "Wang Zhiyi",
+    "type": "WS",
+    "elo": 2630,
+    "rank": 2,
+    "wins": 62,
+    "losses": 20,
+    "played": 82,
+    "form": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "as_of": "2026-03-08"
+  },
+  {
+    "name": "Han Yue",
+    "type": "WS",
+    "elo": 2346,
+    "rank": 5,
+    "wins": 40,
+    "losses": 27,
+    "played": 67,
+    "form": [
+      1,
+      0,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2026-03-04"
+  },
+  {
+    "name": "Putri Kusuma Wardani",
+    "type": "WS",
+    "elo": 2270,
+    "rank": 6,
+    "wins": 16,
+    "losses": 16,
+    "played": 32,
+    "form": [
+      1,
+      0,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2026-03-06"
+  },
+  {
+    "name": "Ratchanok Intanon",
+    "type": "WS",
+    "elo": 2265,
+    "rank": 7,
+    "wins": 27,
+    "losses": 24,
+    "played": 51,
+    "form": [
+      0,
+      1,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2026-03-04"
+  },
+  {
+    "name": "Goh Soon Huat / Lai Shevon Jemie",
+    "type": "XD",
+    "elo": 1943,
+    "rank": 11,
+    "wins": 28,
+    "losses": 32,
+    "played": 60,
+    "form": [
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2026-03-05"
+  },
+  {
+    "name": "Mark Lamsfuss / Isabel Lohau",
+    "type": "XD",
+    "elo": 1839,
+    "rank": 30,
+    "wins": 8,
+    "losses": 14,
+    "played": 22,
+    "form": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2024-01-09"
+  },
+  {
+    "name": "Dechapol Puavaranukroh / Sapsiree Taerattanachai",
+    "type": "XD",
+    "elo": 2180,
+    "rank": 6,
+    "wins": 48,
+    "losses": 16,
+    "played": 64,
+    "form": [
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2024-06-08"
+  },
+  {
+    "name": "Praveen Jordan / Melati Daeva Oktavianti",
+    "type": "XD",
+    "elo": 1943,
+    "rank": 26,
+    "wins": 9,
+    "losses": 11,
+    "played": 20,
+    "form": [
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2023-09-07"
+  },
+  {
+    "name": "Seo Seung Jae / Chae Yu Jung",
+    "type": "XD",
+    "elo": 2287,
+    "rank": 3,
+    "wins": 31,
+    "losses": 11,
+    "played": 42,
+    "form": [
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2024-06-06"
+  },
+  {
+    "name": "Marcus Ellis / Lauren Smith",
+    "type": "XD",
+    "elo": 1814,
+    "rank": 28,
+    "wins": 3,
+    "losses": 15,
+    "played": 18,
+    "form": [
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2024-03-14"
+  },
+  {
+    "name": "Thom Gicquel / Delphine Delrue",
+    "type": "XD",
+    "elo": 2089,
+    "rank": 5,
+    "wins": 37,
+    "losses": 24,
+    "played": 61,
+    "form": [
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2026-03-08"
+  },
+  {
+    "name": "Hafiz Faizal / Gloria Emanuelle Widjaja",
+    "type": "XD",
+    "elo": 1956,
+    "rank": 10,
+    "wins": 3,
+    "losses": 3,
+    "played": 6,
+    "form": [
+      1,
+      0,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2021-11-26"
+  },
+  {
+    "name": "Greysia Polii / Apriyani Rahayu",
+    "type": "WD",
+    "elo": 2141,
+    "rank": 6,
+    "wins": 8,
+    "losses": 6,
+    "played": 14,
+    "form": [
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2022-03-17"
+  },
+  {
+    "name": "Hendra Setiawan / Mohammad Ahsan",
+    "type": "MD",
+    "elo": 1918,
+    "rank": 22,
+    "wins": 27,
+    "losses": 19,
+    "played": 46,
+    "form": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2024-09-18"
+  },
+  {
+    "name": "Vladimir Ivanov / Ivan Sozonov",
+    "type": "MD",
+    "elo": 1876,
+    "rank": 15,
+    "wins": 2,
+    "losses": 4,
+    "played": 6,
+    "form": [
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2021-12-16"
+  },
+  {
+    "name": "Ong Yew Sin / Teo Ee Yi",
+    "type": "MD",
+    "elo": 1768,
+    "rank": 32,
+    "wins": 30,
+    "losses": 26,
+    "played": 56,
+    "form": [
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2026-03-03"
+  },
+  {
+    "name": "Chow Mei Kuan / Lee Meng Yean",
+    "type": "WD",
+    "elo": 1904,
+    "rank": 14,
+    "wins": 2,
+    "losses": 2,
+    "played": 4,
+    "form": [
+      1,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2021-01-30"
+  },
+  {
+    "name": "Kim So Yeong / Kong Hee Yong",
+    "type": "WD",
+    "elo": 2075,
+    "rank": 9,
+    "wins": 36,
+    "losses": 15,
+    "played": 51,
+    "form": [
+      0,
+      1,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2024-09-19"
+  },
+  {
+    "name": "Linda Efler / Isabel Lohau",
+    "type": "WD",
+    "elo": 1620,
+    "rank": 32,
+    "wins": 0,
+    "losses": 14,
+    "played": 14,
+    "form": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2024-01-10"
+  },
+  {
+    "name": "Ben Lane / Sean Vendy",
+    "type": "MD",
+    "elo": 2037,
+    "rank": 15,
+    "wins": 14,
+    "losses": 19,
+    "played": 33,
+    "form": [
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2026-03-03"
+  },
+  {
+    "name": "Jongkolphan Kititharakul / Rawinda Prajongjai",
+    "type": "WD",
+    "elo": 2044,
+    "rank": 10,
+    "wins": 19,
+    "losses": 23,
+    "played": 42,
+    "form": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2024-06-04"
+  },
+  {
+    "name": "Chloe Cobb / Lauren Smith",
+    "type": "WD",
+    "elo": 1674,
+    "rank": 29,
+    "wins": 4,
+    "losses": 11,
+    "played": 15,
+    "form": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2023-08-22"
+  },
+  {
+    "name": "Aaron Chia / Soh Wooi Yik",
+    "type": "MD",
+    "elo": 2136,
+    "rank": 2,
+    "wins": 52,
+    "losses": 31,
+    "played": 83,
+    "form": [
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2026-03-08"
+  },
+  {
+    "name": "Choi Sol Gyu / Seo Seung Jae",
+    "type": "MD",
+    "elo": 2035,
+    "rank": 11,
+    "wins": 3,
+    "losses": 3,
+    "played": 6,
+    "form": [
+      1,
+      1,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2022-08-26"
+  },
+  {
+    "name": "Chan Peng Soon / Goh Liu Ying",
+    "type": "XD",
+    "elo": 1737,
+    "rank": null,
+    "wins": 4,
+    "losses": 5,
+    "played": 9,
+    "form": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2023-01-11"
+  },
+  {
+    "name": "Zachariah Josiahno Sumitro / Hediana Julimarbela",
+    "type": "XD",
+    "elo": 1649,
+    "rank": 32,
+    "wins": 2,
+    "losses": 5,
+    "played": 7,
+    "form": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2023-06-13"
+  },
+  {
+    "name": "Jeong Na Eun / Kim Hye Jeong",
+    "type": "WD",
+    "elo": 2086,
+    "rank": 12,
+    "wins": 10,
+    "losses": 8,
+    "played": 18,
+    "form": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2024-03-13"
+  },
+  {
+    "name": "Benyapa Aimsaard / Nuntakarn Aimsaard",
+    "type": "WD",
+    "elo": 1934,
+    "rank": 20,
+    "wins": 11,
+    "losses": 15,
+    "played": 26,
+    "form": [
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2025-03-13"
+  },
+  {
+    "name": "Julie Finne-Ipsen / Mai Surrow",
+    "type": "WD",
+    "elo": 1731,
+    "rank": 41,
+    "wins": 0,
+    "losses": 6,
+    "played": 6,
+    "form": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2025-03-12"
+  },
+  {
+    "name": "Mark Lamsfuss / Marvin Seidel",
+    "type": "MD",
+    "elo": 1843,
+    "rank": 24,
+    "wins": 6,
+    "losses": 11,
+    "played": 17,
+    "form": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2024-01-09"
+  },
+  {
+    "name": "Chen Tang Jie / Peck Yen Wei",
+    "type": "XD",
+    "elo": 1899,
+    "rank": 28,
+    "wins": 2,
+    "losses": 3,
+    "played": 5,
+    "form": [
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2022-08-23"
+  },
+  {
+    "name": "Yuki Kaneko / Misaki Matsutomo",
+    "type": "XD",
+    "elo": 1908,
+    "rank": 28,
+    "wins": 8,
+    "losses": 14,
+    "played": 22,
+    "form": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2024-06-06"
+  },
+  {
+    "name": "Jones Ralfy Jansen / Linda Efler",
+    "type": "XD",
+    "elo": 1566,
+    "rank": 52,
+    "wins": 4,
+    "losses": 7,
+    "played": 11,
+    "form": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2023-08-23"
+  },
+  {
+    "name": "Venkat Gaurav Prasad / Juhi Dewangan",
+    "type": "XD",
+    "elo": 1439,
+    "rank": 125,
+    "wins": 0,
+    "losses": 6,
+    "played": 6,
+    "form": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2023-08-22"
+  },
+  {
+    "name": "Tan Kian Meng / Tan Wee Kiong",
+    "type": "MD",
+    "elo": 1739,
+    "rank": 64,
+    "wins": 1,
+    "losses": 3,
+    "played": 4,
+    "form": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2022-06-30"
+  },
+  {
+    "name": "Kang Min Hyuk / Seo Seung Jae",
+    "type": "MD",
+    "elo": 2201,
+    "rank": 3,
+    "wins": 25,
+    "losses": 12,
+    "played": 37,
+    "form": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2024-09-19"
+  },
+  {
+    "name": "Hiroki Okamura / Masayuki Morizono",
+    "type": "MD",
+    "elo": 1699,
+    "rank": 52,
+    "wins": 2,
+    "losses": 3,
+    "played": 5,
+    "form": [
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2022-08-24"
+  },
+  {
+    "name": "Febriana Dwipuji Kusuma / Amallia Cahaya Pratiwi",
+    "type": "WD",
+    "elo": 1984,
+    "rank": 10,
+    "wins": 14,
+    "losses": 16,
+    "played": 30,
+    "form": [
+      1,
+      0,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2025-08-29"
+  },
+  {
+    "name": "Baek Ha Na / Lee Yu Lim",
+    "type": "WD",
+    "elo": 2067,
+    "rank": 20,
+    "wins": 8,
+    "losses": 4,
+    "played": 12,
+    "form": [
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2023-01-15"
+  },
+  {
+    "name": "Marcus Fernaldi Gideon / Kevin Sanjaya Sukamuljo",
+    "type": "MD",
+    "elo": 2121,
+    "rank": 23,
+    "wins": 15,
+    "losses": 6,
+    "played": 21,
+    "form": [
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2023-01-12"
+  },
+  {
+    "name": "Keiichiro Matsui / Yoshinori Takeuti",
+    "type": "MD",
+    "elo": 1878,
+    "rank": 28,
+    "wins": 8,
+    "losses": 11,
+    "played": 19,
+    "form": [
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2024-01-11"
+  },
+  {
+    "name": "Choi Sol Gyu / Kim Won Ho",
+    "type": "MD",
+    "elo": 2024,
+    "rank": 15,
+    "wins": 9,
+    "losses": 10,
+    "played": 19,
+    "form": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2023-09-06"
+  },
+  {
+    "name": "M.r.arjun / Dhruv Kapila",
+    "type": "MD",
+    "elo": 1740,
+    "rank": 43,
+    "wins": 1,
+    "losses": 7,
+    "played": 8,
+    "form": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2024-01-09"
+  },
+  {
+    "name": "Goh Sze Fei / Nur Izzuddin",
+    "type": "MD",
+    "elo": 2050,
+    "rank": 8,
+    "wins": 24,
+    "losses": 19,
+    "played": 43,
+    "form": [
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2026-03-05"
+  },
+  {
+    "name": "Christo Popov / Toma Junior Popov",
+    "type": "MD",
+    "elo": 1949,
+    "rank": 25,
+    "wins": 8,
+    "losses": 24,
+    "played": 32,
+    "form": [
+      0,
+      0,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2026-03-06"
+  },
+  {
+    "name": "Ko Sung Hyun / Eom Hye Won",
+    "type": "XD",
+    "elo": 1786,
+    "rank": 102,
+    "wins": 4,
+    "losses": 4,
+    "played": 8,
+    "form": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2025-01-08"
+  },
+  {
+    "name": "Pearly Tan / Thinaah Muralitharan",
+    "type": "WD",
+    "elo": 2227,
+    "rank": 2,
+    "wins": 33,
+    "losses": 31,
+    "played": 64,
+    "form": [
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2026-03-07"
+  },
+  {
+    "name": "Clara Azurmendi / Beatriz Corrales",
+    "type": "WD",
+    "elo": 1469,
+    "rank": 43,
+    "wins": 1,
+    "losses": 4,
+    "played": 5,
+    "form": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2023-01-11"
+  },
+  {
+    "name": "Puttita Supajirakul / Sapsiree Taerattanachai",
+    "type": "WD",
+    "elo": 1968,
+    "rank": 20,
+    "wins": 5,
+    "losses": 3,
+    "played": 8,
+    "form": [
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2022-08-27"
+  },
+  {
+    "name": "Siti Fadia Silva Ramadhanti / Ribka Sugiarto",
+    "type": "WD",
+    "elo": 1863,
+    "rank": 28,
+    "wins": 1,
+    "losses": 3,
+    "played": 4,
+    "form": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2022-08-24"
+  },
+  {
+    "name": "Tan Kian Meng / Lai Pei Jing",
+    "type": "XD",
+    "elo": 1866,
+    "rank": 16,
+    "wins": 20,
+    "losses": 22,
+    "played": 42,
+    "form": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2025-03-11"
+  },
+  {
+    "name": "Supak Jomkoh / Supissara Pacharamongkol",
+    "type": "XD",
+    "elo": 1921,
+    "rank": 23,
+    "wins": 9,
+    "losses": 18,
+    "played": 27,
+    "form": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2024-09-19"
+  },
+  {
+    "name": "Satwiksairaj Rankireddy / Chirag Shetty",
+    "type": "MD",
+    "elo": 2104,
+    "rank": 4,
+    "wins": 43,
+    "losses": 22,
+    "played": 65,
+    "form": [
+      0,
+      1,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2026-03-04"
+  },
+  {
+    "name": "Mathias Thyrri / Alexandra Boe",
+    "type": "XD",
+    "elo": 2078,
+    "rank": 9,
+    "wins": 17,
+    "losses": 18,
+    "played": 35,
+    "form": [
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2026-03-03"
+  },
+  {
+    "name": "Rinov Rivaldy / Pitha Haningtyas Mentari",
+    "type": "XD",
+    "elo": 1919,
+    "rank": 35,
+    "wins": 10,
+    "losses": 17,
+    "played": 27,
+    "form": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2025-08-27"
+  },
+  {
+    "name": "Lu Ching Yao / Yang Po Hsuan",
+    "type": "MD",
+    "elo": 1869,
+    "rank": 25,
+    "wins": 6,
+    "losses": 13,
+    "played": 19,
+    "form": [
+      0,
+      0,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2024-06-07"
+  },
+  {
+    "name": "Pramudya Kusumawardana / Yeremia Erich Yoche Yacob Rambitan",
+    "type": "MD",
+    "elo": 2004,
+    "rank": 22,
+    "wins": 9,
+    "losses": 9,
+    "played": 18,
+    "form": [
+      1,
+      1,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2023-09-07"
+  },
+  {
+    "name": "Chang Tak Ching / Ng Wing Yung",
+    "type": "XD",
+    "elo": 1696,
+    "rank": 24,
+    "wins": 4,
+    "losses": 4,
+    "played": 8,
+    "form": [
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2022-08-23"
+  },
+  {
+    "name": "Rehan Naufal Kusharjanto / Lisa Ayu Kusumawati",
+    "type": "XD",
+    "elo": 1946,
+    "rank": 19,
+    "wins": 10,
+    "losses": 13,
+    "played": 23,
+    "form": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2024-06-05"
+  },
+  {
+    "name": "Oliver Leirud / Anona Pak",
+    "type": "XD",
+    "elo": 1577,
+    "rank": 57,
+    "wins": 1,
+    "losses": 3,
+    "played": 4,
+    "form": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2022-03-16"
+  },
+  {
+    "name": "Takuro Hoki / Yugo Kobayashi",
+    "type": "MD",
+    "elo": 2112,
+    "rank": 9,
+    "wins": 47,
+    "losses": 21,
+    "played": 68,
+    "form": [
+      1,
+      1,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2026-03-05"
+  },
+  {
+    "name": "Yuta Watanabe / Arisa Igaki",
+    "type": "XD",
+    "elo": 2194,
+    "rank": 4,
+    "wins": 49,
+    "losses": 16,
+    "played": 65,
+    "form": [
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2024-06-05"
+  },
+  {
+    "name": "Hoo Pang Ron / Cheah Yee See",
+    "type": "XD",
+    "elo": 1822,
+    "rank": 23,
+    "wins": 3,
+    "losses": 3,
+    "played": 6,
+    "form": [
+      1,
+      1,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2022-03-17"
+  },
+  {
+    "name": "Gabriela Stoeva / Stefani Stoeva",
+    "type": "WD",
+    "elo": 1990,
+    "rank": 12,
+    "wins": 16,
+    "losses": 16,
+    "played": 32,
+    "form": [
+      1,
+      1,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2026-03-05"
+  },
+  {
+    "name": "Ashwini Ponnappa / Reddy Sikki Gupta",
+    "type": "WD",
+    "elo": 1682,
+    "rank": 25,
+    "wins": 5,
+    "losses": 8,
+    "played": 13,
+    "form": [
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2022-08-24"
+  },
+  {
+    "name": "Vivian Ho / Lim Chiew Sien",
+    "type": "WD",
+    "elo": 1581,
+    "rank": 43,
+    "wins": 7,
+    "losses": 17,
+    "played": 24,
+    "form": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2025-01-09"
+  },
+  {
+    "name": "Akira Koga / Taichi Saito",
+    "type": "MD",
+    "elo": 1967,
+    "rank": 16,
+    "wins": 12,
+    "losses": 13,
+    "played": 25,
+    "form": [
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2024-03-14"
+  },
+  {
+    "name": "Supak Jomkoh / Kittinupong Kedren",
+    "type": "MD",
+    "elo": 1918,
+    "rank": 16,
+    "wins": 4,
+    "losses": 14,
+    "played": 18,
+    "form": [
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2024-09-18"
+  },
+  {
+    "name": "Fajar Alfian / Muhammad Shohibul Fikri",
+    "type": "MD",
+    "elo": 2096,
+    "rank": 5,
+    "wins": 52,
+    "losses": 27,
+    "played": 79,
+    "form": [
+      1,
+      1,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2026-03-05"
+  },
+  {
+    "name": "Leo Rolly Carnando / Daniel Marthin",
+    "type": "MD",
+    "elo": 1945,
+    "rank": 14,
+    "wins": 10,
+    "losses": 12,
+    "played": 22,
+    "form": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2024-06-06"
+  },
+  {
+    "name": "Kim Astrup / Anders Skaarup Rasmussen",
+    "type": "MD",
+    "elo": 1960,
+    "rank": 10,
+    "wins": 39,
+    "losses": 28,
+    "played": 67,
+    "form": [
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2026-03-05"
+  },
+  {
+    "name": "Lucas Corvee / Ronan Labar",
+    "type": "MD",
+    "elo": 1768,
+    "rank": 36,
+    "wins": 3,
+    "losses": 9,
+    "played": 12,
+    "form": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2024-03-12"
+  },
+  {
+    "name": "Tang Chun Man / Tse Ying Suet",
+    "type": "XD",
+    "elo": 2087,
+    "rank": 7,
+    "wins": 32,
+    "losses": 24,
+    "played": 56,
+    "form": [
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2026-03-07"
+  },
+  {
+    "name": "Muhammad Shohibul Fikri / Bagas Maulana",
+    "type": "MD",
+    "elo": 2050,
+    "rank": 11,
+    "wins": 19,
+    "losses": 15,
+    "played": 34,
+    "form": [
+      1,
+      0,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2024-06-07"
+  },
+  {
+    "name": "Sabar Karyaman Gutama / Moh Reza Pahlevi Isfahani",
+    "type": "MD",
+    "elo": 2097,
+    "rank": 7,
+    "wins": 18,
+    "losses": 15,
+    "played": 33,
+    "form": [
+      0,
+      1,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2026-03-04"
+  },
+  {
+    "name": "Mariia Stoliarenko / Yelyzaveta Zharka",
+    "type": "WD",
+    "elo": 1472,
+    "rank": 50,
+    "wins": 0,
+    "losses": 5,
+    "played": 5,
+    "form": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2023-08-21"
+  },
+  {
+    "name": "Kyohei Yamashita / Naru Shinoya",
+    "type": "XD",
+    "elo": 1911,
+    "rank": 21,
+    "wins": 11,
+    "losses": 13,
+    "played": 24,
+    "form": [
+      1,
+      0,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2024-03-13"
+  },
+  {
+    "name": "Rin Iwanaga / Kie Nakanishi",
+    "type": "WD",
+    "elo": 2065,
+    "rank": 7,
+    "wins": 21,
+    "losses": 24,
+    "played": 45,
+    "form": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2026-03-05"
+  },
+  {
+    "name": "Nami Matsuyama / Chiharu Shida",
+    "type": "WD",
+    "elo": 2251,
+    "rank": 3,
+    "wins": 48,
+    "losses": 18,
+    "played": 66,
+    "form": [
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2025-08-30"
+  },
+  {
+    "name": "Christoph Wegner / Matthew Nottingham",
+    "type": "MD",
+    "elo": 1743,
+    "rank": 40,
+    "wins": 4,
+    "losses": 7,
+    "played": 11,
+    "form": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2025-08-27"
+  },
+  {
+    "name": "Ruben Jille / Ties Van Der Lecq",
+    "type": "MD",
+    "elo": 1533,
+    "rank": 29,
+    "wins": 2,
+    "losses": 7,
+    "played": 9,
+    "form": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2023-03-15"
+  },
+  {
+    "name": "Lee Jhe-Huei / Yang Po Hsuan",
+    "type": "MD",
+    "elo": 1950,
+    "rank": 14,
+    "wins": 19,
+    "losses": 20,
+    "played": 39,
+    "form": [
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2026-03-05"
+  },
+  {
+    "name": "Johanna Goliszewski / Clara Nistad",
+    "type": "WD",
+    "elo": 1671,
+    "rank": 46,
+    "wins": 1,
+    "losses": 3,
+    "played": 4,
+    "form": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2022-08-23"
+  },
+  {
+    "name": "Fabien Delrue / William Villeger",
+    "type": "MD",
+    "elo": 1690,
+    "rank": 39,
+    "wins": 3,
+    "losses": 4,
+    "played": 7,
+    "form": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2022-08-24"
+  },
+  {
+    "name": "Joshua Mayo / Paul Reynaud",
+    "type": "MD",
+    "elo": 1382,
+    "rank": 54,
+    "wins": 1,
+    "losses": 4,
+    "played": 5,
+    "form": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2023-08-22"
+  },
+  {
+    "name": "Kati-Kreete Tüür / Helina Rüütel",
+    "type": "WD",
+    "elo": 1570,
+    "rank": 51,
+    "wins": 0,
+    "losses": 4,
+    "played": 4,
+    "form": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2023-08-21"
+  },
+  {
+    "name": "Callum Hemming / Jessica Pugh",
+    "type": "XD",
+    "elo": 1765,
+    "rank": 46,
+    "wins": 1,
+    "losses": 3,
+    "played": 4,
+    "form": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2022-08-22"
+  },
+  {
+    "name": "Jacqueline Funaoka / Samia Lima",
+    "type": "WD",
+    "elo": 1536,
+    "rank": 64,
+    "wins": 2,
+    "losses": 4,
+    "played": 6,
+    "form": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2025-08-25"
+  },
+  {
+    "name": "Mikkel Mikkelsen / Rikke Søby",
+    "type": "XD",
+    "elo": 1724,
+    "rank": 35,
+    "wins": 1,
+    "losses": 4,
+    "played": 5,
+    "form": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2022-08-23"
+  },
+  {
+    "name": "Alexander Dunn / Adam Hall",
+    "type": "MD",
+    "elo": 1663,
+    "rank": 32,
+    "wins": 6,
+    "losses": 12,
+    "played": 18,
+    "form": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2024-06-05"
+  },
+  {
+    "name": "Bjarne Gehnert / Jan Colin Stichling",
+    "type": "MD",
+    "elo": 1631,
+    "rank": 54,
+    "wins": 4,
+    "losses": 4,
+    "played": 8,
+    "form": [
+      1,
+      0,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2024-06-04"
+  },
+  {
+    "name": "Anibal Molina / Jonathan Mcdermott",
+    "type": "MD",
+    "elo": 1671,
+    "rank": 72,
+    "wins": 1,
+    "losses": 3,
+    "played": 4,
+    "form": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2023-08-22"
+  },
+  {
+    "name": "Guo Xin Wa / Zhang Shu Xian",
+    "type": "XD",
+    "elo": 1796,
+    "rank": 32,
+    "wins": 2,
+    "losses": 4,
+    "played": 6,
+    "form": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2022-08-24"
+  },
+  {
+    "name": "M.r. Arjun / Dhruv Kapila",
+    "type": "MD",
+    "elo": 1895,
+    "rank": 35,
+    "wins": 4,
+    "losses": 2,
+    "played": 6,
+    "form": [
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2022-08-26"
+  },
+  {
+    "name": "Julie Macpherson / Ciara Torrance",
+    "type": "WD",
+    "elo": 1687,
+    "rank": 40,
+    "wins": 3,
+    "losses": 13,
+    "played": 16,
+    "form": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2026-01-06"
+  },
+  {
+    "name": "Serena Anita / Katharina Fink",
+    "type": "WD",
+    "elo": 1444,
+    "rank": 82,
+    "wins": 1,
+    "losses": 3,
+    "played": 4,
+    "form": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2023-08-23"
+  },
+  {
+    "name": "Ties Van Der Lecq / Debora Jille",
+    "type": "XD",
+    "elo": 1649,
+    "rank": 90,
+    "wins": 1,
+    "losses": 3,
+    "played": 4,
+    "form": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2023-08-21"
+  },
+  {
+    "name": "Torjus Flaatten / Vegard Rikheim",
+    "type": "MD",
+    "elo": 1459,
+    "rank": 67,
+    "wins": 2,
+    "losses": 3,
+    "played": 5,
+    "form": [
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2023-08-21"
+  },
+  {
+    "name": "Fabricio Augusto / Jacqueline Funaoka",
+    "type": "XD",
+    "elo": 1752,
+    "rank": 58,
+    "wins": 2,
+    "losses": 4,
+    "played": 6,
+    "form": [
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2025-08-27"
+  },
+  {
+    "name": "Adam Hall / Julie Macpherson",
+    "type": "XD",
+    "elo": 1745,
+    "rank": 40,
+    "wins": 3,
+    "losses": 7,
+    "played": 10,
+    "form": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2023-08-22"
+  },
+  {
+    "name": "Zheng Si Wei / Huang Dong Ping",
+    "type": "XD",
+    "elo": 2375,
+    "rank": 1,
+    "wins": 9,
+    "losses": 2,
+    "played": 11,
+    "form": [
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2023-08-27"
+  },
+  {
+    "name": "Robin Tabeling / Selena Piek",
+    "type": "XD",
+    "elo": 2040,
+    "rank": 13,
+    "wins": 12,
+    "losses": 13,
+    "played": 25,
+    "form": [
+      1,
+      1,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2024-06-06"
+  },
+  {
+    "name": "Rachel Hu / Kristen Tsai",
+    "type": "WD",
+    "elo": 1881,
+    "rank": 23,
+    "wins": 2,
+    "losses": 4,
+    "played": 6,
+    "form": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2022-08-24"
+  },
+  {
+    "name": "Mayu Matsumoto / Wakana Nagahara",
+    "type": "WD",
+    "elo": 2198,
+    "rank": 7,
+    "wins": 21,
+    "losses": 14,
+    "played": 35,
+    "form": [
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2024-06-08"
+  },
+  {
+    "name": "Chen Qi Ming / Jia Yi Fan",
+    "type": "WD",
+    "elo": 2443,
+    "rank": 3,
+    "wins": 52,
+    "losses": 9,
+    "played": 61,
+    "form": [
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2024-12-14"
+  },
+  {
+    "name": "He Ji Ting / Tan Qiang",
+    "type": "MD",
+    "elo": 2063,
+    "rank": 19,
+    "wins": 7,
+    "losses": 2,
+    "played": 9,
+    "form": [
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2022-03-19"
+  },
+  {
+    "name": "Lee So Hee / Shin Se Eum",
+    "type": "WD",
+    "elo": 2074,
+    "rank": 3,
+    "wins": 6,
+    "losses": 2,
+    "played": 8,
+    "form": [
+      1,
+      0,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2022-08-26"
+  },
+  {
+    "name": "Goh V Shem / Tan Wee Kiong",
+    "type": "MD",
+    "elo": 1822,
+    "rank": 15,
+    "wins": 2,
+    "losses": 2,
+    "played": 4,
+    "form": [
+      1,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2022-08-24"
+  },
+  {
+    "name": "Liu Xuan Xuan / Xia Yu Ting",
+    "type": "WD",
+    "elo": 1810,
+    "rank": 24,
+    "wins": 3,
+    "losses": 5,
+    "played": 8,
+    "form": [
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2022-08-24"
+  },
+  {
+    "name": "Maiken Fruergaard / Sara Thygesen",
+    "type": "WD",
+    "elo": 1868,
+    "rank": 24,
+    "wins": 7,
+    "losses": 9,
+    "played": 16,
+    "form": [
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2024-06-06"
+  },
+  {
+    "name": "Mathias Thyrri / Amalie Magelund",
+    "type": "XD",
+    "elo": 1855,
+    "rank": 22,
+    "wins": 4,
+    "losses": 6,
+    "played": 10,
+    "form": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2024-03-13"
+  },
+  {
+    "name": "Debora Jille / Cheryl Seinen",
+    "type": "WD",
+    "elo": 1689,
+    "rank": 32,
+    "wins": 4,
+    "losses": 10,
+    "played": 14,
+    "form": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2024-03-13"
+  },
+  {
+    "name": "Zheng Si Wei / Huang Ya Qiong",
+    "type": "XD",
+    "elo": 2506,
+    "rank": 3,
+    "wins": 55,
+    "losses": 5,
+    "played": 60,
+    "form": [
+      0,
+      1,
+      1,
+      1,
+      1
+    ],
+    "as_of": "2024-12-15"
+  },
+  {
+    "name": "William Villeger / Anne Tran",
+    "type": "XD",
+    "elo": 1691,
+    "rank": 55,
+    "wins": 1,
+    "losses": 3,
+    "played": 4,
+    "form": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2022-08-22"
+  },
+  {
+    "name": "Wang Yi Lyu / Huang Dong Ping",
+    "type": "XD",
+    "elo": 2157,
+    "rank": 2,
+    "wins": 15,
+    "losses": 7,
+    "played": 22,
+    "form": [
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2023-01-12"
+  },
+  {
+    "name": "Dejan Ferdinansyah / Gloria Emanuelle Widjaja",
+    "type": "XD",
+    "elo": 1962,
+    "rank": 8,
+    "wins": 17,
+    "losses": 13,
+    "played": 30,
+    "form": [
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2025-01-09"
+  },
+  {
+    "name": "Ishaan Bhatnagar / Tanisha Crasto",
+    "type": "XD",
+    "elo": 1672,
+    "rank": 41,
+    "wins": 1,
+    "losses": 3,
+    "played": 4,
+    "form": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2022-08-23"
+  },
+  {
+    "name": "Man Wei Chong / Tee Kai Wun",
+    "type": "MD",
+    "elo": 2085,
+    "rank": 6,
+    "wins": 23,
+    "losses": 18,
+    "played": 41,
+    "form": [
+      1,
+      0,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2026-03-06"
+  },
+  {
+    "name": "Margot Lambert / Anne Tran",
+    "type": "WD",
+    "elo": 2024,
+    "rank": 16,
+    "wins": 4,
+    "losses": 11,
+    "played": 15,
+    "form": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2024-06-06"
+  },
+  {
+    "name": "Srivedya Gurazada / Ishika Jaiswal",
+    "type": "WD",
+    "elo": 1477,
+    "rank": 40,
+    "wins": 2,
+    "losses": 6,
+    "played": 8,
+    "form": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2023-06-13"
+  },
+  {
+    "name": "Supissara Pacharamongkol / Puttita Supajirakul",
+    "type": "WD",
+    "elo": 1789,
+    "rank": 24,
+    "wins": 4,
+    "losses": 4,
+    "played": 8,
+    "form": [
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2023-03-16"
+  },
+  {
+    "name": "Krishna Prasad Garaga / Vishnuvardhan Goud Panjala",
+    "type": "MD",
+    "elo": 1672,
+    "rank": 37,
+    "wins": 0,
+    "losses": 4,
+    "played": 4,
+    "form": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2023-03-15"
+  },
+  {
+    "name": "Treesa Jolly / Gayatri Gopichand",
+    "type": "WD",
+    "elo": 1851,
+    "rank": 23,
+    "wins": 15,
+    "losses": 17,
+    "played": 32,
+    "form": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2026-03-03"
+  },
+  {
+    "name": "Jeppe Bay / Lasse Mølhede",
+    "type": "MD",
+    "elo": 1863,
+    "rank": 31,
+    "wins": 4,
+    "losses": 7,
+    "played": 11,
+    "form": [
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2023-08-23"
+  },
+  {
+    "name": "Yuki Fukushima / Sayaka Hirota",
+    "type": "WD",
+    "elo": 2140,
+    "rank": 7,
+    "wins": 15,
+    "losses": 10,
+    "played": 25,
+    "form": [
+      1,
+      0,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2024-03-15"
+  },
+  {
+    "name": "Du Yue / Li Wen Mei",
+    "type": "WD",
+    "elo": 1995,
+    "rank": 19,
+    "wins": 5,
+    "losses": 3,
+    "played": 8,
+    "form": [
+      1,
+      1,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2022-08-25"
+  },
+  {
+    "name": "Low Yeen Yuan / Valeree Sietsema",
+    "type": "WD",
+    "elo": 1627,
+    "rank": 64,
+    "wins": 1,
+    "losses": 3,
+    "played": 4,
+    "form": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2022-08-23"
+  },
+  {
+    "name": "Hoo Pang Ron / Toh Ee Wei",
+    "type": "XD",
+    "elo": 1817,
+    "rank": 183,
+    "wins": 2,
+    "losses": 2,
+    "played": 4,
+    "form": [
+      1,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2022-06-29"
+  },
+  {
+    "name": "Febby Valencia Dwijayanti Gani / Ribka Sugiarto",
+    "type": "WD",
+    "elo": 1807,
+    "rank": 70,
+    "wins": 2,
+    "losses": 2,
+    "played": 4,
+    "form": [
+      0,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2022-07-01"
+  },
+  {
+    "name": "Anna Cheong Ching Yik / Teoh Mei Xing",
+    "type": "WD",
+    "elo": 1729,
+    "rank": 65,
+    "wins": 3,
+    "losses": 4,
+    "played": 7,
+    "form": [
+      1,
+      0,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2024-01-10"
+  },
+  {
+    "name": "Apriyani Rahayu / Siti Fadia Silva Ramadhanti",
+    "type": "WD",
+    "elo": 1985,
+    "rank": 29,
+    "wins": 25,
+    "losses": 13,
+    "played": 38,
+    "form": [
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2025-03-13"
+  },
+  {
+    "name": "Ashwini Bhat K / Shikha Gautam",
+    "type": "WD",
+    "elo": 1567,
+    "rank": 44,
+    "wins": 1,
+    "losses": 6,
+    "played": 7,
+    "form": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2023-08-22"
+  },
+  {
+    "name": "Chan Peng Soon / Cheah Yee See",
+    "type": "XD",
+    "elo": 1756,
+    "rank": 41,
+    "wins": 2,
+    "losses": 4,
+    "played": 6,
+    "form": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2024-01-11"
+  },
+  {
+    "name": "Liu Yu Chen / Ou Xuan Yi",
+    "type": "MD",
+    "elo": 2014,
+    "rank": 9,
+    "wins": 25,
+    "losses": 10,
+    "played": 35,
+    "form": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2024-06-05"
+  },
+  {
+    "name": "Hee Yong Kwon / Tan Wei Qiang",
+    "type": "XD",
+    "elo": 1752,
+    "rank": 15,
+    "wins": 9,
+    "losses": 12,
+    "played": 21,
+    "form": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2024-09-17"
+  },
+  {
+    "name": "Kim Gi Jung / Kim Sa Rang",
+    "type": "MD",
+    "elo": 1827,
+    "rank": 72,
+    "wins": 1,
+    "losses": 5,
+    "played": 6,
+    "form": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2025-08-26"
+  },
+  {
+    "name": "Kim Won Ho / Jeong Na Eun",
+    "type": "XD",
+    "elo": 2159,
+    "rank": 8,
+    "wins": 18,
+    "losses": 13,
+    "played": 31,
+    "form": [
+      1,
+      0,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2024-06-07"
+  },
+  {
+    "name": "He Ji Ting / Zhou Hao Dong",
+    "type": "MD",
+    "elo": 1959,
+    "rank": 16,
+    "wins": 7,
+    "losses": 6,
+    "played": 13,
+    "form": [
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2023-09-07"
+  },
+  {
+    "name": "Ren Xiang Yu / Tan Qiang",
+    "type": "MD",
+    "elo": 1941,
+    "rank": 19,
+    "wins": 3,
+    "losses": 5,
+    "played": 8,
+    "form": [
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2023-09-06"
+  },
+  {
+    "name": "Yeung Wing Lee / Yeung Pak Hon",
+    "type": "WD",
+    "elo": 1842,
+    "rank": 27,
+    "wins": 3,
+    "losses": 2,
+    "played": 5,
+    "form": [
+      1,
+      0,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2023-08-24"
+  },
+  {
+    "name": "Misha Zilberman / Svetlana Zilberman",
+    "type": "XD",
+    "elo": 1510,
+    "rank": null,
+    "wins": 2,
+    "losses": 3,
+    "played": 5,
+    "form": [
+      1,
+      0,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2025-08-26"
+  },
+  {
+    "name": "Jin Yu Jia / Wong Jia Lin",
+    "type": "WD",
+    "elo": 1736,
+    "rank": 24,
+    "wins": 5,
+    "losses": 5,
+    "played": 10,
+    "form": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2023-08-23"
+  },
+  {
+    "name": "Hiroki Midorikawa / Natsu Saito",
+    "type": "XD",
+    "elo": 2089,
+    "rank": 8,
+    "wins": 16,
+    "losses": 19,
+    "played": 35,
+    "form": [
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2025-12-20"
+  },
+  {
+    "name": "Catherine Choi / Josephine Wu",
+    "type": "WD",
+    "elo": 1777,
+    "rank": 28,
+    "wins": 3,
+    "losses": 6,
+    "played": 9,
+    "form": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2024-03-14"
+  },
+  {
+    "name": "Anna Ching / Teoh Mei Xing",
+    "type": "WD",
+    "elo": 1739,
+    "rank": null,
+    "wins": 2,
+    "losses": 2,
+    "played": 4,
+    "form": [
+      1,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2023-08-23"
+  },
+  {
+    "name": "Gregory Mairs / Jenny Mainzer",
+    "type": "XD",
+    "elo": 1778,
+    "rank": 44,
+    "wins": 4,
+    "losses": 10,
+    "played": 14,
+    "form": [
+      0,
+      0,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2025-03-14"
+  },
+  {
+    "name": "Yang Po Hsuan / Hu Ling Fang",
+    "type": "XD",
+    "elo": 1815,
+    "rank": 27,
+    "wins": 8,
+    "losses": 18,
+    "played": 26,
+    "form": [
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2026-03-05"
+  },
+  {
+    "name": "Jeong Na Eun / Kim Hye Rin",
+    "type": "WD",
+    "elo": 2117,
+    "rank": 11,
+    "wins": 9,
+    "losses": 6,
+    "played": 15,
+    "form": [
+      1,
+      0,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2024-09-21"
+  },
+  {
+    "name": "Zhang Shu Xian / Zheng Si Wei",
+    "type": "WD",
+    "elo": 2083,
+    "rank": 6,
+    "wins": 5,
+    "losses": 2,
+    "played": 7,
+    "form": [
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2023-08-26"
+  },
+  {
+    "name": "Chang Tak Ching / Lee Chih Chen",
+    "type": "XD",
+    "elo": 1707,
+    "rank": 36,
+    "wins": 0,
+    "losses": 4,
+    "played": 4,
+    "form": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2024-03-12"
+  },
+  {
+    "name": "Liang Wei Keng / Wang Chang",
+    "type": "MD",
+    "elo": 2152,
+    "rank": 3,
+    "wins": 43,
+    "losses": 17,
+    "played": 60,
+    "form": [
+      0,
+      0,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2026-03-06"
+  },
+  {
+    "name": "Li Wen Mei / Liu Xuan Xuan",
+    "type": "WD",
+    "elo": 2020,
+    "rank": 17,
+    "wins": 7,
+    "losses": 8,
+    "played": 15,
+    "form": [
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2024-06-04"
+  },
+  {
+    "name": "Chen Tang Jie / Toh Ee Wei",
+    "type": "XD",
+    "elo": 2181,
+    "rank": 4,
+    "wins": 32,
+    "losses": 20,
+    "played": 52,
+    "form": [
+      0,
+      1,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2026-03-03"
+  },
+  {
+    "name": "Go Pei Kee / Teoh Mei Xing",
+    "type": "WD",
+    "elo": 1834,
+    "rank": 18,
+    "wins": 3,
+    "losses": 5,
+    "played": 8,
+    "form": [
+      0,
+      1,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2025-08-27"
+  },
+  {
+    "name": "Ye Hong / Lee Chia Hsin",
+    "type": "XD",
+    "elo": 2013,
+    "rank": 10,
+    "wins": 6,
+    "losses": 8,
+    "played": 14,
+    "form": [
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2024-09-17"
+  },
+  {
+    "name": "Lee Chun Hei / Ng Tsz Yau",
+    "type": "XD",
+    "elo": 1963,
+    "rank": 21,
+    "wins": 5,
+    "losses": 9,
+    "played": 14,
+    "form": [
+      1,
+      0,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2024-09-18"
+  },
+  {
+    "name": "Rui Hirokami / Yuna Kato",
+    "type": "WD",
+    "elo": 1798,
+    "rank": 29,
+    "wins": 0,
+    "losses": 4,
+    "played": 4,
+    "form": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2024-01-10"
+  },
+  {
+    "name": "Baek Ha Na / Lee So Hee",
+    "type": "WD",
+    "elo": 2339,
+    "rank": 4,
+    "wins": 56,
+    "losses": 15,
+    "played": 71,
+    "form": [
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2026-03-08"
+  },
+  {
+    "name": "Feng Yan Zhe / Huang Dong Ping",
+    "type": "XD",
+    "elo": 2441,
+    "rank": 1,
+    "wins": 39,
+    "losses": 11,
+    "played": 50,
+    "form": [
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2026-03-05"
+  },
+  {
+    "name": "Jiang Zhen Bang / Wei Ya Xin",
+    "type": "XD",
+    "elo": 2241,
+    "rank": 2,
+    "wins": 35,
+    "losses": 13,
+    "played": 48,
+    "form": [
+      1,
+      0,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2026-03-06"
+  },
+  {
+    "name": "Kevin Lee / Ty Alexander Leong",
+    "type": "MD",
+    "elo": 1585,
+    "rank": 45,
+    "wins": 1,
+    "losses": 5,
+    "played": 6,
+    "form": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2025-08-25"
+  },
+  {
+    "name": "Annie Xu / Kerry Xu",
+    "type": "WD",
+    "elo": 1655,
+    "rank": 30,
+    "wins": 1,
+    "losses": 4,
+    "played": 5,
+    "form": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2024-03-13"
+  },
+  {
+    "name": "Rena Miyaura / Ayako Sakuramoto",
+    "type": "WD",
+    "elo": 2159,
+    "rank": 11,
+    "wins": 10,
+    "losses": 4,
+    "played": 14,
+    "form": [
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2024-03-16"
+  },
+  {
+    "name": "Hsu Ya Ching / Lin Wan Ching",
+    "type": "WD",
+    "elo": 1804,
+    "rank": 27,
+    "wins": 2,
+    "losses": 4,
+    "played": 6,
+    "form": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2024-06-05"
+  },
+  {
+    "name": "Ty Alexander Leong / Josephine Wu",
+    "type": "XD",
+    "elo": 1826,
+    "rank": 76,
+    "wins": 1,
+    "losses": 5,
+    "played": 6,
+    "form": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2025-08-26"
+  },
+  {
+    "name": "Dong A Ran / Nyl Yakura",
+    "type": "MD",
+    "elo": 1736,
+    "rank": 35,
+    "wins": 0,
+    "losses": 4,
+    "played": 4,
+    "form": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2024-06-05"
+  },
+  {
+    "name": "Li Yi Jing / Luo Xu Min",
+    "type": "WD",
+    "elo": 2023,
+    "rank": 8,
+    "wins": 19,
+    "losses": 10,
+    "played": 29,
+    "form": [
+      1,
+      0,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2026-03-04"
+  },
+  {
+    "name": "Lee Fang Jen / Lee Fang Chih",
+    "type": "MD",
+    "elo": 1860,
+    "rank": 22,
+    "wins": 5,
+    "losses": 11,
+    "played": 16,
+    "form": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2026-03-04"
+  },
+  {
+    "name": "Vinson Chiu / Jennie Gai",
+    "type": "XD",
+    "elo": 1699,
+    "rank": 31,
+    "wins": 0,
+    "losses": 4,
+    "played": 4,
+    "form": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2024-06-04"
+  },
+  {
+    "name": "Paula Lynn Obanana / Lauren Lam",
+    "type": "WD",
+    "elo": 1685,
+    "rank": 42,
+    "wins": 2,
+    "losses": 3,
+    "played": 5,
+    "form": [
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2024-03-14"
+  },
+  {
+    "name": "Liu Sheng Shu / Tan Ning",
+    "type": "WD",
+    "elo": 2491,
+    "rank": 1,
+    "wins": 51,
+    "losses": 10,
+    "played": 61,
+    "form": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "as_of": "2026-03-08"
+  },
+  {
+    "name": "Lee Yu Lim / Shin Seung Chan",
+    "type": "WD",
+    "elo": 1995,
+    "rank": 20,
+    "wins": 2,
+    "losses": 3,
+    "played": 5,
+    "form": [
+      0,
+      0,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2024-09-20"
+  },
+  {
+    "name": "Rasmus Kjær / Frederik Søgaard",
+    "type": "MD",
+    "elo": 1935,
+    "rank": 19,
+    "wins": 7,
+    "losses": 9,
+    "played": 16,
+    "form": [
+      1,
+      0,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2025-07-23"
+  },
+  {
+    "name": "Tanisha Crasto / Ashwini Ponnappa",
+    "type": "WD",
+    "elo": 1758,
+    "rank": 19,
+    "wins": 4,
+    "losses": 5,
+    "played": 9,
+    "form": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2025-03-11"
+  },
+  {
+    "name": "He Ji Ting / Ren Xiang Yu",
+    "type": "MD",
+    "elo": 2036,
+    "rank": 6,
+    "wins": 12,
+    "losses": 9,
+    "played": 21,
+    "form": [
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2025-03-15"
+  },
+  {
+    "name": "Cheng Chi Ya / Zhang Chi",
+    "type": "XD",
+    "elo": 1983,
+    "rank": 14,
+    "wins": 7,
+    "losses": 6,
+    "played": 13,
+    "form": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2026-03-04"
+  },
+  {
+    "name": "Chen Bo Yang / Liu Yi",
+    "type": "MD",
+    "elo": 2047,
+    "rank": 11,
+    "wins": 12,
+    "losses": 10,
+    "played": 22,
+    "form": [
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2026-03-07"
+  },
+  {
+    "name": "Ruttanapon Ketsaopar / Jhenicha Sudjaipraparat",
+    "type": "XD",
+    "elo": 1955,
+    "rank": 13,
+    "wins": 3,
+    "losses": 7,
+    "played": 10,
+    "form": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2026-03-03"
+  },
+  {
+    "name": "Kenya Mitsui / Hiroki Okamura",
+    "type": "MD",
+    "elo": 1730,
+    "rank": 34,
+    "wins": 2,
+    "losses": 8,
+    "played": 10,
+    "form": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2025-08-25"
+  },
+  {
+    "name": "Ornnicha Jongsathapornparn / Sukitta Suwachai",
+    "type": "WD",
+    "elo": 1607,
+    "rank": 47,
+    "wins": 1,
+    "losses": 5,
+    "played": 6,
+    "form": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2026-01-08"
+  },
+  {
+    "name": "Choong Hon Jian / Muhammad Shohibul Fikri",
+    "type": "MD",
+    "elo": 1821,
+    "rank": 29,
+    "wins": 0,
+    "losses": 6,
+    "played": 6,
+    "form": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2026-03-03"
+  },
+  {
+    "name": "Sung Shuo Yun / Yu Chien Hui",
+    "type": "WD",
+    "elo": 1647,
+    "rank": 20,
+    "wins": 3,
+    "losses": 7,
+    "played": 10,
+    "form": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2025-08-27"
+  },
+  {
+    "name": "Xie Hao Nan / Zeng Wei Han",
+    "type": "MD",
+    "elo": 1827,
+    "rank": 29,
+    "wins": 2,
+    "losses": 6,
+    "played": 8,
+    "form": [
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2025-07-23"
+  },
+  {
+    "name": "Polina Buhrova / Yevheniia Kantemyr",
+    "type": "WD",
+    "elo": 1667,
+    "rank": 30,
+    "wins": 1,
+    "losses": 8,
+    "played": 9,
+    "form": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2026-03-04"
+  },
+  {
+    "name": "Guo Xin Wa / Chen Fang Hui",
+    "type": "XD",
+    "elo": 2077,
+    "rank": 6,
+    "wins": 17,
+    "losses": 8,
+    "played": 25,
+    "form": [
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2026-03-07"
+  },
+  {
+    "name": "Muhammad Shohibul Fikri / Daniel Marthin",
+    "type": "MD",
+    "elo": 2028,
+    "rank": 16,
+    "wins": 4,
+    "losses": 2,
+    "played": 6,
+    "form": [
+      1,
+      1,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2025-03-13"
+  },
+  {
+    "name": "Mads Vestergaard / Christine Busch",
+    "type": "XD",
+    "elo": 1903,
+    "rank": 20,
+    "wins": 5,
+    "losses": 7,
+    "played": 12,
+    "form": [
+      0,
+      0,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2026-03-06"
+  },
+  {
+    "name": "Junaidi Ariffin / Yap Roy King",
+    "type": "MD",
+    "elo": 1902,
+    "rank": 18,
+    "wins": 6,
+    "losses": 8,
+    "played": 14,
+    "form": [
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2026-03-05"
+  },
+  {
+    "name": "Chen Zhi Xian / Presley Shin Jian Da",
+    "type": "MD",
+    "elo": 1818,
+    "rank": 28,
+    "wins": 1,
+    "losses": 7,
+    "played": 8,
+    "form": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2026-03-04"
+  },
+  {
+    "name": "Li Wen Mei / Zhang Shu Xian",
+    "type": "WD",
+    "elo": 2039,
+    "rank": 80,
+    "wins": 4,
+    "losses": 1,
+    "played": 5,
+    "form": [
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2024-09-22"
+  },
+  {
+    "name": "Pakkapon Teeraratsakul / Phataimas Muenwong",
+    "type": "XD",
+    "elo": 1844,
+    "rank": 48,
+    "wins": 1,
+    "losses": 3,
+    "played": 4,
+    "form": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2025-08-27"
+  },
+  {
+    "name": "Daniel Lundgaard / Mads Vestergaard",
+    "type": "MD",
+    "elo": 1868,
+    "rank": 23,
+    "wins": 3,
+    "losses": 7,
+    "played": 10,
+    "form": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2026-03-04"
+  },
+  {
+    "name": "Leo Rolly Carnando / Bagas Maulana",
+    "type": "MD",
+    "elo": 1929,
+    "rank": 13,
+    "wins": 7,
+    "losses": 6,
+    "played": 13,
+    "form": [
+      1,
+      0,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2026-03-03"
+  },
+  {
+    "name": "Teng Chun Hsun / Yang Ching Tun",
+    "type": "WD",
+    "elo": 1790,
+    "rank": 32,
+    "wins": 2,
+    "losses": 4,
+    "played": 6,
+    "form": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2025-06-04"
+  },
+  {
+    "name": "Sathish Kumar Karunakaran / Aadya Variyath",
+    "type": "XD",
+    "elo": 1727,
+    "rank": 37,
+    "wins": 2,
+    "losses": 4,
+    "played": 6,
+    "form": [
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2025-06-05"
+  },
+  {
+    "name": "Peeratchai Roajanawong / Pakkapon Teeraratsakul",
+    "type": "MD",
+    "elo": 1806,
+    "rank": 43,
+    "wins": 1,
+    "losses": 4,
+    "played": 5,
+    "form": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2025-08-25"
+  },
+  {
+    "name": "Hsu Yin-Hui / Lin Jhih Yong",
+    "type": "WD",
+    "elo": 1762,
+    "rank": 14,
+    "wins": 4,
+    "losses": 7,
+    "played": 11,
+    "form": [
+      0,
+      1,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2026-03-03"
+  },
+  {
+    "name": "Jesper Toft / Amalie Magelund",
+    "type": "XD",
+    "elo": 1910,
+    "rank": 12,
+    "wins": 9,
+    "losses": 7,
+    "played": 16,
+    "form": [
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2026-03-04"
+  },
+  {
+    "name": "Hsieh Pei Lan / Hung En-Tzu",
+    "type": "WD",
+    "elo": 1926,
+    "rank": 9,
+    "wins": 10,
+    "losses": 11,
+    "played": 21,
+    "form": [
+      1,
+      0,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2026-03-06"
+  },
+  {
+    "name": "Hoo Pang Ron / Cheng Su Yin",
+    "type": "XD",
+    "elo": 1879,
+    "rank": 23,
+    "wins": 3,
+    "losses": 6,
+    "played": 9,
+    "form": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2026-03-03"
+  },
+  {
+    "name": "Lanny Tria Mayasari / Siti Fadia Silva Ramadhanti",
+    "type": "WD",
+    "elo": 2001,
+    "rank": 14,
+    "wins": 4,
+    "losses": 3,
+    "played": 7,
+    "form": [
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2025-08-28"
+  },
+  {
+    "name": "Jia Yi Fan / Zhang Shu Xian",
+    "type": "WD",
+    "elo": 2243,
+    "rank": 6,
+    "wins": 14,
+    "losses": 5,
+    "played": 19,
+    "form": [
+      1,
+      0,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2025-08-29"
+  },
+  {
+    "name": "Alexander Dunn / Julie Macpherson",
+    "type": "XD",
+    "elo": 1861,
+    "rank": 32,
+    "wins": 4,
+    "losses": 6,
+    "played": 10,
+    "form": [
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2026-03-05"
+  },
+  {
+    "name": "Hee Yong Kwon / Jin Yu Jia",
+    "type": "XD",
+    "elo": 1743,
+    "rank": 22,
+    "wins": 2,
+    "losses": 5,
+    "played": 7,
+    "form": [
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2025-08-27"
+  },
+  {
+    "name": "Lu Ming Yang / Hung En-Tzu",
+    "type": "XD",
+    "elo": 1747,
+    "rank": 31,
+    "wins": 3,
+    "losses": 5,
+    "played": 8,
+    "form": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2025-08-26"
+  },
+  {
+    "name": "Callum Hemming / Estelle Van Zandt",
+    "type": "XD",
+    "elo": 1686,
+    "rank": 39,
+    "wins": 2,
+    "losses": 5,
+    "played": 7,
+    "form": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2026-03-04"
+  },
+  {
+    "name": "Wong Tien Ci / Lim Chiew Sien",
+    "type": "XD",
+    "elo": 1690,
+    "rank": 37,
+    "wins": 1,
+    "losses": 6,
+    "played": 7,
+    "form": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2026-03-04"
+  },
+  {
+    "name": "Hu Ling Fang / Jheng Yu Chieh",
+    "type": "WD",
+    "elo": 1807,
+    "rank": 31,
+    "wins": 2,
+    "losses": 5,
+    "played": 7,
+    "form": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2026-03-03"
+  },
+  {
+    "name": "Nur Mohd Azriyn Ayub / Tan Wee Kiong",
+    "type": "MD",
+    "elo": 1848,
+    "rank": 26,
+    "wins": 4,
+    "losses": 6,
+    "played": 10,
+    "form": [
+      1,
+      0,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2026-03-04"
+  },
+  {
+    "name": "Liu Kuan Han / Yang Po Hsuan",
+    "type": "MD",
+    "elo": 1835,
+    "rank": 20,
+    "wins": 3,
+    "losses": 7,
+    "played": 10,
+    "form": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2026-03-04"
+  },
+  {
+    "name": "Ong Xin Yee / Carmen Ting",
+    "type": "WD",
+    "elo": 1691,
+    "rank": 25,
+    "wins": 1,
+    "losses": 5,
+    "played": 6,
+    "form": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2026-03-04"
+  },
+  {
+    "name": "Paulina Chalupska / Kornelia Marchewka",
+    "type": "WD",
+    "elo": 1639,
+    "rank": 45,
+    "wins": 1,
+    "losses": 6,
+    "played": 7,
+    "form": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2026-01-08"
+  },
+  {
+    "name": "Dechapol Puavaranukroh / Supissara Pacharamongkol",
+    "type": "XD",
+    "elo": 2133,
+    "rank": 3,
+    "wins": 13,
+    "losses": 8,
+    "played": 21,
+    "form": [
+      0,
+      0,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2026-01-09"
+  },
+  {
+    "name": "Ye Hong / Nicole Gonzales Chan",
+    "type": "XD",
+    "elo": 2048,
+    "rank": 15,
+    "wins": 5,
+    "losses": 5,
+    "played": 10,
+    "form": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "as_of": "2026-03-08"
+  },
+  {
+    "name": "Chen Ching Chen / Hsu Yin-Hui",
+    "type": "XD",
+    "elo": 1801,
+    "rank": 25,
+    "wins": 3,
+    "losses": 6,
+    "played": 9,
+    "form": [
+      1,
+      0,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2026-03-04"
+  },
+  {
+    "name": "Chen Zhi Xian / Lin Yu Chieh",
+    "type": "MD",
+    "elo": 1809,
+    "rank": 36,
+    "wins": 1,
+    "losses": 4,
+    "played": 5,
+    "form": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2026-03-03"
+  },
+  {
+    "name": "Yuki Fukushima / Mayu Matsumoto",
+    "type": "WD",
+    "elo": 2241,
+    "rank": 6,
+    "wins": 22,
+    "losses": 8,
+    "played": 30,
+    "form": [
+      1,
+      0,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2026-03-06"
+  },
+  {
+    "name": "Kim Won Ho / Seo Seung Jae",
+    "type": "MD",
+    "elo": 2498,
+    "rank": 1,
+    "wins": 37,
+    "losses": 1,
+    "played": 38,
+    "form": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "as_of": "2026-03-08"
+  },
+  {
+    "name": "Kim Hye Rin / Kong Hee Yong",
+    "type": "WD",
+    "elo": 2159,
+    "rank": 3,
+    "wins": 10,
+    "losses": 8,
+    "played": 18,
+    "form": [
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2026-01-08"
+  },
+  {
+    "name": "Ashith Surya / Amrutha Pramuthesh",
+    "type": "XD",
+    "elo": 1571,
+    "rank": 46,
+    "wins": 0,
+    "losses": 4,
+    "played": 4,
+    "form": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2026-01-07"
+  },
+  {
+    "name": "Presley Shin Jian Da / Jennie Gai",
+    "type": "XD",
+    "elo": 1803,
+    "rank": 26,
+    "wins": 2,
+    "losses": 5,
+    "played": 7,
+    "form": [
+      0,
+      1,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2026-03-04"
+  },
+  {
+    "name": "Dhruv Kapila / Tanisha Crasto",
+    "type": "XD",
+    "elo": 1817,
+    "rank": 21,
+    "wins": 2,
+    "losses": 5,
+    "played": 7,
+    "form": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2026-03-05"
+  },
+  {
+    "name": "Francesca Corbett / Jennie Gai",
+    "type": "WD",
+    "elo": 1818,
+    "rank": 32,
+    "wins": 2,
+    "losses": 4,
+    "played": 6,
+    "form": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2026-03-05"
+  },
+  {
+    "name": "Jiang Zhen Bang / Huang Dong Ping",
+    "type": "XD",
+    "elo": 2041,
+    "rank": null,
+    "wins": 3,
+    "losses": 1,
+    "played": 4,
+    "form": [
+      1,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2025-03-15"
+  },
+  {
+    "name": "Huang Di / Liu Yang",
+    "type": "MD",
+    "elo": 1938,
+    "rank": 17,
+    "wins": 4,
+    "losses": 3,
+    "played": 7,
+    "form": [
+      1,
+      1,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2025-07-24"
+  },
+  {
+    "name": "Jeong Na Eun / Lee Yeon Woo",
+    "type": "WD",
+    "elo": 1986,
+    "rank": 19,
+    "wins": 3,
+    "losses": 3,
+    "played": 6,
+    "form": [
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2026-01-10"
+  },
+  {
+    "name": "Dechapol Puavaranukroh / Kittinupong Kedren",
+    "type": "MD",
+    "elo": 1944,
+    "rank": 12,
+    "wins": 2,
+    "losses": 4,
+    "played": 6,
+    "form": [
+      1,
+      0,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2025-08-27"
+  },
+  {
+    "name": "Kang Min Hyuk / Ki Dong Ju",
+    "type": "MD",
+    "elo": 1991,
+    "rank": 16,
+    "wins": 5,
+    "losses": 4,
+    "played": 9,
+    "form": [
+      1,
+      0,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2026-03-03"
+  },
+  {
+    "name": "Lee Jong Won / Chae Yu Jung",
+    "type": "XD",
+    "elo": 1907,
+    "rank": 67,
+    "wins": 4,
+    "losses": 2,
+    "played": 6,
+    "form": [
+      1,
+      1,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2025-08-27"
+  },
+  {
+    "name": "Rehan Naufal Kusharjanto / Gloria Emanuelle Widjaja",
+    "type": "XD",
+    "elo": 1952,
+    "rank": 16,
+    "wins": 4,
+    "losses": 3,
+    "played": 7,
+    "form": [
+      0,
+      0,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2025-07-25"
+  },
+  {
+    "name": "Rohan Kapoor / Gadde Ruthvika Shivani",
+    "type": "XD",
+    "elo": 1616,
+    "rank": 36,
+    "wins": 2,
+    "losses": 6,
+    "played": 8,
+    "form": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2026-03-04"
+  },
+  {
+    "name": "Feng Yan Zhe / Wei Ya Xin",
+    "type": "XD",
+    "elo": 2060,
+    "rank": 48,
+    "wins": 5,
+    "losses": 2,
+    "played": 7,
+    "form": [
+      1,
+      1,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2025-06-05"
+  },
+  {
+    "name": "Jafar Hidayatullah / Felisha Alberta Si",
+    "type": "XD",
+    "elo": 2038,
+    "rank": 10,
+    "wins": 7,
+    "losses": 7,
+    "played": 14,
+    "form": [
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2026-03-05"
+  },
+  {
+    "name": "Takumi Nomura / Yuichi Shimabukuro",
+    "type": "MD",
+    "elo": 1857,
+    "rank": 31,
+    "wins": 1,
+    "losses": 4,
+    "played": 5,
+    "form": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2026-03-03"
+  },
+  {
+    "name": "Amri Syahnawi / Nita Violina Marwah",
+    "type": "XD",
+    "elo": 1930,
+    "rank": 17,
+    "wins": 4,
+    "losses": 3,
+    "played": 7,
+    "form": [
+      1,
+      0,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2026-03-06"
+  },
+  {
+    "name": "Gronya Somerville / Angela Yu",
+    "type": "WD",
+    "elo": 1781,
+    "rank": 30,
+    "wins": 1,
+    "losses": 3,
+    "played": 4,
+    "form": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2025-08-27"
+  },
+  {
+    "name": "Yuichi Shimabukuro / Sayaka Hirota",
+    "type": "XD",
+    "elo": 1910,
+    "rank": 19,
+    "wins": 3,
+    "losses": 5,
+    "played": 8,
+    "form": [
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2026-03-05"
+  },
+  {
+    "name": "Lui Lok Lok / Tsang Hiu Yan",
+    "type": "WD",
+    "elo": 1726,
+    "rank": 29,
+    "wins": 1,
+    "losses": 3,
+    "played": 4,
+    "form": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "as_of": "2026-03-03"
+  },
+  {
+    "name": "Rui Hirokami / Sayaka Hirota",
+    "type": "WD",
+    "elo": 1934,
+    "rank": 16,
+    "wins": 3,
+    "losses": 3,
+    "played": 6,
+    "form": [
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2026-03-05"
+  },
+  {
+    "name": "Julien Maio / Lea Palermo",
+    "type": "XD",
+    "elo": 1713,
+    "rank": 44,
+    "wins": 1,
+    "losses": 3,
+    "played": 4,
+    "form": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2026-01-08"
+  },
+  {
+    "name": "Margot Lambert / Camille Pion",
+    "type": "WD",
+    "elo": 1856,
+    "rank": 22,
+    "wins": 2,
+    "losses": 3,
+    "played": 5,
+    "form": [
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2026-03-05"
+  },
+  {
+    "name": "Kaho Osawa / Mai Tanabe",
+    "type": "WD",
+    "elo": 1881,
+    "rank": 19,
+    "wins": 3,
+    "losses": 2,
+    "played": 5,
+    "form": [
+      1,
+      1,
+      0,
+      1,
+      0
+    ],
+    "as_of": "2026-03-05"
+  },
+  {
+    "name": "Ririna Hiramoto / Kokona Ishikawa",
+    "type": "WD",
+    "elo": 1847,
+    "rank": 26,
+    "wins": 2,
+    "losses": 2,
+    "played": 4,
+    "form": [
+      1,
+      1,
+      0,
+      0
+    ],
+    "as_of": "2026-03-04"
+  },
+  {
+    "name": "Febriana Dwipuji Kusuma / Meilysa Trias Puspitasari",
+    "type": "WD",
+    "elo": 1997,
+    "rank": 21,
+    "wins": 4,
+    "losses": 2,
+    "played": 6,
+    "form": [
+      1,
+      0,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2026-03-06"
+  },
+  {
+    "name": "Raymond Indra / Nikolaus Joaquin",
+    "type": "MD",
+    "elo": 2103,
+    "rank": 17,
+    "wins": 3,
+    "losses": 2,
+    "played": 5,
+    "form": [
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    "as_of": "2026-03-07"
+  }
+]

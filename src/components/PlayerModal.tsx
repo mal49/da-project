@@ -1,52 +1,93 @@
 import { Fragment, useEffect, useMemo, useRef, useState } from 'react'
-import type { Player } from '../players'
-import { PLAYERS } from '../players'
+import type { Discipline, Player } from '../players'
+import { PLAYERS, disciplineOf } from '../players'
 import { PlayerAvatar } from './PlayerAvatar'
 
 type Props = {
   open: boolean
   title: string
   excludeId?: string
+  // When set, the capsule filter opens on this discipline (e.g. the simulator
+  // seeding a doubles draw). Omitted in the head-to-head picker -> opens on "All".
+  discipline?: Discipline
+  eloFor: (name: string) => number | null
+  rankFor: (name: string) => number | null
   onPick: (player: Player) => void
   onClose: () => void
 }
 
 type Group = { label: string | null; items: Player[] }
 
-export function PlayerModal({ open, title, excludeId, onPick, onClose }: Props) {
+// Capsule filter categories: All + the five BWF disciplines. Doubles/mixed
+// entries are pairs-as-teams (name = 'A / B') carrying the pair's real rating.
+type Category = 'all' | Discipline
+const DISCIPLINE_LABEL: Record<Discipline, string> = {
+  MS: "Men's Singles",
+  WS: "Women's Singles",
+  MD: "Men's Doubles",
+  WD: "Women's Doubles",
+  XD: 'Mixed Doubles',
+}
+const DISCIPLINE_ORDER: Discipline[] = ['MS', 'WS', 'MD', 'WD', 'XD']
+const CATEGORIES: { key: Category; label: string }[] = [
+  { key: 'all', label: 'All' },
+  ...DISCIPLINE_ORDER.map((d) => ({ key: d as Category, label: DISCIPLINE_LABEL[d] })),
+]
+const isPair = (d: Discipline): boolean => d === 'MD' || d === 'WD' || d === 'XD'
+
+export function PlayerModal({
+  open,
+  title,
+  excludeId,
+  discipline,
+  eloFor,
+  rankFor,
+  onPick,
+  onClose,
+}: Props) {
   const [q, setQ] = useState('')
+  const [category, setCategory] = useState<Category>(discipline ?? 'all')
   const [selected, setSelected] = useState(0)
   const inputRef = useRef<HTMLInputElement>(null)
 
   useEffect(() => {
     if (open) {
       setQ('')
+      setCategory(discipline ?? 'all')
       setSelected(0)
       const id = setTimeout(() => inputRef.current?.focus(), 50)
       return () => clearTimeout(id)
     }
-  }, [open])
+  }, [open, discipline])
 
   const filtered = useMemo(() => {
-    const list = PLAYERS.filter((p) => p.id !== excludeId)
-    if (!q.trim()) return list
-    const needle = q.toLowerCase()
-    return list.filter(
-      (p) =>
-        p.name.toLowerCase().includes(needle) ||
-        p.country.toLowerCase().includes(needle),
-    )
-  }, [q, excludeId])
+    let list = PLAYERS.filter((p) => p.id !== excludeId)
+    if (category !== 'all') list = list.filter((p) => disciplineOf(p) === category)
+    if (q.trim()) {
+      const needle = q.toLowerCase()
+      list = list.filter(
+        (p) =>
+          p.name.toLowerCase().includes(needle) ||
+          p.country.toLowerCase().includes(needle),
+      )
+    }
+    return list
+  }, [q, excludeId, category])
 
-  // Group by men/women only when not searching.
+  // Split into per-discipline groups only on "All" (no search); otherwise the
+  // capsule already names the category, so show one flat, rank-sorted list.
+  // Order by displayed (real) rank, falling back to the roster rank.
   const grouped = useMemo<Group[]>(() => {
-    if (q.trim()) return [{ label: null, items: filtered }]
-    const byRank = (a: Player, b: Player) => a.rank - b.rank
-    return [
-      { label: "Men's Singles", items: filtered.filter((p) => !p.women).sort(byRank) },
-      { label: "Women's Singles", items: filtered.filter((p) => p.women).sort(byRank) },
-    ]
-  }, [filtered, q])
+    const byRank = (a: Player, b: Player) =>
+      (rankFor(a.name) ?? a.rank) - (rankFor(b.name) ?? b.rank)
+    if (category !== 'all' || q.trim()) {
+      return [{ label: null, items: [...filtered].sort(byRank) }]
+    }
+    return DISCIPLINE_ORDER.map((d) => ({
+      label: DISCIPLINE_LABEL[d],
+      items: filtered.filter((p) => disciplineOf(p) === d).sort(byRank),
+    })).filter((g) => g.items.length > 0)
+  }, [filtered, q, category, rankFor])
 
   const flat = useMemo(() => grouped.flatMap((g) => g.items), [grouped])
 
@@ -107,6 +148,24 @@ export function PlayerModal({ open, title, excludeId, onPick, onClose }: Props) 
           />
           <span className="modal-kbd">ESC</span>
         </div>
+        <div className="modal-filters">
+          <div className="tabs" role="tablist" aria-label="Category">
+            {CATEGORIES.map((c) => (
+              <button
+                key={c.key}
+                className="tab"
+                role="tab"
+                aria-selected={category === c.key}
+                onClick={() => {
+                  setCategory(c.key)
+                  setSelected(0)
+                }}
+              >
+                {c.label}
+              </button>
+            ))}
+          </div>
+        </div>
         <div className="modal-list">
           {flat.length === 0 ? (
             <div className="modal-empty">No players match "{q}"</div>
@@ -130,13 +189,28 @@ export function PlayerModal({ open, title, excludeId, onPick, onClose }: Props) 
                       <PlayerAvatar player={p} size={40} />
                       <div className="mname">
                         <b>{p.name}</b>
-                        <span>
-                          {p.country} · {p.hand}-hand · {p.height}cm
-                        </span>
+                        {(() => {
+                          const d = disciplineOf(p)
+                          return isPair(d) ? (
+                            <span>
+                              {DISCIPLINE_LABEL[d]}
+                              {p.country ? ` · ${p.country}` : ''}
+                            </span>
+                          ) : (
+                            <span>
+                              {p.country} · {p.hand}-hand · {p.height}cm
+                            </span>
+                          )
+                        })()}
                       </div>
                       <div className="mright">
-                        <span className="mrank">#{p.rank}</span>
-                        <span className="melo">{p.elo} ELO</span>
+                        <span className="mrank">#{rankFor(p.name) ?? p.rank}</span>
+                        <span className="melo">
+                          {(() => {
+                            const e = eloFor(p.name)
+                            return e != null ? `${e} ELO` : 'Unrated'
+                          })()}
+                        </span>
                       </div>
                     </div>
                   )

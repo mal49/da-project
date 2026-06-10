@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
-import type { Player, RankingEntry } from '../players'
-import { PLAYERS, fetchRankings } from '../players'
+import type { Discipline, Player, RankingEntry } from '../players'
+import { PLAYERS, disciplineOf, fetchRankings } from '../players'
 import { PlayerAvatar } from './PlayerAvatar'
 
 type Props = {
@@ -17,21 +17,49 @@ type Row = {
   form: number[] | null
 }
 
+const DISCIPLINE_TABS: Discipline[] = ['MS', 'WS', 'MD', 'WD', 'XD']
+const DISCIPLINE_LABEL: Record<Discipline, string> = {
+  MS: "Men's Singles",
+  WS: "Women's Singles",
+  MD: "Men's Doubles",
+  WD: "Women's Doubles",
+  XD: 'Mixed Doubles',
+}
+const isPair = (d: Discipline): boolean => d === 'MD' || d === 'WD' || d === 'XD'
+
 // Fallback flags for ranking entries that aren't in the static roster.
 const FLAGS: Record<string, string> = {
   CHN: '🇨🇳', THA: '🇹🇭', DEN: '🇩🇰', FRA: '🇫🇷', INA: '🇮🇩', TPE: '🇹🇼',
   IND: '🇮🇳', MAS: '🇲🇾', SGP: '🇸🇬', JPN: '🇯🇵', KOR: '🇰🇷', ESP: '🇪🇸',
-  HKG: '🇭🇰',
+  HKG: '🇭🇰', GER: '🇩🇪', NED: '🇳🇱', CAN: '🇨🇦', USA: '🇺🇸', RUS: '🇷🇺',
+}
+
+// Order-/spacing-independent identity for a pair, so a Wikipedia pair name joins
+// to the generated pool entry (which carries the real team Elo + avatar/flag).
+function pairKey(name: string): string {
+  return name
+    .split(' / ')
+    .map((m) => m.toLowerCase().replace(/[^a-z0-9]/g, ''))
+    .sort()
+    .join('|')
 }
 
 const byName = new Map(PLAYERS.map((p) => [p.name, p]))
+const poolByPairKey = new Map(
+  PLAYERS.filter((p) => isPair(disciplineOf(p))).map((p) => [pairKey(p.name), p]),
+)
 
-// Resolve a ranking entry to a pickable Player: use the roster entry (for
-// avatar/flag/hand + the predictor's metadata) but show the real BWF rank;
-// synthesize a minimal Player if it isn't in the roster.
-function toPlayer(e: RankingEntry, women: boolean): Player {
-  const rostered = byName.get(e.name)
-  if (rostered) return { ...rostered, rank: e.rank }
+// Resolve a ranking entry to a pickable Player: reuse the roster/pool entry (for
+// avatar/flag/hand + the predictor's real rating) but show the real BWF rank;
+// synthesize a minimal Player when we have no match.
+function toPlayer(e: RankingEntry, disc: Discipline): Player {
+  if (isPair(disc)) {
+    const pooled = poolByPairKey.get(pairKey(e.name))
+    if (pooled) return { ...pooled, rank: e.rank }
+  } else {
+    const rostered = byName.get(e.name)
+    if (rostered) return { ...rostered, rank: e.rank }
+  }
   return {
     id: e.name.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
     name: e.name,
@@ -42,7 +70,8 @@ function toPlayer(e: RankingEntry, women: boolean): Player {
     form: e.form ?? [],
     hand: 'R',
     height: 178,
-    women,
+    women: disc === 'WS' || disc === 'WD',
+    discipline: disc,
   }
 }
 
@@ -53,9 +82,10 @@ function formatDate(iso: string): string {
 }
 
 export function Leaderboard({ onPickPlayer }: Props) {
-  const [div, setDiv] = useState<'men' | 'women'>('men')
-  const [men, setMen] = useState<RankingEntry[]>([])
-  const [women, setWomen] = useState<RankingEntry[]>([])
+  const [disc, setDisc] = useState<Discipline>('MS')
+  const [lists, setLists] = useState<Record<Discipline, RankingEntry[]>>({
+    MS: [], WS: [], MD: [], WD: [], XD: [],
+  })
   const [asOf, setAsOf] = useState('')
   const [source, setSource] = useState('')
   const [status, setStatus] = useState<Status>('loading')
@@ -67,8 +97,7 @@ export function Leaderboard({ onPickPlayer }: Props) {
     fetchRankings().then((data) => {
       if (cancelled) return
       if (data.available) {
-        setMen(data.men)
-        setWomen(data.women)
+        setLists({ MS: data.men, WS: data.women, MD: data.md, WD: data.wd, XD: data.xd })
         setAsOf(data.asOf)
         setSource(data.source)
         setStatus('live')
@@ -83,9 +112,8 @@ export function Leaderboard({ onPickPlayer }: Props) {
 
   const rows = useMemo<Row[]>(() => {
     if (status === 'live') {
-      const entries = div === 'women' ? women : men
-      return entries.slice(0, 8).map((e) => ({
-        player: toPlayer(e, div === 'women'),
+      return (lists[disc] ?? []).slice(0, 8).map((e) => ({
+        player: toPlayer(e, disc),
         rank: e.rank,
         points: e.points,
         wins: e.wins,
@@ -94,8 +122,8 @@ export function Leaderboard({ onPickPlayer }: Props) {
       }))
     }
 
-    // Demo fallback (backend offline): static roster, fabricated record, no points.
-    return PLAYERS.filter((p) => (div === 'women' ? p.women : !p.women))
+    // Demo fallback (backend offline): static roster/pool, fabricated record.
+    return PLAYERS.filter((p) => disciplineOf(p) === disc)
       .slice()
       .sort((a, b) => a.rank - b.rank)
       .slice(0, 8)
@@ -103,39 +131,34 @@ export function Leaderboard({ onPickPlayer }: Props) {
         const wins = p.form.reduce((s, x) => s + x, 0)
         return { player: p, rank: p.rank, points: null, wins: 18 + wins * 3, losses: 9 - wins, form: p.form }
       })
-  }, [div, status, men, women])
+  }, [disc, status, lists])
 
   const caption =
     status === 'loading'
       ? 'Loading rankings…'
       : status === 'live'
         ? `● Live World Rankings${asOf ? ` · as of ${formatDate(asOf)}` : ''}${source ? ` · ${source}` : ''}`
-        : '○ Demo data — backend offline'
+        : '○ Demo data · backend offline'
 
   return (
     <div>
-      <div className="tabs" role="tablist">
-        <button
-          className="tab"
-          role="tab"
-          aria-selected={div === 'men'}
-          onClick={() => setDiv('men')}
-        >
-          Men's Singles
-        </button>
-        <button
-          className="tab"
-          role="tab"
-          aria-selected={div === 'women'}
-          onClick={() => setDiv('women')}
-        >
-          Women's Singles
-        </button>
+      <div className="tabs" role="tablist" aria-label="Discipline">
+        {DISCIPLINE_TABS.map((d) => (
+          <button
+            key={d}
+            className="tab"
+            role="tab"
+            aria-selected={disc === d}
+            onClick={() => setDisc(d)}
+          >
+            {DISCIPLINE_LABEL[d]}
+          </button>
+        ))}
       </div>
       <div className="lb-table">
         <div className="lb-row head">
           <span>Rank</span>
-          <span>Player</span>
+          <span>{isPair(disc) ? 'Pair' : 'Player'}</span>
           <span>Points</span>
           <span>Record</span>
           <span>Last 5</span>
@@ -143,9 +166,8 @@ export function Leaderboard({ onPickPlayer }: Props) {
         </div>
         {rows.length === 0 ? (
           <div className="lb-empty">
-            {div === 'women'
-              ? "Women's ranking snapshot pending — add it to backend/data/bwf_rankings.json."
-              : 'No ranking data available.'}
+            No {DISCIPLINE_LABEL[disc]} ranking data available. Refresh it with
+            {' '}<code>python backend/fetch_wikipedia_rankings.py</code>.
           </div>
         ) : (
           rows.map(({ player: p, rank, points, wins, losses, form }, idx) => (
@@ -156,7 +178,7 @@ export function Leaderboard({ onPickPlayer }: Props) {
                 <span>
                   <span>{p.name}</span>
                   <span className="country">
-                    {p.country} · {p.hand}-HAND
+                    {isPair(disc) ? `${p.country} · ${DISCIPLINE_LABEL[disc]}` : `${p.country} · ${p.hand}-HAND`}
                   </span>
                 </span>
               </span>

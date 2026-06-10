@@ -1,6 +1,11 @@
 // Player roster + prediction-view helpers.
 // Roster ported from the Claude Design handoff (players.js). Ranks/Elo are
 // demo figures; the live win-probability comes from the backend model.
+import { GENERATED_PLAYERS } from './players.generated'
+
+// The five BWF disciplines. Singles entries are individuals; doubles/mixed
+// entries are a PAIR treated as one team (name = 'A / B', with the pair's Elo).
+export type Discipline = 'MS' | 'WS' | 'MD' | 'WD' | 'XD'
 
 export type Player = {
   id: string
@@ -13,17 +18,17 @@ export type Player = {
   hand: 'R' | 'L'
   height: number
   women?: boolean
+  // MS/WS/MD/WD/XD. Absent on the hand-authored core roster (all singles) —
+  // use disciplineOf() to read it, which falls back to the `women` flag.
+  discipline?: Discipline
 }
 
 export type MatchContext = {
   tournament: string
   round: Round
-  surface: Surface
-  bestOf: 3 | 5
 }
 
 export type Round = 'R32' | 'R16' | 'QF' | 'SF' | 'Final'
-export type Surface = 'Mat' | 'Wood' | 'Cement'
 
 export type KeyFactor = { label: string; value: number; weight: number }
 
@@ -39,7 +44,8 @@ export type PredictionView = {
   modelUsed: string
 }
 
-export const PLAYERS: Player[] = [
+// The hand-authored core roster (ids here are referenced by MATCHUPS / findPlayer).
+const CORE_PLAYERS: Player[] = [
   { id: 'va', name: 'Viktor Axelsen', country: 'DEN', flag: '🇩🇰', rank: 2, elo: 2650, form: [1, 1, 1, 0, 1], hand: 'R', height: 194 },
   { id: 'kv', name: 'Kunlavut Vitidsarn', country: 'THA', flag: '🇹🇭', rank: 1, elo: 2710, form: [1, 1, 1, 1, 0], hand: 'R', height: 175 },
   { id: 'aa', name: 'Anders Antonsen', country: 'DEN', flag: '🇩🇰', rank: 3, elo: 2605, form: [1, 0, 1, 1, 1], hand: 'R', height: 184 },
@@ -78,6 +84,14 @@ export const PLAYERS: Player[] = [
   { id: 'ri', name: 'Ratchanok Intanon', country: 'THA', flag: '🇹🇭', rank: 7, elo: 2520, form: [0, 1, 1, 0, 1], hand: 'R', height: 168, women: true },
 ]
 
+// Full pickable roster: the curated core plus players mined from the real
+// tournament CSVs (backend/build_roster.py) so the draw pool runs deep enough
+// for the 32-player bracket. Deduped by name, core entries win.
+export const PLAYERS: Player[] = [
+  ...CORE_PLAYERS,
+  ...GENERATED_PLAYERS.filter((g) => !CORE_PLAYERS.some((c) => c.name === g.name)),
+]
+
 // Curated sample matchups for the "Try these →" chips.
 export const MATCHUPS: [string, string][] = [
   ['va', 'kv'],
@@ -88,7 +102,6 @@ export const MATCHUPS: [string, string][] = [
 ]
 
 export const ROUNDS: Round[] = ['R32', 'R16', 'QF', 'SF', 'Final']
-export const SURFACES: Surface[] = ['Mat', 'Wood', 'Cement']
 
 export function findPlayer(id: string): Player | undefined {
   return PLAYERS.find((p) => p.id === id)
@@ -101,6 +114,7 @@ export const API_BASE_URL = import.meta.env.VITE_API_URL ?? 'http://localhost:80
 
 export type RealStats = {
   elo: number
+  rank: number | null // real world rank (badmintonranks), null if unknown
   wins: number
   losses: number
   played: number
@@ -132,6 +146,7 @@ export async function fetchLeaderboard(): Promise<LeaderboardData> {
       for (const p of data.players) {
         stats.set(p.name, {
           elo: p.elo,
+          rank: p.rank ?? null,
           wins: p.wins,
           losses: p.losses,
           played: p.played,
@@ -160,12 +175,17 @@ export type RankingEntry = {
   elo: number | null
 }
 
+// Per-discipline ranking lists. men/women are singles; md/wd/xd are pairs (each
+// entry's `name` is 'Player A / Player B').
 export type RankingsData = {
   available: boolean
   asOf: string
   source: string
   men: RankingEntry[]
   women: RankingEntry[]
+  md: RankingEntry[]
+  wd: RankingEntry[]
+  xd: RankingEntry[]
 }
 
 type RankingsApiResponse = {
@@ -174,6 +194,9 @@ type RankingsApiResponse = {
   source: string
   men: RankingEntry[]
   women: RankingEntry[]
+  md?: RankingEntry[]
+  wd?: RankingEntry[]
+  xd?: RankingEntry[]
 }
 
 // Fetch /rankings. Never throws: on failure returns available:false so the
@@ -189,10 +212,93 @@ export async function fetchRankings(): Promise<RankingsData> {
       source: d.source ?? '',
       men: d.men ?? [],
       women: d.women ?? [],
+      md: d.md ?? [],
+      wd: d.wd ?? [],
+      xd: d.xd ?? [],
     }
   } catch {
-    return { available: false, asOf: '', source: '', men: [], women: [] }
+    return { available: false, asOf: '', source: '', men: [], women: [], md: [], wd: [], xd: [] }
   }
+}
+
+// ---- Tournament bracket simulation (POST /simulate) ----
+export type BracketMatch = {
+  player_a: string
+  player_b: string
+  prob_a: number
+  prob_b: number
+  winner: string
+}
+
+export type BracketRound = {
+  name: string
+  size: number
+  matches: BracketMatch[]
+}
+
+export type TournamentResult = {
+  available: boolean
+  champion: string
+  modelUsed: string
+  rounds: BracketRound[]
+  error?: string
+}
+
+type TournamentApiResponse = {
+  champion: string
+  model_used: string
+  rounds: BracketRound[]
+}
+
+export type SeedEntry = { name: string; rank: number; elo: number }
+
+// Run a single-elimination bracket on the backend model. `seeded` is the list of
+// entrants already arranged in bracket order (slot 0 vs slot 1, ...). Never
+// throws: returns available:false (+ error message) on any failure.
+export async function simulateTournament(
+  seeded: SeedEntry[],
+  matchType: Discipline,
+  tournamentName: string,
+): Promise<TournamentResult> {
+  try {
+    const res = await fetch(`${API_BASE_URL}/simulate`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        players: seeded.map((s) => ({ name: s.name, rank: s.rank, elo: s.elo })),
+        tournament_name: tournamentName,
+        match_type: matchType,
+      }),
+    })
+    if (!res.ok) {
+      const body = (await res.json().catch(() => null)) as { detail?: string } | null
+      throw new Error(body?.detail ?? `Request failed with ${res.status}`)
+    }
+    const d = (await res.json()) as TournamentApiResponse
+    return { available: true, champion: d.champion, modelUsed: d.model_used, rounds: d.rounds }
+  } catch (e) {
+    return {
+      available: false,
+      champion: '',
+      modelUsed: '',
+      rounds: [],
+      error: e instanceof Error ? e.message : 'Unable to reach the simulator.',
+    }
+  }
+}
+
+// Standard single-elimination seed slotting for a power-of-two draw: returns the
+// 1-indexed seed sitting in each bracket slot, so #1 and #2 can only meet in the
+// final. e.g. n=8 -> [1,8,4,5,2,7,3,6].
+export function seedOrder(n: number): number[] {
+  let seeds = [1]
+  while (seeds.length < n) {
+    const m = seeds.length * 2 + 1
+    const next: number[] = []
+    for (const s of seeds) next.push(s, m - s)
+    seeds = next
+  }
+  return seeds
 }
 
 export function initials(name: string): string {
@@ -206,8 +312,6 @@ export function initials(name: string): string {
 export function lastName(name: string): string {
   return name.split(' ').slice(-1)[0]
 }
-
-const formScore = (p: Player) => p.form.reduce((sum, x) => sum + x, 0)
 
 // Map the design's short round codes to the labels the backend ROUND_MAPPING expects.
 export function roundToApi(round: Round): string {
@@ -225,20 +329,33 @@ export function roundToApi(round: Round): string {
   }
 }
 
-// Singles only in this UI: infer division from player A.
-export function matchTypeFor(a: Player): 'MS' | 'WS' {
-  return a.women ? 'WS' : 'MS'
+// A player's discipline: explicit field if present (doubles/mixed pairs and
+// generated singles carry it), else inferred from the legacy `women` flag for the
+// hand-authored core roster (all singles).
+export function disciplineOf(p: Player): Discipline {
+  return p.discipline ?? (p.women ? 'WS' : 'MS')
+}
+
+// Discipline for a head-to-head prediction: take it from side A (both sides
+// should be the same discipline — the UI lets you pick, like the singles flow).
+export function matchTypeFor(a: Player): Discipline {
+  return disciplineOf(a)
 }
 
 // Derive the projected scoreline + ranked key factors that the result card shows.
-// `pA` is the model's win probability for player A.
+// `pA` is the model's win probability for player A. The key factors are the model's
+// two real per-player features — Elo gap and world-rank gap — taken from the actual
+// match-derived ratings (not the demo roster), so the card can't contradict itself.
 export function buildPredictionView(
   a: Player,
   b: Player,
-  ctx: MatchContext,
   pA: number,
   confidence: string,
   modelUsed: string,
+  realEloA: number | null = null,
+  realEloB: number | null = null,
+  realRankA: number | null = null,
+  realRankB: number | null = null,
 ): PredictionView {
   const pB = 1 - pA
   const winner = pA >= 0.5 ? a : b
@@ -256,19 +373,14 @@ export function buildPredictionView(
     sets.push([21, 15 + Math.floor((1 - conf) * 7)])
   }
 
-  // Key factors derived from the real player stats + chosen context.
-  const eloDiff = a.elo - b.elo
-  const rankAdv = (b.rank - a.rank) * 8
-  const formAdv = (formScore(a) - formScore(b)) * 14
-  let ctxAdj = 0
-  if (ctx.round === 'Final') ctxAdj += eloDiff > 0 ? 12 : -12
-  if (ctx.surface === 'Wood') ctxAdj += a.hand === 'L' ? -4 : 2
+  // Both diffs are A-minus-B and positive => favours A (lower rank number = better).
+  // 0 when a player is unrated, so nothing fabricated is shown.
+  const eloDiff = realEloA != null && realEloB != null ? realEloA - realEloB : 0
+  const rankDiff = realRankA != null && realRankB != null ? realRankB - realRankA : 0
 
   const keyFactors: KeyFactor[] = [
-    { label: 'Elo gap', value: eloDiff, weight: Math.abs(eloDiff) / 5 },
-    { label: 'Recent form', value: formAdv, weight: Math.abs(formAdv) },
-    { label: 'World rank', value: rankAdv, weight: Math.abs(rankAdv) },
-    { label: 'Match context', value: ctxAdj, weight: Math.abs(ctxAdj) },
+    { label: 'Elo gap', value: eloDiff, weight: Math.abs(eloDiff) },
+    { label: 'World rank', value: rankDiff, weight: Math.abs(rankDiff) * 12 },
   ].sort((x, y) => y.weight - x.weight)
 
   return { pA, pB, winner, sets, keyFactors, confidence, modelUsed }

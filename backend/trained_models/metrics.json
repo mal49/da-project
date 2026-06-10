@@ -1,0 +1,90 @@
+{
+  "trained_at": "2026-06-09T14:04:05+00:00",
+  "n_matches": 4231,
+  "features": [
+    "rank_diff",
+    "elo_diff",
+    "round_level",
+    "type_encoded",
+    "tier"
+  ],
+  "best_model": "decision_tree",
+  "best_model_label": "Decision Tree",
+  "selection_metric": "chronological_holdout_accuracy",
+  "headline_accuracy": 0.7497,
+  "headline_accuracy_pct": "75.0%",
+  "holdout_accuracy": 0.7497,
+  "cv_accuracy": 0.7407,
+  "calibrated": true,
+  "brier_raw": 0.1792,
+  "brier_calibrated": 0.1777,
+  "baselines": {
+    "majority_class": 0.5048,
+    "higher_elo_wins": 0.7395,
+    "better_rank_wins": 0.7251,
+    "higher_elo_wins_holdout": 0.7497,
+    "better_rank_wins_holdout": 0.7391
+  },
+  "cv": {
+    "logistic_regression": {
+      "acc": 0.7381,
+      "acc_std": 0.0113,
+      "auc": 0.8131,
+      "brier": 0.1765
+    },
+    "decision_tree": {
+      "acc": 0.7407,
+      "acc_std": 0.0102,
+      "auc": 0.8057,
+      "brier": 0.1792
+    },
+    "random_forest": {
+      "acc": 0.7374,
+      "acc_std": 0.0101,
+      "auc": 0.8079,
+      "brier": 0.1791
+    },
+    "gradient_boosting": {
+      "acc": 0.7247,
+      "acc_std": 0.0185,
+      "auc": 0.7983,
+      "brier": 0.1852
+    },
+    "baseline_majority": {
+      "acc": 0.5048,
+      "acc_std": 0.0002,
+      "auc": 0.5,
+      "brier": null
+    },
+    "baseline_higher_elo": {
+      "acc": 0.7395,
+      "acc_std": 0.0,
+      "auc": null,
+      "brier": null
+    },
+    "baseline_better_rank": {
+      "acc": 0.7251,
+      "acc_std": 0.0,
+      "auc": null,
+      "brier": null
+    }
+  },
+  "holdout": {
+    "logistic_regression": {
+      "acc": 0.745,
+      "auc": 0.8304
+    },
+    "decision_tree": {
+      "acc": 0.7497,
+      "auc": 0.8242
+    },
+    "random_forest": {
+      "acc": 0.745,
+      "auc": 0.822
+    },
+    "gradient_boosting": {
+      "acc": 0.7344,
+      "auc": 0.8009
+    }
+  }
+}

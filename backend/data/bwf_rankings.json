@@ -1,6 +1,6 @@
 {
-  "_readme": "Official BWF World Ranking (singles), parsed from https://en.wikipedia.org/wiki/BWF_World_Ranking via the MediaWiki API. Refresh with: python backend/fetch_wikipedia_rankings.py . Names normalized to match src/players.ts. Served by the backend at GET /rankings.",
-  "as_of": "2026-05-26",
+  "_readme": "Official BWF World Ranking (all 5 disciplines), parsed from https://en.wikipedia.org/wiki/BWF_World_Ranking via the MediaWiki API. Refresh with: python backend/fetch_wikipedia_rankings.py . Singles names normalized to match src/players.ts; doubles entries are pairs ('A / B'). Served by the backend at GET /rankings.",
+  "as_of": "2026-06-02",
   "source": "en.wikipedia.org",
   "men": [
     {
@@ -11,21 +11,21 @@
     },
     {
       "rank": 2,
-      "name": "Kunlavut Vitidsarn",
-      "country": "THA",
-      "points": 96865
-    },
-    {
-      "rank": 3,
       "name": "Anders Antonsen",
       "country": "DEN",
       "points": 95455
     },
     {
+      "rank": 3,
+      "name": "Kunlavut Vitidsarn",
+      "country": "THA",
+      "points": 93565
+    },
+    {
       "rank": 4,
       "name": "Christo Popov",
       "country": "FRA",
-      "points": 85962
+      "points": 84462
     },
     {
       "rank": 5,
@@ -47,21 +47,33 @@
     },
     {
       "rank": 8,
-      "name": "Lin Chun-Yi",
-      "country": "TPE",
-      "points": 73414
+      "name": "Alex Lanier",
+      "country": "FRA",
+      "points": 74525
     },
     {
       "rank": 9,
-      "name": "Alex Lanier",
-      "country": "FRA",
-      "points": 68565
+      "name": "Lin Chun-Yi",
+      "country": "TPE",
+      "points": 69414
     },
     {
       "rank": 10,
       "name": "Lakshya Sen",
       "country": "IND",
-      "points": 68363
+      "points": 69373
+    },
+    {
+      "rank": 11,
+      "name": "Kodai Naraoka",
+      "country": "JPN",
+      "points": 68020
+    },
+    {
+      "rank": 12,
+      "name": "Alwi Farhan",
+      "country": "INA",
+      "points": 66209
     }
   ],
   "women": [
@@ -81,19 +93,19 @@
       "rank": 3,
       "name": "Akane Yamaguchi",
       "country": "JPN",
-      "points": 96876
+      "points": 97826
     },
     {
       "rank": 4,
       "name": "Chen Yu Fei",
       "country": "CHN",
-      "points": 90251
+      "points": 86951
     },
     {
       "rank": 5,
       "name": "Han Yue",
       "country": "CHN",
-      "points": 86288
+      "points": 84638
     },
     {
       "rank": 6,
@@ -117,13 +129,247 @@
       "rank": 9,
       "name": "Tomoka Miyazaki",
       "country": "JPN",
-      "points": 61076
+      "points": 62086
     },
     {
       "rank": 10,
+      "name": "P. V. Sindhu",
+      "country": "IND",
+      "points": 59781
+    },
+    {
+      "rank": 11,
       "name": "Michelle Li",
       "country": "CAN",
-      "points": 58577
+      "points": 56847
+    },
+    {
+      "rank": 12,
+      "name": "Nozomi Okuhara",
+      "country": "JPN",
+      "points": 56490
+    }
+  ],
+  "md": [
+    {
+      "rank": 1,
+      "name": "Kim Won Ho / Seo Seung Jae",
+      "country": "KOR",
+      "points": 122049
+    },
+    {
+      "rank": 2,
+      "name": "Fajar Alfian / Muhammad Rian Ardianto",
+      "country": "INA",
+      "points": 90853
+    },
+    {
+      "rank": 3,
+      "name": "Aaron Chia / Soh Wooi Yik",
+      "country": "MAS",
+      "points": 89484
+    },
+    {
+      "rank": 4,
+      "name": "Satwiksairaj Rankireddy / Chirag Shetty",
+      "country": "IND",
+      "points": 89311
+    },
+    {
+      "rank": 5,
+      "name": "Liang Weikeng / Wang Chang",
+      "country": "CHN",
+      "points": 85639
+    },
+    {
+      "rank": 6,
+      "name": "Man Wei Chong / Tee Kai Wun",
+      "country": "MAS",
+      "points": 72273
+    },
+    {
+      "rank": 7,
+      "name": "Sabar Karyaman Gutama / Muhammad Reza Pahlevi Isfahani",
+      "country": "INA",
+      "points": 72116
+    },
+    {
+      "rank": 8,
+      "name": "Goh Sze Fei / Nur Izzuddin",
+      "country": "MAS",
+      "points": 71537
+    },
+    {
+      "rank": 9,
+      "name": "Takuro Hoki / Yugo Kobayashi",
+      "country": "JPN",
+      "points": 69790
+    },
+    {
+      "rank": 10,
+      "name": "Chen Boyang / Liu Yi",
+      "country": "CHN",
+      "points": 63585
+    },
+    {
+      "rank": 11,
+      "name": "Ben Lane / Sean Vendy",
+      "country": "ENG",
+      "points": 61691
+    },
+    {
+      "rank": 12,
+      "name": "Raymond Indra / Nikolaus Joaquin",
+      "country": "INA",
+      "points": 61366
+    }
+  ],
+  "wd": [
+    {
+      "rank": 1,
+      "name": "Liu Shengshu / Tan Ning",
+      "country": "CHN",
+      "points": 118767
+    },
+    {
+      "rank": 2,
+      "name": "Pearly Tan / Thinaah Muralitharan",
+      "country": "MAS",
+      "points": 95250
+    },
+    {
+      "rank": 3,
+      "name": "Baek Ha Na / Lee So Hee",
+      "country": "KOR",
+      "points": 94134
+    },
+    {
+      "rank": 4,
+      "name": "Jia Yifan / Chen Qingchen",
+      "country": "CHN",
+      "points": 91110
+    },
+    {
+      "rank": 5,
+      "name": "Yuki Fukushima / Sayaka Hirota",
+      "country": "JPN",
+      "points": 86406
+    },
+    {
+      "rank": 6,
+      "name": "Kim Hye Jeong / Jeong Na Eun Kong Hee Yong",
+      "country": "KOR",
+      "points": 82317
+    },
+    {
+      "rank": 7,
+      "name": "Rin Iwanaga / Kie Nakanishi",
+      "country": "JPN",
+      "points": 78764
+    },
+    {
+      "rank": 8,
+      "name": "Li Yijing / Luo Xumin",
+      "country": "CHN",
+      "points": 68457
+    },
+    {
+      "rank": 9,
+      "name": "Hsieh Pei Shan / Hung En Tzu",
+      "country": "TPE",
+      "points": 63875
+    },
+    {
+      "rank": 10,
+      "name": "Gabriela Stoeva / Stefani Stoeva",
+      "country": "BUL",
+      "points": 59706
+    },
+    {
+      "rank": 11,
+      "name": "Hsu Yin Hui / Lin Jhih Yun",
+      "country": "TPE",
+      "points": 54114
+    },
+    {
+      "rank": 12,
+      "name": "Arisa Igarashi / Chiharu Shida",
+      "country": "JPN",
+      "points": 53819
+    }
+  ],
+  "xd": [
+    {
+      "rank": 1,
+      "name": "Feng Yanzhe / Huang Dongping",
+      "country": "CHN",
+      "points": 103800
+    },
+    {
+      "rank": 2,
+      "name": "Jiang Zhenbang / Wei Yaxin",
+      "country": "CHN",
+      "points": 98950
+    },
+    {
+      "rank": 3,
+      "name": "Dechapol Puavaranukroh / Sapsiree Taerattanachai",
+      "country": "THA",
+      "points": 91120
+    },
+    {
+      "rank": 4,
+      "name": "Chen Tang Jie / Toh Ee Wei",
+      "country": "MAS",
+      "points": 90050
+    },
+    {
+      "rank": 5,
+      "name": "Mathias Christiansen / Christina Pedersen",
+      "country": "DEN",
+      "points": 83290
+    },
+    {
+      "rank": 6,
+      "name": "Thom Gicquel / Delphine Delrue",
+      "country": "FRA",
+      "points": 81340
+    },
+    {
+      "rank": 7,
+      "name": "Guo Xinwa / Chen Fanghui",
+      "country": "CHN",
+      "points": 73790
+    },
+    {
+      "rank": 8,
+      "name": "Tang Chun Man / Tse Ying Suet",
+      "country": "HON",
+      "points": 65410
+    },
+    {
+      "rank": 9,
+      "name": "Jafar Hidayatullah / Felisha Pasaribu",
+      "country": "INA",
+      "points": 62380
+    },
+    {
+      "rank": 10,
+      "name": "Hiroki Midorikawa / Natsu Saito",
+      "country": "JPN",
+      "points": 59860
+    },
+    {
+      "rank": 11,
+      "name": "Cheng Xing / Zhang Chi",
+      "country": "CHN",
+      "points": 59830
+    },
+    {
+      "rank": 12,
+      "name": "Goh Soon Huat / Shevon Jemie Lai",
+      "country": "MAS",
+      "points": 59480
     }
   ]
 }

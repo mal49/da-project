@@ -6,8 +6,13 @@ import numpy as np
 import os
 import csv
 import json
+import re
+import unicodedata
 from collections import defaultdict
 from typing import Optional
+
+# Feature engineering is shared with train.py so serving matches training exactly.
+from features import build_features
 
 app = FastAPI(title="🏸 Badminton Match Predictor API")
 
@@ -29,14 +34,27 @@ try:
     model = joblib.load(model_path)
     feature_columns = joblib.load(features_path)
     mappings = joblib.load(mappings_path)
-    
+
     ROUND_MAPPING = mappings['round_mapping']
     TYPE_MAPPING = mappings['type_mapping']
     print("✅ Models loaded successfully!")
 except Exception as e:
     print(f"❌ Error loading models: {e}")
-    print("💡 Make sure 'trained_models' folder exists in the parent directory.")
+    print("💡 Run `python train.py` to (re)generate the trained_models artifacts.")
     raise e
+
+# Model name + measured accuracy come from train.py's metrics.json, so the figures
+# the UI shows always reflect the model that's actually loaded (no hardcoded number).
+try:
+    metrics_path = os.path.join(os.path.dirname(__file__), "trained_models", "metrics.json")
+    with open(metrics_path, encoding="utf-8") as f:
+        METRICS = json.load(f)
+    MODEL_LABEL = METRICS.get("best_model_label", "Model")
+    MODEL_ACCURACY_PCT = METRICS.get("headline_accuracy_pct", "")
+    MODEL_USED = f"{MODEL_LABEL} ({MODEL_ACCURACY_PCT} Acc)" if MODEL_ACCURACY_PCT else MODEL_LABEL
+except (OSError, json.JSONDecodeError):
+    METRICS, MODEL_LABEL, MODEL_ACCURACY_PCT = {}, "Model", ""
+    MODEL_USED = "Model"
 
 # ============ REQUEST SCHEMA ============
 class MatchPredictionRequest(BaseModel):
@@ -82,16 +100,70 @@ class MatchPredictionResponse(BaseModel):
     confidence: str
     model_used: str
 
-# ============ HELPER FUNCTIONS ============
-def get_tournament_tier(name: str) -> int:
-    name = str(name).lower()
-    if any(x in name for x in ['super 1000', 'world tour finals', 'olympic', 'world championship']):
-        return 3
-    elif any(x in name for x in ['super 750', 'all england', 'china open', 'indonesia open']):
-        return 2
-    elif 'super 500' in name:
-        return 1
-    return 0
+# ---- Tournament bracket simulation schema ----
+class TournamentPlayer(BaseModel):
+    name: str = Field(min_length=1)
+    rank: int = Field(ge=1, le=2000)
+    elo: Optional[int] = Field(default=None, ge=1000, le=3500)
+
+    @field_validator("name")
+    @classmethod
+    def clean_name(cls, value: str) -> str:
+        normalized = " ".join(value.strip().split())
+        if not normalized:
+            raise ValueError("must not be blank")
+        return normalized
+
+class TournamentRequest(BaseModel):
+    players: list[TournamentPlayer]
+    tournament_name: str = Field(min_length=1)
+    match_type: str
+
+    @field_validator("tournament_name")
+    @classmethod
+    def clean_tournament(cls, value: str) -> str:
+        normalized = " ".join(value.strip().split())
+        if not normalized:
+            raise ValueError("must not be blank")
+        return normalized
+
+    @field_validator("match_type")
+    @classmethod
+    def validate_type(cls, value: str) -> str:
+        normalized = value.strip().upper()
+        if normalized not in TYPE_MAPPING:
+            raise ValueError(f"match_type must be one of: {', '.join(TYPE_MAPPING.keys())}")
+        return normalized
+
+    @field_validator("players")
+    @classmethod
+    def validate_draw(cls, value: list[TournamentPlayer]) -> list[TournamentPlayer]:
+        if len(value) not in (2, 4, 8, 16, 32):
+            raise ValueError("players must contain 2, 4, 8, 16 or 32 entrants (a power of two)")
+        return value
+
+class BracketMatch(BaseModel):
+    player_a: str
+    player_b: str
+    prob_a: float
+    prob_b: float
+    winner: str
+
+class BracketRound(BaseModel):
+    name: str
+    size: int
+    matches: list[BracketMatch]
+
+class TournamentResponse(BaseModel):
+    champion: str
+    model_used: str
+    rounds: list[BracketRound]
+
+# Draw size -> model round label (feature) and human round name (display).
+_ROUND_LABEL_BY_SIZE = {32: "Round of 32", 16: "Round of 16", 8: "Quarter final",
+                        4: "Semi final", 2: "Final"}
+_ROUND_NAME_BY_SIZE = {32: "Round of 32", 16: "Round of 16", 8: "Quarterfinals",
+                       4: "Semifinals", 2: "Final"}
 
 # ============ LEADERBOARD / RANKINGS (real data, pre-computed at startup) ============
 # Two real-data sources live in backend/data/:
@@ -150,64 +222,145 @@ def _match_stats() -> tuple[dict, str]:
     return stats, season
 
 
-def _load_leaderboard() -> dict:
-    """Elo strength ladder from ingested match history (served at /players)."""
-    stats, season = _match_stats()
-    players = [
-        {"name": name, **s} for name, s in stats.items() if s["elo"] is not None
-    ]
-    players.sort(key=lambda p: p["elo"], reverse=True)
-    return {"available": bool(players), "season": season, "players": players}
+def _load_player_ratings() -> tuple[dict, dict]:
+    """Real tournament ratings — Elo + world rank + record + last-5 form per player,
+    from data/player_ratings.json (built by ingest_tournaments.py from the
+    badmintonranks tournament CSVs). Served at /players and used by /predict.
+
+    Returns (payload, by_name) where payload is the /players response and by_name
+    maps player name -> rating (incl. a casefold alias for resilient lookups).
+    Degrades to available=False if the file is missing."""
+    try:
+        with open(os.path.join(DATA_DIR, "player_ratings.json"), encoding="utf-8") as f:
+            players = json.load(f)
+    except (OSError, json.JSONDecodeError):
+        return {"available": False, "season": "", "players": []}, {}
+
+    players.sort(key=lambda p: p.get("elo") or 0, reverse=True)
+    by_name: dict[str, dict] = {}
+    for p in players:
+        by_name[p["name"]] = p
+        by_name[p["name"].casefold()] = p
+
+    years = [p["as_of"][:4] for p in players if p.get("as_of")]
+    season = ""
+    if years:
+        lo, hi = min(years), max(years)
+        season = lo if lo == hi else f"{lo}–{hi[2:]}"  # e.g. "2021–26"
+    return {"available": bool(players), "season": season, "players": players}, by_name
+
+
+def _pair_key(pair_name: str) -> frozenset:
+    """Order-/spacing-/accent-independent identity for a doubles pair: the set of
+    its two members each reduced to lowercase letters+digits. So 'Liu Shengshu / Tan
+    Ning' (Wikipedia) and 'Liu Sheng Shu / Tan Ning' (CSV pool) collapse to the same
+    key, regardless of which member is listed first."""
+    def norm(m: str) -> str:
+        s = unicodedata.normalize("NFKD", m or "")
+        s = "".join(c for c in s if not unicodedata.combining(c))
+        return re.sub(r"[^a-z0-9]", "", s.lower())
+    return frozenset(norm(m) for m in pair_name.split(" / ") if m.strip())
 
 
 def _load_rankings() -> dict:
-    """Official BWF World Ranking snapshot (served at /rankings), enriched with
-    match-derived record + form where we have history. Sorted by world rank.
+    """Official BWF World Ranking snapshot (served at /rankings), all 5 disciplines,
+    enriched with record + form + Elo where we have history. Sorted by world rank.
     The snapshot is refreshed from Wikipedia by fetch_wikipedia_rankings.py.
     Degrades to available=False if the file is missing."""
+    empty = {"available": False, "as_of": "", "source": "",
+             "men": [], "women": [], "md": [], "wd": [], "xd": []}
     try:
         with open(os.path.join(DATA_DIR, "bwf_rankings.json"), encoding="utf-8") as f:
             snapshot = json.load(f)
     except (OSError, json.JSONDecodeError):
-        return {"available": False, "as_of": "", "source": "", "men": [], "women": []}
+        return empty
 
     stats, _ = _match_stats()
+    # Doubles enrichment source: the pair team ratings (real Elo/record/form),
+    # indexed by order-independent pair key so Wikipedia spellings still join.
+    pair_index = {_pair_key(p["name"]): p for p in LEADERBOARD["players"]
+                  if p.get("type") in ("MD", "WD", "XD")}
 
-    def enrich(entries: list[dict]) -> list[dict]:
-        out = []
-        for e in sorted(entries, key=lambda x: x.get("rank") or 9999):
-            s = stats.get(e.get("name"), {})
-            out.append({
-                "rank": e.get("rank"),
-                "name": e.get("name"),
-                "country": e.get("country"),
-                "points": e.get("points"),
-                "tournaments": e.get("tournaments"),
-                # match-derived extras (null when we have no history for them)
-                "wins": s.get("wins"),
-                "losses": s.get("losses"),
-                "form": s.get("form"),
-                "elo": s.get("elo"),
-            })
-        return out
+    def row(e: dict, extra: dict) -> dict:
+        return {
+            "rank": e.get("rank"),
+            "name": e.get("name"),
+            "country": e.get("country"),
+            "points": e.get("points"),
+            "tournaments": e.get("tournaments"),
+            # match-derived extras (null when we have no history for them)
+            "wins": extra.get("wins"),
+            "losses": extra.get("losses"),
+            "form": extra.get("form"),
+            "elo": extra.get("elo"),
+        }
 
-    men = enrich(snapshot.get("men", []))
-    women = enrich(snapshot.get("women", []))
+    def enrich_singles(entries: list[dict]) -> list[dict]:
+        return [row(e, stats.get(e.get("name"), {}))
+                for e in sorted(entries, key=lambda x: x.get("rank") or 9999)]
+
+    def enrich_doubles(entries: list[dict]) -> list[dict]:
+        return [row(e, pair_index.get(_pair_key(e.get("name", "")), {}))
+                for e in sorted(entries, key=lambda x: x.get("rank") or 9999)]
+
+    men = enrich_singles(snapshot.get("men", []))
+    women = enrich_singles(snapshot.get("women", []))
+    md = enrich_doubles(snapshot.get("md", []))
+    wd = enrich_doubles(snapshot.get("wd", []))
+    xd = enrich_doubles(snapshot.get("xd", []))
     return {
-        "available": bool(men or women),
+        "available": bool(men or women or md or wd or xd),
         "as_of": snapshot.get("as_of", ""),
         "source": snapshot.get("source", ""),
         "men": men,
         "women": women,
+        "md": md,
+        "wd": wd,
+        "xd": xd,
     }
 
 
-LEADERBOARD = _load_leaderboard()
+LEADERBOARD, RATINGS_BY_NAME = _load_player_ratings()
 RANKINGS = _load_rankings()
-print(f"📊 /players: {len(LEADERBOARD['players'])} players "
-      f"({LEADERBOARD['season'] or 'no matches'})  |  "
-      f"📈 /rankings: {len(RANKINGS['men'])} men + {len(RANKINGS['women'])} women "
-      f"(as of {RANKINGS['as_of'] or 'n/a'})")
+print(f"📊 /players: {len(LEADERBOARD['players'])} rated players "
+      f"({LEADERBOARD['season'] or 'no data'})  |  "
+      f"📈 /rankings (as of {RANKINGS['as_of'] or 'n/a'}): "
+      f"MS {len(RANKINGS['men'])}, WS {len(RANKINGS['women'])}, "
+      f"MD {len(RANKINGS['md'])}, WD {len(RANKINGS['wd'])}, XD {len(RANKINGS['xd'])}")
+print(f"🧠 Predictor: {MODEL_USED}")
+
+
+def _rating(name: str) -> Optional[dict]:
+    """Real rating (elo + rank + ...) for a player name, or None when we have no
+    tournament history for them — the model then falls back to neutral values."""
+    return RATINGS_BY_NAME.get(name) or RATINGS_BY_NAME.get(name.casefold())
+
+
+# Module-level probability helpers shared by /predict and /simulate, so a single
+# bracket match is scored exactly like a head-to-head prediction.
+MODEL_CLASSES = getattr(model, "classes_", None)
+if MODEL_CLASSES is None:
+    raise RuntimeError("Model does not expose class labels for probability mapping.")
+
+
+def _prob_a_wins(feat: list[float]) -> float:
+    """Raw P(side A wins) for one feature vector, via the model's class order."""
+    proba = model.predict_proba(np.array([feat]))[0]
+    cp = {int(c): float(p) for c, p in zip(MODEL_CLASSES, proba)}
+    if 0 not in cp or 1 not in cp:
+        raise ValueError(f"Unexpected model classes: {list(MODEL_CLASSES)}")
+    return cp[1]
+
+
+def _symmetric_prob_a(elo_a, rank_a, elo_b, rank_b,
+                      round_label: str, match_type: str, tournament: str) -> float:
+    """Symmetrized P(A beats B): average P(A wins | A-vs-B) with 1 - P(B wins | B-vs-A)
+    so swapping the two players just mirrors the result (a tree model on difference
+    features isn't antisymmetric on its own)."""
+    feat_ab = build_features(elo_a, rank_a, elo_b, rank_b, round_label, match_type, tournament)
+    feat_ba = [-feat_ab[0], -feat_ab[1], feat_ab[2], feat_ab[3], feat_ab[4]]
+    return (_prob_a_wins(feat_ab) + (1.0 - _prob_a_wins(feat_ba))) / 2.0
+
 
 # ============ ENDPOINTS ============
 @app.get("/")
@@ -215,7 +368,10 @@ def read_root():
     return {
         "message": "🏸 Badminton Match Prediction API",
         "status": "online",
-        "model_accuracy": "76.3%"
+        "model_used": MODEL_USED,
+        "model_label": MODEL_LABEL,
+        "model_accuracy": MODEL_ACCURACY_PCT or "n/a",
+        "matches_trained": METRICS.get("n_matches"),
     }
 
 @app.get("/rankings")
@@ -227,58 +383,28 @@ def get_rankings():
 
 @app.get("/players")
 def list_players():
-    """Real leaderboard data (Elo + win/loss + last-5 form) for players we have
-    ingested match history for, sorted by Elo descending. Pre-computed at
-    startup. Returns {available, season, players[]}."""
+    """Real tournament ratings (Elo + world rank + win/loss + last-5 form), sorted
+    by Elo descending. Pre-computed at startup. Returns {available, season,
+    players[]}."""
     return LEADERBOARD
 
 @app.post("/predict", response_model=MatchPredictionResponse)
 def predict_match(request: MatchPredictionRequest):
     try:
-        # 1. Prepare Features (MUST match training logic exactly)
-        # Training: rank_diff = player_b_rank - player_a_rank
-        rank_diff = request.player_b_rank - request.player_a_rank
-        
-        # Training: elo_diff = player_a_elo - player_b_elo
-        # Default Elo to 2400 if not provided
-        a_elo = request.player_a_elo if request.player_a_elo else 2400
-        b_elo = request.player_b_elo if request.player_b_elo else 2400
-        elo_diff = a_elo - b_elo
-        
-        # Encode Categoricals
-        round_level = ROUND_MAPPING.get(request.round, 2)
-        type_encoded = TYPE_MAPPING.get(request.match_type, 0)
-        tournament_tier = get_tournament_tier(request.tournament_name)
-        
-        # 2. Create Feature Array (Order must match feature_columns.pkl)
-        features = np.array([[
-            rank_diff,
-            elo_diff,
-            round_level,
-            type_encoded,
-            tournament_tier
-        ]])
-        
-        # 3. Make Prediction
-        prediction = int(model.predict(features)[0])
-        prediction_proba = model.predict_proba(features)[0]
-
-        model_classes = getattr(model, "classes_", None)
-        if model_classes is None:
-            raise ValueError("Model does not expose class labels for probability mapping.")
-
-        class_probabilities = {
-            int(class_label): float(probability)
-            for class_label, probability in zip(model_classes, prediction_proba)
-        }
-        if 0 not in class_probabilities or 1 not in class_probabilities:
-            raise ValueError(f"Unexpected model classes: {list(model_classes)}")
-        
-        # 4. Interpret Results
-        # Model predicts: 1 = Player A wins, 0 = Player B wins
-        player_a_prob = class_probabilities[1]
-        player_b_prob = class_probabilities[0]
-        predicted_winner = request.player_a_name if prediction == 1 else request.player_b_name
+        # 1. Build features the SAME way train.py did (see features.py), from each
+        #    player's REAL Elo + world rank (resolved server-side from the tournament
+        #    ratings — NOT the request's elo/rank, which may be stale UI values).
+        #    Unknown players fall back to neutral, so we still answer.
+        ra = _rating(request.player_a_name)
+        rb = _rating(request.player_b_name)
+        player_a_prob = _symmetric_prob_a(
+            ra["elo"] if ra else None, ra["rank"] if ra else None,
+            rb["elo"] if rb else None, rb["rank"] if rb else None,
+            request.round, request.match_type, request.tournament_name,
+        )
+        player_b_prob = 1.0 - player_a_prob
+        predicted_winner = (request.player_a_name if player_a_prob >= 0.5
+                            else request.player_b_name)
         
         # 5. Determine Confidence
         max_prob = max(player_a_prob, player_b_prob)
@@ -294,11 +420,57 @@ def predict_match(request: MatchPredictionRequest):
             player_b_win_probability=round(player_b_prob, 4),
             predicted_winner=predicted_winner,
             confidence=confidence,
-            model_used="Decision Tree (76.3% Acc)"
+            model_used=MODEL_USED,
         )
         
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Prediction error: {str(e)}")
+
+@app.post("/simulate", response_model=TournamentResponse)
+def simulate_tournament(request: TournamentRequest):
+    """Single-elimination bracket simulation. `players` arrive in bracket order
+    (slot 0 plays slot 1, slot 2 plays slot 3, ...); each round every pairing is
+    scored with the same symmetrized model used by /predict, the more likely
+    winner advances, and we repeat until one player remains. Returns every
+    round's matchups with win probabilities, plus the predicted champion."""
+    try:
+        # (name, rank, elo) tuples; rebuilt each round from the previous winners.
+        contenders = [(p.name, p.rank, p.elo) for p in request.players]
+        rounds: list[BracketRound] = []
+        while len(contenders) > 1:
+            size = len(contenders)
+            round_label = _ROUND_LABEL_BY_SIZE.get(size, "Round of 32")
+            round_name = _ROUND_NAME_BY_SIZE.get(size, f"Round of {size}")
+            matches: list[BracketMatch] = []
+            winners: list[tuple] = []
+            for i in range(0, size, 2):
+                na, rka, ea = contenders[i]
+                nb, rkb, eb = contenders[i + 1]
+                # Prefer real server ratings; fall back to the values the client
+                # sent (from the rankings) when we have no history on file.
+                ra = _rating(na)
+                rb = _rating(nb)
+                prob_a = _symmetric_prob_a(
+                    ra["elo"] if ra else ea, ra["rank"] if ra else rka,
+                    rb["elo"] if rb else eb, rb["rank"] if rb else rkb,
+                    round_label, request.match_type, request.tournament_name,
+                )
+                winner = contenders[i] if prob_a >= 0.5 else contenders[i + 1]
+                matches.append(BracketMatch(
+                    player_a=na, player_b=nb,
+                    prob_a=round(prob_a, 4), prob_b=round(1.0 - prob_a, 4),
+                    winner=winner[0],
+                ))
+                winners.append(winner)
+            rounds.append(BracketRound(name=round_name, size=size, matches=matches))
+            contenders = winners
+        return TournamentResponse(
+            champion=contenders[0][0], model_used=MODEL_USED, rounds=rounds,
+        )
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Simulation error: {str(e)}")
 
 if __name__ == "__main__":
     import uvicorn

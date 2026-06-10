@@ -71,7 +71,7 @@ export function ResultCard({ result, a, b }: Props) {
           <div className="result-desc">
             Win probability from <strong>{result.modelUsed}</strong>. Projected
             scoreline is an illustrative best-guess; the model itself weighs Elo,
-            rank, recent form, and match context.
+            world rank, round, and tournament tier.
           </div>
         </div>
 

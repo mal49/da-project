@@ -3,10 +3,10 @@
    Fonts are loaded via index.html. */
 
 :root {
-  /* primary accent */
-  --accent: #ff6b6b;
-  --accent-deep: #e0535f;
-  --accent-ink: #5b1f24;
+  /* primary accent (green theme) */
+  --accent: #16a34a;
+  --accent-deep: #15803d;
+  --accent-ink: #14532d;
   --accent-soft: color-mix(in oklab, var(--accent) 14%, white 86%);
   --accent-line: color-mix(in oklab, var(--accent) 35%, white 65%);
 
@@ -34,7 +34,7 @@
   --c-peach: #ee8765;
   --c-peach-bg: #fae4d8;
   --c-rose: var(--accent);
-  --c-rose-bg: #fbe3e3;
+  --c-rose-bg: #dcfce7;
 
   --font-display: 'Plus Jakarta Sans', system-ui, sans-serif;
   --font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
