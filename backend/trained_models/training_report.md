@@ -1,12 +1,12 @@
 # Badminton Predictor — Training Report
 
-_Generated 2026-06-09T14:04:05+00:00 · 4231 unique matches · leakage-free point-in-time features_
+_Generated 2026-06-14T15:33:57+00:00 · 4231 unique matches · leakage-free point-in-time features_
 
 **Features:** `rank_diff, elo_diff, round_level, type_encoded, tier`  
-**Best model:** Decision Tree · calibrated (Platt)  
+**Best model:** XGBoost · calibrated (Platt)  
 **Selected by:** chronological hold-out accuracy (forecasting the most recent matches)  
-**Headline accuracy (chronological hold-out):** 75.0%  
-**5-fold CV accuracy (same model):** 74.1%
+**Headline accuracy (chronological hold-out):** 75.2%  
+**5-fold CV accuracy (same model):** 74.0%
 
 ## Baselines to beat
 
@@ -21,7 +21,7 @@ _Generated 2026-06-09T14:04:05+00:00 · 4231 unique matches · leakage-free poin
 | logistic_regression | 0.738 ± 0.011 | 0.813 | 0.176 |
 | decision_tree | 0.741 ± 0.010 | 0.806 | 0.179 |
 | random_forest | 0.737 ± 0.010 | 0.808 | 0.179 |
-| gradient_boosting | 0.725 ± 0.018 | 0.798 | 0.185 |
+| xgboost | 0.740 ± 0.007 | 0.812 | 0.177 |
 | baseline_majority | 0.505 ± 0.000 | 0.500 | — |
 | baseline_higher_elo | 0.740 ± 0.000 | — | — |
 | baseline_better_rank | 0.725 ± 0.000 | — | — |
@@ -33,11 +33,11 @@ _Generated 2026-06-09T14:04:05+00:00 · 4231 unique matches · leakage-free poin
 | logistic_regression | 0.745 | 0.830 |
 | decision_tree | 0.750 | 0.824 |
 | random_forest | 0.745 | 0.822 |
-| gradient_boosting | 0.734 | 0.801 |
+| xgboost | 0.752 | 0.827 |
 
 ## Calibration
 
-Brier score (lower is better): raw **0.179** → calibrated **0.178**.
+Brier score (lower is better): raw **0.177** → calibrated **0.177**.
 
 _The model is selected and headlined on the chronological hold-out (train on the oldest 80%, test on the newest 20%) — the honest 'forecast the next matches' setting. 5-fold CV is reported alongside for completeness._
 
