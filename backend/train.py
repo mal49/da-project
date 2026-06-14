@@ -35,10 +35,10 @@ risk of leaking the outcome via a final/aggregate rating. Serving (`main.py`) us
 player's latest-known rating, which is the same "rating going into the match" idea
 applied to an upcoming, unseen match.
 
-Training needs numpy + scikit-learn (already in requirements.txt); the plots also
-need matplotlib (requirements-dev.txt). No xgboost needed — scikit-learn's
-HistGradientBoosting is the gradient-boosting candidate. The deployed API (main.py)
-does NOT import matplotlib, so requirements.txt stays lean.
+Training needs numpy + scikit-learn + xgboost (all in requirements.txt); the plots
+also need matplotlib (requirements-dev.txt). XGBoost is the gradient-boosting
+candidate. The deployed API (main.py) does NOT import matplotlib, so
+requirements.txt stays lean.
 """
 
 from __future__ import annotations
@@ -52,13 +52,14 @@ from pathlib import Path
 import numpy as np
 from sklearn.calibration import CalibratedClassifierCV
 from sklearn.dummy import DummyClassifier
-from sklearn.ensemble import HistGradientBoostingClassifier, RandomForestClassifier
+from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, roc_auc_score
 from sklearn.model_selection import GridSearchCV, StratifiedKFold, cross_validate
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
 from sklearn.tree import DecisionTreeClassifier
+from xgboost import XGBClassifier
 
 # Feature engineering lives in features.py so training and serving stay identical.
 from features import FEATURES, ROUND_MAPPING, TYPE_MAPPING, build_features
@@ -129,8 +130,10 @@ def candidate_models() -> dict[str, object]:
         "random_forest": RandomForestClassifier(
             n_estimators=400, min_samples_leaf=5, random_state=RANDOM_STATE,
             n_jobs=-1),
-        "gradient_boosting": HistGradientBoostingClassifier(
-            random_state=RANDOM_STATE),
+        "xgboost": XGBClassifier(
+            n_estimators=100, max_depth=4, learning_rate=0.1,
+            subsample=0.8, colsample_bytree=0.8, eval_metric="logloss",
+            random_state=RANDOM_STATE, n_jobs=-1),
     }
 
 
@@ -264,7 +267,7 @@ def main() -> None:
     pretty = {"logistic_regression": "Logistic Regression",
               "decision_tree": "Decision Tree",
               "random_forest": "Random Forest",
-              "gradient_boosting": "Gradient Boosting"}
+              "xgboost": "XGBoost"}
     metrics = {
         "trained_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "n_matches": int(len(X)),
