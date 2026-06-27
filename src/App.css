@@ -36,11 +36,17 @@
   width: 30px;
   height: 30px;
   border-radius: 9px;
-  background: var(--accent);
+  overflow: hidden;
+  background: #fff;
   display: grid;
   place-items: center;
-  color: white;
-  box-shadow: var(--shadow-coral);
+  box-shadow: var(--shadow-sm);
+}
+.brand-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 .brand-name {
   font-family: var(--font-display);
