@@ -71,6 +71,8 @@ FLAG = {
     "SCO": "🏴\U000e0067\U000e0062\U000e0073\U000e0063\U000e0074\U000e007f",
     "ENG": "🏴\U000e0067\U000e0062\U000e0065\U000e006e\U000e0067\U000e007f",
     "MAC": "🇲🇴", "AUS": "🇦🇺", "RUS": "🇷🇺",
+    "BUL": "🇧🇬", "UKR": "🇺🇦", "POL": "🇵🇱", "EST": "🇪🇪",
+    "ISR": "🇮🇱", "NOR": "🇳🇴", "PHI": "🇵🇭",
 }
 
 # Left-handers among the additions (everyone else defaults to 'R').
@@ -231,21 +233,72 @@ DOUBLES_COUNTRY: dict[str, str] = {
     "Jacqueline Funaoka": "JPN",
     # China
     "Guo Xin Wa": "CHN", "Tan Qiang": "CHN", "Liu Xuan Xuan": "CHN",
+    "Xie Hao Nan": "CHN", "Zeng Wei Han": "CHN", "Huang Di": "CHN",
+    "Liu Yang": "CHN",
     # Korea
     "Ko Sung Hyun": "KOR", "Eom Hye Won": "KOR", "Kim Hye Rin": "KOR",
-    "Hee Yong Kwon": "KOR",
+    "Hee Yong Kwon": "KOR", "Kim Gi Jung": "KOR", "Kim Sa Rang": "KOR",
+    # Malaysia
+    "Junaidi Ariffin": "MAS", "Yap Roy King": "MAS", "Ong Xin Yee": "MAS",
+    "Carmen Ting": "MAS",
+    # Indonesia
+    "Raymond Indra": "INA", "Nikolaus Joaquin": "INA", "Amri Syahnawi": "INA",
+    "Nita Violina Marwah": "INA", "Jafar Hidayatullah": "INA",
+    "Felisha Alberta Si": "INA",
     # Chinese Taipei
     "Hsu Yin-Hui": "TPE", "Hung En-Tzu": "TPE", "Lu Ching Yao": "TPE",
+    "Chen Bo Yang": "TPE", "Chen Zhi Xian": "TPE", "Lee Fang Jen": "TPE",
+    "Lee Fang Chih": "TPE", "Lin Yu Chieh": "TPE",
+    "Presley Shin Jian Da": "TPE", "Sung Shuo Yun": "TPE",
+    "Yu Chien Hui": "TPE", "Hsu Ya Ching": "TPE", "Lin Wan Ching": "TPE",
+    "Liu Yi": "TPE", "Lee Chia Hsin": "TPE",
+    # Thailand
+    "Ruttanapon Ketsaopar": "THA", "Jhenicha Sudjaipraparat": "THA",
+    "Peeratchai Roajanawong": "THA", "Pakkapon Teeraratsakul": "THA",
+    "Phataimas Muenwong": "THA",
+    "Ornnicha Jongsathapornparn": "THA", "Sukitta Suwachai": "THA",
+    # Japan
+    "Kaho Osawa": "JPN", "Mai Tanabe": "JPN", "Ririna Hiramoto": "JPN",
+    "Kokona Ishikawa": "JPN", "Hiroki Midorikawa": "JPN", "Natsu Saito": "JPN",
+    "Kyohei Yamashita": "JPN", "Naru Shinoya": "JPN",
     # India
     "Venkat Gaurav Prasad": "IND", "Juhi Dewangan": "IND", "M.r.arjun": "IND",
+    "Treesa Jolly": "IND", "Gayatri Gopichand": "IND",
+    "Sathish Kumar Karunakaran": "IND", "Aadya Variyath": "IND",
+    "Krishna Prasad Garaga": "IND", "Vishnuvardhan Goud Panjala": "IND",
+    "Ashith Surya": "IND", "Amrutha Pramuthesh": "IND",
+    "Ashwini Bhat K": "IND", "Shikha Gautam": "IND",
+    "Srivedya Gurazada": "IND", "Ishika Jaiswal": "IND",
+    "Rohan Kapoor": "IND", "Gadde Ruthvika Shivani": "IND",
+    # Hong Kong
+    "Lee Chun Hei": "HKG", "Ng Tsz Yau": "HKG", "Lui Lok Lok": "HKG",
+    "Tsang Hiu Yan": "HKG", "Yeung Wing Lee": "HKG", "Yeung Pak Hon": "HKG",
     # Europe
     "Amalie Magelund": "DEN", "Mads Vestergaard": "DEN", "Julie Finne-Ipsen": "DEN",
     "Mai Surrow": "DEN", "Anne Tran": "FRA", "Margot Lambert": "FRA",
     "Marvin Seidel": "GER", "Jones Ralfy Jansen": "GER", "Marcus Ellis": "ENG",
     "Clara Azurmendi": "ESP", "Beatriz Corrales": "ESP", "Debora Jille": "NED",
     "Vladimir Ivanov": "RUS", "Ivan Sozonov": "RUS",
+    "Rasmus Kjaer": "DEN", "Frederik Sogaard": "DEN", "Jeppe Bay": "DEN",
+    "Lasse Molhede": "DEN", "Mikkel Mikkelsen": "DEN", "Rikke Soby": "DEN",
+    "Lucas Corvee": "FRA", "Ronan Labar": "FRA", "Julien Maio": "FRA",
+    "Lea Palermo": "FRA", "Joshua Mayo": "FRA", "Paul Reynaud": "FRA",
+    "Robin Tabeling": "NED", "Selena Piek": "NED",
+    "Johanna Goliszewski": "GER", "Clara Nistad": "GER",
+    "Bjarne Gehnert": "GER", "Jan Colin Stichling": "GER",
+    "Gabriela Stoeva": "BUL", "Stefani Stoeva": "BUL",
+    "Polina Buhrova": "UKR", "Yevheniia Kantemyr": "UKR",
+    "Mariia Stoliarenko": "UKR", "Yelyzaveta Zharka": "UKR",
+    "Paulina Chalupska": "POL", "Kornelia Marchewka": "POL",
+    "Kati-Kreete Tuur": "EST", "Helina Ruutel": "EST",
+    "Misha Zilberman": "ISR", "Svetlana Zilberman": "ISR",
+    "Torjus Flaatten": "NOR", "Vegard Rikheim": "NOR",
     # North America
     "Josephine Wu": "CAN", "Valeree Sietsema": "USA",
+    "Kevin Lee": "CAN", "Ty Alexander Leong": "CAN",
+    "Paula Lynn Obanana": "CAN", "Lauren Lam": "CAN",
+    "Annie Xu": "USA", "Kerry Xu": "USA", "Rachel Hu": "USA", "Kristen Tsai": "USA",
+    "Gronya Somerville": "AUS", "Angela Yu": "AUS",
 }
 
 # Full country name (data/players.json) -> ISO-3, for the auto country lookup.
@@ -381,18 +434,16 @@ def collect_pairs() -> tuple[dict[str, list[tuple]], dict[str, str]]:
 
 
 def pair_country(name: str, lookup: dict[str, str]) -> tuple[str, bool]:
-    """(country, same_country_ok) for a pair. Real BWF pairs are SAME-NATION, so a
-    pair whose two members resolve to DIFFERENT countries is a data artifact —
-    same_country_ok is False and the caller drops it. Otherwise country is the
-    agreed (both members same) or the single resolved ISO3, or '' when neither
-    member is known (-> neutral flag; trusted as same-country since the source only
-    pairs same-nation players and we can't disprove it). Resolution is via the
-    member country lookup (DOUBLES_COUNTRY + the singles sources)."""
+    """(country, same_country_ok) for a pair. Real BWF pairs are SAME-NATION, so the
+    pair is only kept when BOTH members resolve to the SAME ISO-3. Anything else
+    (one side unknown, or sides on different nations — a data artifact in the
+    CSVs) is dropped, because showing a partial/assumed country would let a
+    cross-nationality pair slip through the bracket under a single flag."""
     resolved = [c for member in name.split(" / ")
                 if (c := lookup.get(member.lower()) or lookup.get(norm(member)))]
-    if len(resolved) >= 2 and len(set(resolved)) > 1:
-        return "", False
-    return (resolved[0] if resolved else ""), True
+    if len(resolved) >= 2 and len(set(resolved)) == 1:
+        return resolved[0], True
+    return "", False
 
 
 def norm(name: str) -> str:
