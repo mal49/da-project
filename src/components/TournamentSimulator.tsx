@@ -4,8 +4,8 @@ import {
   PLAYERS,
   disciplineOf,
   fetchRankings,
-  lastName,
   seedOrder,
+  shortLabel,
   simulateTournament,
 } from '../players'
 import { PlayerAvatar } from './PlayerAvatar'
@@ -525,7 +525,7 @@ function SlotRow({ slot, onEdit }: { slot: Slot; onEdit: (seedIndex: number) => 
       {slot.player ? (
         <>
           <PlayerAvatar player={slot.player} size={24} />
-          <span className="ts-name">{lastName(slot.player.name)}</span>
+          <span className="ts-name">{shortLabel(slot.player.name)}</span>
           {slot.prob != null && <Pct value={slot.prob} />}
         </>
       ) : (

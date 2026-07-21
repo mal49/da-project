@@ -313,6 +313,16 @@ export function lastName(name: string): string {
   return name.split(' ').slice(-1)[0]
 }
 
+// Display label for the bracket row. For pairs ("A / B"), shows the last name of
+// each side ("Yang / Yi") so two distinct pairs aren't collapsed onto the same
+// token (e.g. CHN "Ou Xuan Yi" vs TPE "Liu Yi" both truncated to "Yi"). For
+// individuals, returns just the last name as before.
+export function shortLabel(name: string): string {
+  if (!name.includes(' / ')) return lastName(name)
+  const sides = name.split(' / ')
+  return sides.map((s) => lastName(s)).join(' / ')
+}
+
 // Map the design's short round codes to the labels the backend ROUND_MAPPING expects.
 export function roundToApi(round: Round): string {
   switch (round) {
